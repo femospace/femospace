@@ -1,0 +1,293 @@
+{
+  "es": {
+    "termsTitle": "TÉRMINOS Y CONDICIONES",
+    "privacyTitle": "POLÍTICA DE PRIVACIDAD",
+    "section1Title": "SECCIÓN 1 — TÉRMINOS Y CONDICIONES",
+    "intro": {
+      "title": "Introducción y Aceptación",
+      "welcome": "Bienvenido a <strong>Femo Space</strong>, una plataforma de redes sociales de próxima generación operada por <strong>SS Corporate Inc</strong>.",
+      "agreement": "Al acceder, registrarse o usar Femo Space (Web, Aplicaciones Móviles, Aplicación PC), usted acepta cumplir y estar legalmente obligado por estos Términos y Condiciones.",
+      "noAgree": "Si no está de acuerdo, no debe usar la plataforma."
+    },
+    "eligibility": {
+      "title": "Elegibilidad",
+      "age": "Debe tener al menos 13 años (o la edad mínima requerida por su país).",
+      "accuracy": "Al registrarse, confirma que toda la información proporcionada es precisa y legal.",
+      "multipleAccounts": "Un usuario no puede operar múltiples cuentas con fines maliciosos."
+    },
+    "accountSecurity": {
+      "title": "Registro y Seguridad de Cuenta",
+      "responsibility": "Usted es responsable de proteger sus credenciales de inicio de sesión.",
+      "verification": "Se puede requerir verificación por correo electrónico y teléfono para acciones sensibles de seguridad.",
+      "notResponsible": "Femo Space no es responsable del acceso no autorizado causado por negligencia del usuario."
+    },
+    "userContent": {
+      "title": "Contenido de Usuario y Propiedad",
+      "ownership": "Usted conserva la propiedad del contenido que carga.",
+      "license": "Al publicar contenido, otorga a Femo Space una licencia mundial y no exclusiva para alojar, mostrar, distribuir y promocionar su contenido dentro de la plataforma.",
+      "standards": "El contenido no debe violar leyes, derechos de autor o estándares de la comunidad."
+    },
+    "prohibited": {
+      "title": "Actividades Prohibidas",
+      "intro": "Los usuarios NO deben:",
+      "illegal": "Publicar contenido ilegal, abusivo, odioso o engañoso",
+      "impersonate": "Hacerse pasar por otros",
+      "exploit": "Explotar vulnerabilidades del sistema",
+      "spam": "Hacer spam, estafar o manipular la participación",
+      "bots": "Usar bots sin permiso"
+    },
+    "contact": {
+      "email": "📧 Correo: legal@femospace.com",
+      "company": "🏢 Empresa: SS Corporate Inc",
+      "language": "🌐 Idioma:"
+    }
+  },
+  "ar": {
+    "termsTitle": "الشروط والأحكام",
+    "privacyTitle": "سياسة الخصوصية",
+    "section1Title": "القسم 1 — الشروط والأحكام",
+    "intro": {
+      "title": "المقدمة والقبول",
+      "welcome": "مرحبًا بك في <strong>Femo Space</strong>، منصة وسائل التواصل الاجتماعي من الجيل التالي التي تديرها <strong>SS Corporate Inc</strong>.",
+      "agreement": "من خلال الوصول أو التسجيل أو استخدام Femo Space (الويب وتطبيقات الهاتف المحمول وتطبيق الكمبيوتر)، فإنك توافق على الالتزام والالتزام قانونيًا بهذه الشروط والأحكام.",
+      "noAgree": "إذا كنت لا توافق، يجب عليك عدم استخدام المنصة."
+    },
+    "eligibility": {
+      "title": "الأهلية",
+      "age": "يجب أن يكون عمرك 13 عامًا على الأقل (أو الحد الأدنى للعمر المطلوب في بلدك).",
+      "accuracy": "بالتسجيل، فإنك تؤكد أن جميع المعلومات المقدمة دقيقة وقانونية.",
+      "multipleAccounts": "لا يجوز للمستخدم تشغيل حسابات متعددة لأغراض خبيثة."
+    },
+    "accountSecurity": {
+      "title": "تسجيل الحساب والأمان",
+      "responsibility": "أنت مسؤول عن حماية بيانات تسجيل الدخول الخاصة بك.",
+      "verification": "قد يكون التحقق من البريد الإلكتروني والهاتف مطلوبًا للإجراءات الحساسة للأمان.",
+      "notResponsible": "Femo Space ليست مسؤولة عن الوصول غير المصرح به الناجم عن إهمال المستخدم."
+    },
+    "contact": {
+      "email": "📧 البريد الإلكتروني: legal@femospace.com",
+      "company": "🏢 الشركة: SS Corporate Inc",
+      "language": "🌐 اللغة:"
+    }
+  },
+  "bn": {
+    "termsTitle": "নিয়ম ও শর্তাবলী",
+    "privacyTitle": "গোপনীয়তা নীতি",
+    "section1Title": "অনুচ্ছেদ 1 — নিয়ম ও শর্তাবলী",
+    "intro": {
+      "title": "ভূমিকা এবং গ্রহণযোগ্যতা",
+      "welcome": "<strong>SS Corporate Inc</strong> দ্বারা পরিচালিত পরবর্তী প্রজন্মের সোশ্যাল মিডিয়া প্ল্যাটফর্ম <strong>Femo Space</strong>-এ স্বাগতম।",
+      "agreement": "Femo Space (ওয়েব, মোবাইল অ্যাপ্স, পিসি অ্যাপ) অ্যাক্সেস, নিবন্ধন বা ব্যবহার করার মাধ্যমে, আপনি এই নিয়ম ও শর্তাবলী মেনে চলতে এবং আইনগতভাবে বাধ্য হতে সম্মত হন।",
+      "noAgree": "যদি আপনি সম্মত না হন, তাহলে আপনাকে প্ল্যাটফর্মটি ব্যবহার করা উচিত নয়।"
+    },
+    "eligibility": {
+      "title": "যোগ্যতা",
+      "age": "আপনার বয়স কমপক্ষে 13 বছর (বা আপনার দেশের প্রয়োজনীয় ন্যূনতম বয়স) হতে হবে।",
+      "accuracy": "নিবন্ধন করার মাধ্যমে, আপনি নিশ্চিত করছেন যে প্রদত্ত সমস্ত তথ্য সঠিক এবং আইনসম্মত।",
+      "multipleAccounts": "একজন ব্যবহারকারী দুর্দান্ত উদ্দেশ্যে একাধিক অ্যাকাউন্ট পরিচালনা করতে পারবেন না।"
+    },
+    "contact": {
+      "email": "📧 ইমেল: legal@femospace.com",
+      "company": "🏢 কোম্পানি: SS Corporate Inc",
+      "language": "🌐 ভাষা:"
+    }
+  },
+  "pt": {
+    "termsTitle": "TERMOS E CONDIÇÕES",
+    "privacyTitle": "POLÍTICA DE PRIVACIDADE",
+    "section1Title": "SEÇÃO 1 — TERMOS E CONDIÇÕES",
+    "intro": {
+      "title": "Introdução e Aceitação",
+      "welcome": "Bem-vindo ao <strong>Femo Space</strong>, uma plataforma de mídia social de última geração operada pela <strong>SS Corporate Inc</strong>.",
+      "agreement": "Ao acessar, registrar-se ou usar o Femo Space (Web, Aplicativos Móveis, Aplicativo PC), você concorda em cumprir e estar legalmente vinculado a estes Termos e Condições.",
+      "noAgree": "Se você não concordar, não deve usar a plataforma."
+    },
+    "eligibility": {
+      "title": "Elegibilidade",
+      "age": "Você deve ter pelo menos 13 anos (ou a idade mínima exigida pelo seu país).",
+      "accuracy": "Ao se registrar, você confirma que todas as informações fornecidas são precisas e legais.",
+      "multipleAccounts": "Um usuário não pode operar várias contas para fins maliciosos."
+    },
+    "contact": {
+      "email": "📧 E-mail: legal@femospace.com",
+      "company": "🏢 Empresa: SS Corporate Inc",
+      "language": "🌐 Idioma:"
+    }
+  },
+  "ru": {
+    "termsTitle": "УСЛОВИЯ И ПОЛОЖЕНИЯ",
+    "privacyTitle": "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ",
+    "section1Title": "РАЗДЕЛ 1 — УСЛОВИЯ И ПОЛОЖЕНИЯ",
+    "intro": {
+      "title": "Введение и принятие",
+      "welcome": "Добро пожаловать в <strong>Femo Space</strong>, социальную сеть нового поколения, управляемую <strong>SS Corporate Inc</strong>.",
+      "agreement": "Получая доступ, регистрируясь или используя Femo Space (Веб, Мобильные Приложения, ПК Приложение), вы соглашаетесь соблюдать и быть юридически связанными этими Условиями и Положениями.",
+      "noAgree": "Если вы не согласны, вы не должны использовать платформу."
+    },
+    "eligibility": {
+      "title": "Право доступа",
+      "age": "Вам должно быть не менее 13 лет (или минимальный возраст, требуемый вашей страной).",
+      "accuracy": "Регистрируясь, вы подтверждаете, что вся предоставленная информация является точной и законной.",
+      "multipleAccounts": "Один пользователь не может управлять несколькими учетными записями в злонамеренных целях."
+    },
+    "contact": {
+      "email": "📧 Электронная почта: legal@femospace.com",
+      "company": "🏢 Компания: SS Corporate Inc",
+      "language": "🌐 Язык:"
+    }
+  },
+  "ja": {
+    "termsTitle": "利用規約",
+    "privacyTitle": "プライバシーポリシー",
+    "section1Title": "セクション1 — 利用規約",
+    "intro": {
+      "title": "紹介と承諾",
+      "welcome": "<strong>SS Corporate Inc</strong>が運営する次世代ソーシャルメディアプラットフォーム<strong>Femo Space</strong>へようこそ。",
+      "agreement": "Femo Space（Web、モバイルアプリ、PCアプリ）にアクセス、登録、または使用することにより、これらの利用規約に従い法的に拘束されることに同意します。",
+      "noAgree": "同意しない場合は、プラットフォームを使用しないでください。"
+    },
+    "eligibility": {
+      "title": "資格",
+      "age": "13歳以上（またはあなたの国で必要な最低年齢）である必要があります。",
+      "accuracy": "登録することにより、提供されたすべての情報が正確で合法であることを確認します。",
+      "multipleAccounts": "1人のユーザーが悪意のある目的で複数のアカウントを操作することはできません。"
+    },
+    "contact": {
+      "email": "📧 メール: legal@femospace.com",
+      "company": "🏢 会社: SS Corporate Inc",
+      "language": "🌐 言語:"
+    }
+  },
+  "de": {
+    "termsTitle": "GESCHÄFTSBEDINGUNGEN",
+    "privacyTitle": "DATENSCHUTZRICHTLINIE",
+    "section1Title": "ABSCHNITT 1 — GESCHÄFTSBEDINGUNGEN",
+    "intro": {
+      "title": "Einführung und Akzeptanz",
+      "welcome": "Willkommen bei <strong>Femo Space</strong>, einer Social-Media-Plattform der nächsten Generation, die von <strong>SS Corporate Inc</strong> betrieben wird.",
+      "agreement": "Durch den Zugriff auf, die Registrierung bei oder die Nutzung von Femo Space (Web, Mobile Apps, PC App) stimmen Sie zu, diese Geschäftsbedingungen einzuhalten und rechtlich daran gebunden zu sein.",
+      "noAgree": "Wenn Sie nicht einverstanden sind, dürfen Sie die Plattform nicht nutzen."
+    },
+    "eligibility": {
+      "title": "Berechtigung",
+      "age": "Sie müssen mindestens 13 Jahre alt sein (oder das in Ihrem Land erforderliche Mindestalter).",
+      "accuracy": "Durch die Registrierung bestätigen Sie, dass alle bereitgestellten Informationen korrekt und rechtmäßig sind.",
+      "multipleAccounts": "Ein Benutzer darf nicht mehrere Konten für böswillige Zwecke betreiben."
+    },
+    "contact": {
+      "email": "📧 E-Mail: legal@femospace.com",
+      "company": "🏢 Unternehmen: SS Corporate Inc",
+      "language": "🌐 Sprache:"
+    }
+  },
+  "fr": {
+    "termsTitle": "CONDITIONS GÉNÉRALES",
+    "privacyTitle": "POLITIQUE DE CONFIDENTIALITÉ",
+    "section1Title": "SECTION 1 — CONDITIONS GÉNÉRALES",
+    "intro": {
+      "title": "Introduction et Acceptation",
+      "welcome": "Bienvenue sur <strong>Femo Space</strong>, une plateforme de médias sociaux de nouvelle génération exploitée par <strong>SS Corporate Inc</strong>.",
+      "agreement": "En accédant, en vous inscrivant ou en utilisant Femo Space (Web, Applications Mobiles, Application PC), vous acceptez de vous conformer et d'être légalement lié par ces Conditions Générales.",
+      "noAgree": "Si vous n'êtes pas d'accord, vous ne devez pas utiliser la plateforme."
+    },
+    "eligibility": {
+      "title": "Éligibilité",
+      "age": "Vous devez avoir au moins 13 ans (ou l'âge minimum requis par votre pays).",
+      "accuracy": "En vous inscrivant, vous confirmez que toutes les informations fournies sont exactes et légales.",
+      "multipleAccounts": "Un utilisateur ne peut pas gérer plusieurs comptes à des fins malveillantes."
+    },
+    "contact": {
+      "email": "📧 E-mail: legal@femospace.com",
+      "company": "🏢 Entreprise: SS Corporate Inc",
+      "language": "🌐 Langue:"
+    }
+  },
+  "ko": {
+    "termsTitle": "이용약관",
+    "privacyTitle": "개인정보 보호정책",
+    "section1Title": "섹션 1 — 이용약관",
+    "intro": {
+      "title": "소개 및 수락",
+      "welcome": "<strong>SS Corporate Inc</strong>에서 운영하는 차세대 소셜 미디어 플랫폼 <strong>Femo Space</strong>에 오신 것을 환영합니다.",
+      "agreement": "Femo Space(웹, 모바일 앱, PC 앱)에 액세스하거나 등록하거나 사용함으로써 귀하는 본 이용약관을 준수하고 법적으로 구속되는 데 동의합니다.",
+      "noAgree": "동의하지 않으면 플랫폼을 사용해서는 안 됩니다."
+    },
+    "eligibility": {
+      "title": "자격",
+      "age": "최소 13세 이상(또는 귀하의 국가에서 요구하는 최소 연령)이어야 합니다.",
+      "accuracy": "등록함으로써 제공된 모든 정보가 정확하고 합법적임을 확인합니다.",
+      "multipleAccounts": "한 사용자가 악의적인 목적으로 여러 계정을 운영할 수 없습니다."
+    },
+    "contact": {
+      "email": "📧 이메일: legal@femospace.com",
+      "company": "🏢 회사: SS Corporate Inc",
+      "language": "🌐 언어:"
+    }
+  },
+  "it": {
+    "termsTitle": "TERMINI E CONDIZIONI",
+    "privacyTitle": "POLITICA SULLA PRIVACY",
+    "section1Title": "SEZIONE 1 — TERMINI E CONDIZIONI",
+    "intro": {
+      "title": "Introduzione e Accettazione",
+      "welcome": "Benvenuto su <strong>Femo Space</strong>, una piattaforma di social media di nuova generazione gestita da <strong>SS Corporate Inc</strong>.",
+      "agreement": "Accedendo, registrandoti o utilizzando Femo Space (Web, App Mobili, App PC), accetti di rispettare ed essere legalmente vincolato da questi Termini e Condizioni.",
+      "noAgree": "Se non sei d'accordo, non devi utilizzare la piattaforma."
+    },
+    "eligibility": {
+      "title": "Idoneità",
+      "age": "Devi avere almeno 13 anni (o l'età minima richiesta dal tuo paese).",
+      "accuracy": "Registrandoti, confermi che tutte le informazioni fornite sono accurate e legali.",
+      "multipleAccounts": "Un utente non può gestire più account per scopi dannosi."
+    },
+    "contact": {
+      "email": "📧 Email: legal@femospace.com",
+      "company": "🏢 Azienda: SS Corporate Inc",
+      "language": "🌐 Lingua:"
+    }
+  },
+  "tr": {
+    "termsTitle": "ŞARTLAR VE KOŞULLAR",
+    "privacyTitle": "GİZLİLİK POLİTİKASI",
+    "section1Title": "BÖLÜM 1 — ŞARTLAR VE KOŞULLAR",
+    "intro": {
+      "title": "Giriş ve Kabul",
+      "welcome": "<strong>SS Corporate Inc</strong> tarafından işletilen yeni nesil sosyal medya platformu <strong>Femo Space</strong>'e hoş geldiniz.",
+      "agreement": "Femo Space'e (Web, Mobil Uygulamalar, PC Uygulaması) erişerek, kaydolarak veya kullanarak, bu Şartlar ve Koşullar'a uymayı ve yasal olarak bağlı olmayı kabul edersiniz.",
+      "noAgree": "Kabul etmiyorsanız, platformu kullanmamalısınız."
+    },
+    "eligibility": {
+      "title": "Uygunluk",
+      "age": "En az 13 yaşında olmalısınız (veya ülkenizin gerektirdiği minimum yaş).",
+      "accuracy": "Kaydolarak, sağlanan tüm bilgilerin doğru ve yasal olduğunu onaylarsınız.",
+      "multipleAccounts": "Bir kullanıcı kötü niyetli amaçlar için birden fazla hesap işletemez."
+    },
+    "contact": {
+      "email": "📧 E-posta: legal@femospace.com",
+      "company": "🏢 Şirket: SS Corporate Inc",
+      "language": "🌐 Dil:"
+    }
+  },
+  "zh-CN": {
+    "termsTitle": "条款和条件",
+    "privacyTitle": "隐私政策",
+    "section1Title": "第1节 — 条款和条件",
+    "intro": {
+      "title": "介绍和接受",
+      "welcome": "欢迎来到由<strong>SS Corporate Inc</strong>运营的下一代社交媒体平台<strong>Femo Space</strong>。",
+      "agreement": "通过访问、注册或使用Femo Space（网页版、移动应用、PC应用），您同意遵守并受这些条款和条件的法律约束。",
+      "noAgree": "如果您不同意，您不得使用该平台。"
+    },
+    "eligibility": {
+      "title": "资格",
+      "age": "您必须至少年满13岁（或您所在国家/地区要求的最低年龄）。",
+      "accuracy": "通过注册，您确认所提供的所有信息都是准确和合法的。",
+      "multipleAccounts": "一个用户不得出于恶意目的操作多个帐户。"
+    },
+    "contact": {
+      "email": "📧 电子邮件: legal@femospace.com",
+      "company": "🏢 公司: SS Corporate Inc",
+      "language": "🌐 语言:"
+    }
+  }
+}
