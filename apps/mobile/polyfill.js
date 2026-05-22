@@ -1,0 +1,18 @@
+if (!Array.prototype.toReversed) {
+    Array.prototype.toReversed = function () {
+        return [...this].reverse();
+    };
+    console.log('Polyfill: Array.prototype.toReversed added.');
+}
+if (!Array.prototype.toSorted) {
+    Array.prototype.toSorted = function (compareFn) {
+        return [...this].sort(compareFn);
+    };
+}
+if (!Array.prototype.toSpliced) {
+    Array.prototype.toSpliced = function (start, deleteCount, ...items) {
+        const copy = [...this];
+        copy.splice(start, deleteCount, ...items);
+        return copy;
+    };
+}

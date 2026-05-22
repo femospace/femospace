@@ -1,0 +1,397 @@
+{
+  "welcome": {
+    "title": "Welcome to Femo Space",
+    "tagline": "Connect, Create, Earn – New Gen Social Experience",
+    "login": "Login",
+    "register": "Register",
+    "switchToEnglish": "Switch to English"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Contact Us",
+    "terms": "Terms",
+    "privacy": "Privacy Policy"
+  },
+  "home": {
+    "welcome": "Welcome back, {{name}}!",
+    "feedSubtitle": "This is your protected feed area.",
+    "logout": "Logout",
+    "feedPlaceholder": "Feed content will appear here..."
+  },
+  "auth": {
+    "login": {
+      "title": "WELCOME TO THE FEMO SPACE",
+      "subtitle": "Login to your Femo account today",
+      "identifierLabel": "Femo ID or Femo Mail",
+      "identifierLabelId": "Femo ID",
+      "identifierLabelMail": "Femo Mail",
+      "identifierPlaceholder": "Enter your Femo ID or Femo Mail",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "forgotPassword": "Forgot Password?",
+      "submit": "Login",
+      "submitting": "Logging in...",
+      "alreadyHaveAccount": "Already have an account?",
+      "dontHaveAccount": "Don't have an account?",
+      "signUp": "Create Account",
+      "securityInfo": {
+        "encrypted": "Your data is encrypted and secure",
+        "rateLimited": "Rate-limited login with brute-force protection"
+      },
+      "errors": {
+        "identifierRequired": "Femo ID or Femo Mail is required",
+        "identifierInvalid": "Please enter a valid Femo ID (numbers only) or Femo Mail (email format)",
+        "passwordRequired": "Password is required",
+        "invalid": "Invalid Femo ID/Mail or password",
+        "unverified": "Your email is not verified. Please check your inbox for a verification link.",
+        "locked": "Account locked due to multiple failed attempts. Please try again later.",
+        "blocked": "Your account has been blocked. Please contact support.",
+        "failed": "Login failed. Please try again."
+      }
+    },
+    "register": {
+      "steps": {
+        "identity": "Identity",
+        "account": "Account",
+        "finalize": "Finalize"
+      },
+      "identity": {
+        "title": "Welcome to Femo",
+        "subtitle": "Let's get to know you better",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "birthday": "Birthday",
+        "gender": "Gender",
+        "next": "Next",
+        "stepInfo": "Step {{step}} of 3",
+        "idInfo": "Auto-generated, read-only, permanent",
+        "placeholder": {
+          "firstName": "John",
+          "lastName": "Doe"
+        },
+        "errors": {
+          "firstName": "First name is required",
+          "lastName": "Last name is required",
+          "birthday": "Birthday is required",
+          "age": "You must be at least 13 years old",
+          "gender": "Please select your gender"
+        }
+      },
+      "credentials": {
+        "title": "Create Your Account",
+        "subtitle": "Secure your Femo account today",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "phoneNumber": "Phone Number (Optional)",
+        "country": "Country",
+        "terms": "I agree to the <link>Terms & Conditions</link>",
+        "privacy": "I agree to the <link>Privacy Policy</link>",
+        "submit": "Create Account",
+        "back": "Back",
+        "selectCountry": "Select your country",
+        "searchCountries": "Search countries...",
+        "noCountries": "No countries found",
+        "placeholder": {
+          "email": "your@email.com",
+          "username": "username",
+          "phone": "1234567890"
+        },
+        "termsConfirmationTitle": "Register Confirmation",
+        "termsConfirmationText": "By checking the above, you confirm full acceptance of the platform's legal rules.",
+        "errors": {
+          "emailRequired": "Email is required",
+          "emailInvalid": "Invalid email format",
+          "emailTaken": "Email is already taken",
+          "passwordRequired": "Password is required",
+          "passwordShort": "Password must be at least 8 characters",
+          "passwordComplex": "Uppercase, lowercase, number and special character required",
+          "confirmRequired": "Please confirm your password",
+          "match": "Passwords do not match",
+          "country": "Please select your country",
+          "terms": "You must accept the Terms & Conditions",
+          "privacy": "You must accept the Privacy Policy",
+          "failed": "Registration failed. Please try again."
+        }
+      },
+      "verification": {
+        "title": "Check Your Email",
+        "subtitle": "We sent a 6-digit code to",
+        "inputLabel": "Enter Verification Code",
+        "resendTimer": "Resend in {{timer}}s",
+        "resendButton": "Resend Code",
+        "verifyButton": "Verify Code",
+        "success": "Verified successfully!",
+        "redirecting": "Redirecting you to your account...",
+        "errors": {
+          "invalid": "Invalid verification code",
+          "resendFailed": "Failed to resend code"
+        }
+      }
+    },
+    "forgotPassword": {
+      "title": "Reset Password",
+      "subtitle": "Enter your email to receive a reset link",
+      "submit": "Send Reset Link",
+      "backToLogin": "Back to Login",
+      "successTitle": "Check Your Email",
+      "successSubtitle": "We have sent a password reset link to",
+      "errors": {
+        "failed": "Failed to send reset link. Please try again."
+      }
+    },
+    "gender": {
+      "male": "Male",
+      "female": "Female",
+      "nonBinary": "Non-binary",
+      "other": "Other",
+      "preferNotToSay": "Prefer not to say"
+    },
+    "password": {
+      "strength": "Strength",
+      "scores": {
+        "tooWeak": "Too weak",
+        "weak": "Weak",
+        "fair": "Fair",
+        "good": "Good",
+        "strong": "Strong",
+        "veryStrong": "Very Strong"
+      },
+      "feedback": {
+        "enter": "Enter a password",
+        "length": "At least 8 characters",
+        "uppercase": "Add uppercase letter",
+        "lowercase": "Add lowercase letter",
+        "number": "Add a number",
+        "special": "Add a special character"
+      }
+    },
+    "common": {
+      "loading": "Loading...",
+      "loadingLong": "Registering...",
+      "checking": "Checking availability...",
+      "available": "Available",
+      "suggestions": "Suggestions",
+      "accountSummary": "Account Summary:",
+      "sending": "Sending code...",
+      "verifying": "Verifying...",
+      "resetting": "Resetting..."
+    }
+  },
+  "selector": {
+    "title": "Choose a Language",
+    "searchPlaceholder": "Search languages...",
+    "popular": "Popular Languages",
+    "all": "All Languages",
+    "noResults": "No languages found matching \"{{query}}\"",
+    "results": "Results ({{count}})",
+    "footer": "Language changes apply instantly across all pages",
+    "close": "Close",
+    "clearSearch": "Clear search"
+  },
+  "legal": {
+    "termsTitle": "Terms & Conditions",
+    "privacyTitle": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "errorLoading": "Could not load legal document."
+  },
+  "menu": {
+    "title": "Menu",
+    "business": "Business Tool",
+    "businessSubtitle": "Manage your business & ads",
+    "account": "Account",
+    "creator": "Creator Tool",
+    "settings": "Settings",
+    "monetization": "Monetization",
+    "payment": "Payment",
+    "darkMode": "Dark Mode",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "help": "Help Center",
+    "languages": "Languages",
+    "copyright": "© 2026 SS Corporate Inc"
+  },
+  "security": {
+    "center": "Security Center",
+    "mfa": "Two-Factor Authentication",
+    "sessions": "Active Sessions",
+    "password": "Password & Keys",
+    "privacy": "Data & Privacy",
+    "alerts": "Security Alerts",
+    "trustScore": "AI Trust Score"
+  },
+  "settings": {
+    "title": "Settings",
+    "sections": {
+      "account": "Account Settings",
+      "security": "Security & Trust",
+      "privacy": "Privacy"
+    },
+    "items": {
+      "femoMail": "Femo Mail",
+      "femoMailSub": "Manage your internal emails",
+      "personalInfo": "Personal Information",
+      "personalInfoSub": "Update your name, email and phone",
+      "language": "Language & Region",
+      "languageSub": "English (US)",
+      "notifications": "Notifications",
+      "notificationsSub": "Manage alerts and push notifications",
+      "password": "Password & Login",
+      "passwordSub": "Change password and secure your account",
+      "devices": "Devices & Sessions",
+      "devicesSub": "Manage and log out from devices",
+      "twoStep": "Two-step verification",
+      "twoStepSub": "Add extra layer of security",
+      "recovery": "Account Recovery",
+      "recoverySub": "Setup recovery options",
+      "loginActivity": "Login Activity",
+      "loginActivitySub": "Review your latest login events",
+      "blockedUsers": "Blocked users",
+      "blockedUsersSub": "Manage people you've blocked",
+      "reportCenter": "Report center",
+      "reportCenterSub": "View status of your reports",
+      "profilePrivacy": "Profile Privacy",
+      "profilePrivacySub": "Control who sees your profile",
+      "activityStatus": "Activity Status",
+      "activityStatusSub": "Manage active status visibility"
+    },
+    "personalInfo": {
+      "title": "Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "username": "Username",
+      "femoEmail": "Femo Email (readonly)",
+      "country": "Country",
+      "bio": "Bio",
+      "website": "Website",
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "saved": "Profile updated successfully",
+      "error": "Failed to update profile",
+      "selectCountry": "Select country..."
+    },
+    "language": {
+      "title": "Language & Region",
+      "language": "Language",
+      "timezone": "Timezone",
+      "timezoneHint": "Auto-detected from your device",
+      "apply": "Apply Changes",
+      "applying": "Saving...",
+      "saved": "Language & region updated"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Control which categories of notifications you receive.",
+      "save": "Save Settings",
+      "saving": "Saving...",
+      "saved": "Notification settings saved",
+      "categories": {
+        "social": "Social",
+        "socialHint": "Likes, comments, follows",
+        "content": "Content",
+        "community": "Community",
+        "system": "System",
+        "systemHint": "Security alerts, updates",
+        "monetization": "Monetization",
+        "monetizationHint": "Payouts, earnings",
+        "business": "Business",
+        "ai": "AI",
+        "aiHint": "AI assistant messages"
+      }
+    },
+    "password": {
+      "title": "Password & Login",
+      "subtitle": "Change your password. After changing, all other sessions will be logged out.",
+      "current": "Current Password",
+      "new": "New Password",
+      "confirm": "Confirm New Password",
+      "change": "Change Password",
+      "changing": "Changing...",
+      "saved": "Password changed successfully. Please log in again.",
+      "mismatch": "Passwords do not match",
+      "tooShort": "Password must be at least 8 characters",
+      "wrongCurrent": "Current password is incorrect",
+      "strength": {
+        "weak": "Weak",
+        "fair": "Fair",
+        "good": "Good",
+        "strong": "Strong"
+      },
+      "rules": {
+        "length": "At least 8 characters",
+        "upper": "Uppercase letter",
+        "number": "Number",
+        "special": "Special character"
+      }
+    },
+    "loginActivity": {
+      "title": "Login Activity",
+      "subtitle": "Review all recent login events and sessions on your account.",
+      "empty": "No login activity found",
+      "ok": "OK"
+    },
+    "blockedUsers": {
+      "title": "Blocked Users",
+      "subtitle": "Users you've blocked can't contact you, see your content or follow you.",
+      "empty": "No blocked users",
+      "unblock": "Unblock",
+      "unblocked": "User unblocked",
+      "error": "Failed to unblock user"
+    },
+    "privacy": {
+      "title": "Profile Privacy",
+      "profileVisibility": "Profile Visibility",
+      "postVisibility": "Post Visibility",
+      "storyVisibility": "Story Visibility",
+      "activityStatus": "Activity Status",
+      "activityStatusHint": "Show when you're online",
+      "showLastSeen": "Show Last Seen",
+      "showLastSeenHint": "Let others see when you were last active",
+      "public": "🌍 Public",
+      "followers": "👥 Followers",
+      "private": "🔒 Private",
+      "save": "Save Privacy Settings",
+      "saving": "Saving...",
+      "saved": "Privacy settings saved"
+    },
+    "recovery": {
+      "title": "Account Recovery",
+      "subtitle": "Set up a recovery email and phone to regain access if you lose your login credentials.",
+      "recoveryEmail": "Recovery Email",
+      "recoveryPhone": "Recovery Phone",
+      "adminNote": "📝 Admin Fallback Available",
+      "adminNoteText": "If you lose access to both recovery options, contact our support team with your Femo ID for manual verification.",
+      "save": "Save Recovery Info",
+      "saving": "Saving...",
+      "saved": "Recovery info saved"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "How can we help you today?",
+    "chat": {
+      "title": "Start Live Chat",
+      "subtitle": "Chat with our support team in real-time",
+      "button": "Start Live Chat"
+    },
+    "community": {
+      "title": "Visit Community",
+      "subtitle": "Get help from the Femo community",
+      "button": "Visit Community"
+    },
+    "loginRequired": "Please log in to start a live chat.",
+    "login": "Log In"
+  },
+  "help": {
+    "title": "Help Center",
+    "searchPlaceholder": "Search help articles...",
+    "stillNeedHelp": "Still need help?",
+    "startChat": "Start Live Chat",
+    "categories": {
+      "gettingStarted": "Getting Started",
+      "account": "Account & Profile",
+      "privacy": "Privacy & Safety",
+      "payments": "Payments & Earnings"
+    }
+  }
+}

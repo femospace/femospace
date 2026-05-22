@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import {
     Bell,
     Heart,
@@ -32,6 +33,7 @@ interface NotificationItem {
 }
 
 export const Notifications = () => {
+    const { t } = useTranslation();
     const { token } = useAuth();
     const [activeTab, setActiveTab] = useState<NotifCategory>('all');
     const [notifications, setNotifications] = useState<NotificationItem[]>([]);
@@ -100,11 +102,11 @@ export const Notifications = () => {
     };
 
     const tabs = [
-        { id: 'all', label: 'All' },
-        { id: 'mentions', label: 'Mentions' },
-        { id: 'follows', label: 'Follows' },
-        { id: 'monetization', label: 'Monetization' },
-        { id: 'system', label: 'System' }
+        { id: 'all', label: t('notifications.all', 'All') },
+        { id: 'mentions', label: t('notifications.mentions', 'Mentions') },
+        { id: 'follows', label: t('notifications.follows', 'Follows') },
+        { id: 'monetization', label: t('notifications.monetization', 'Monetization') },
+        { id: 'system', label: t('notifications.system', 'System') }
     ];
 
     return (
@@ -113,10 +115,10 @@ export const Notifications = () => {
             <div className="sticky top-0 z-20 bg-white/80 dark:bg-[#0f172a]/80 backdrop-blur-md p-4 border-b border-gray-100 dark:border-gray-800">
                 <div className="flex justify-between items-center mb-6">
                     <h1 className="text-2xl font-black dark:text-white flex items-center gap-2">
-                        Notifications
+                        {t('notifications.title', 'Notifications')}
                         {notifications.filter(n => !n.isRead).length > 0 && (
                             <span className="bg-red-500 text-white text-[10px] px-2 py-0.5 rounded-full">
-                                {notifications.filter(n => !n.isRead).length} NEW
+                                {notifications.filter(n => !n.isRead).length} {t('notifications.new', 'NEW')}
                             </span>
                         )}
                     </h1>
@@ -208,8 +210,8 @@ export const Notifications = () => {
                                     <div className="w-20 h-20 bg-gray-50 dark:bg-gray-800/50 rounded-full flex items-center justify-center mb-6 text-gray-300">
                                         <Bell size={40} />
                                     </div>
-                                    <h2 className="text-xl font-bold dark:text-white mb-2">No notifications yet</h2>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400">When people interact with your content or there are system updates, they'll show up here.</p>
+                                    <h2 className="text-xl font-bold dark:text-white mb-2">{t('notifications.noNotifs', 'No notifications yet')}</h2>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400">{t('notifications.noNotifsSubtitle', "When people interact with your content or there are system updates, they'll show up here.")}</p>
                                 </div>
                             )}
                         </AnimatePresence>
@@ -226,8 +228,8 @@ export const Notifications = () => {
                             <Info size={20} className="text-white" />
                         </div>
                         <div>
-                            <h4 className="text-sm font-bold">AI Daily Summary</h4>
-                            <p className="text-[10px] opacity-90">You had 12 likes and 3 new followers today.</p>
+                            <h4 className="text-sm font-bold">{t('notifications.dailySummary', 'AI Daily Summary')}</h4>
+                            <p className="text-[10px] opacity-90">{t('notifications.summaryDesc', { likes: 12, follows: 3, defaultValue: 'You had 12 likes and 3 new followers today.' })}</p>
                         </div>
                     </div>
                     <ChevronRight size={20} className="opacity-70" />

@@ -1,0 +1,178 @@
+{
+  "welcome": {
+    "title": "Femo Space'e Hoş Geldiniz",
+    "tagline": "Bağlan, Oluştur, Kazan – Yeni Nesil Sosyal Deneyim",
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "switchToEnglish": "İngilizceye Geç"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Bize Ulaşın",
+    "terms": "Koşullar",
+    "privacy": "Gizlilik Politikası"
+  },
+  "home": {
+    "welcome": "Tekrar hoş geldiniz, {{name}}!",
+    "feedSubtitle": "Bu sizin korumalı akış alanınızdır.",
+    "logout": "Çıkış Yap",
+    "feedPlaceholder": "Akış içeriği burada görünecektir..."
+  },
+  "auth": {
+    "login": {
+      "title": "FEMO SPACE'E HOŞ GELDİNİZ",
+      "subtitle": "Femo hesabınıza bugün giriş yapın",
+      "identifierLabel": "Femo ID veya Femo Mail",
+      "identifierPlaceholder": "Femo ID veya Femo Mail adresinizi girin",
+      "passwordLabel": "Şifre",
+      "passwordPlaceholder": "Şifrenizi girin",
+      "forgotPassword": "Şifremi unuttum?",
+      "submit": "Giriş Yap",
+      "submitting": "Giriş yapılıyor...",
+      "alreadyHaveAccount": "Zaten hesabınız var mı?",
+      "dontHaveAccount": "Hesabınız yok mu?",
+      "signUp": "Hesap Oluştur",
+      "securityInfo": {
+        "encrypted": "Verileriniz şifrelenmiş ve güvendedir",
+        "rateLimited": "Kaba kuvvet korumalı hız sınırlı giriş"
+      },
+      "errors": {
+        "identifierRequired": "Femo ID veya Femo Mail zorunludur",
+        "identifierInvalid": "Lütfen geçerli bir Femo ID (yalnızca sayılar) veya Femo Mail girin",
+        "passwordRequired": "Şifre zorunludur",
+        "invalid": "Geçersiz Femo ID/Mail veya şifre",
+        "unverified": "E-postanız doğrulanmadı. Lütfen gelen kutunuzu kontrol edin.",
+        "locked": "Çok sayıda başarısız deneme nedeniyle hesap geçici olarak kilitlendi.",
+        "blocked": "Hesabınız engellendi. Lütfen destekle iletişime geçin.",
+        "failed": "Giriş başarısız. Lütfen tekrar deneyin."
+      }
+    },
+    "forgotPassword": {
+      "title": "Şifreyi Sıfırla",
+      "subtitle": "Sıfırlama bağlantısı almak için e-postanızı girin",
+      "submit": "Bağlantı Gönder",
+      "backToLogin": "Girişe Dön",
+      "successTitle": "E-postanızı Kontrol Edin",
+      "successSubtitle": "Şifre sıfırlama bağlantısını şu adrese gönderdik:",
+      "errors": {
+        "failed": "Sıfırlama bağlantısı gönderilemedi."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Femo'ya Hoş Geldiniz",
+        "subtitle": "Sizi daha iyi tanıyalım",
+        "firstName": "Ad",
+        "lastName": "Soyad",
+        "birthday": "Doğum Tarihi",
+        "gender": "Cinsiyet",
+        "next": "İleri",
+        "stepInfo": "Adım {{step}}/3",
+        "idInfo": "Otomatik oluşturulur, salt okunur, kalıcı",
+        "placeholder": {
+          "firstName": "Ahmet",
+          "lastName": "Yılmaz"
+        },
+        "errors": {
+          "firstName": "Ad zorunludur",
+          "lastName": "Soyad zorunludur",
+          "birthday": "Doğum tarihi zorunludur",
+          "gender": "Lütfen cinsiyetinizi seçin",
+          "age": "En az 13 yaşında olmalısınız"
+        }
+      },
+      "credentials": {
+        "title": "Hesabınızı Oluşturun",
+        "subtitle": "Femo hesabınızı bugün güvene alın",
+        "email": "E-post",
+        "password": "Şifre",
+        "confirmPassword": "Şifreyi Onayla",
+        "phoneNumber": "Telefon Numarası (Opsiyonel)",
+        "country": "Ülke/Bölge",
+        "terms": "<link>Koşulları</link> kabul ediyorum",
+        "privacy": "<link>Gizlilik politikasını</link> kabul ediyorum",
+        "back": "Geri",
+        "submit": "Hesap Oluştur",
+        "selectCountry": "Ülkenizi seçin",
+        "searchCountries": "Ülke ara...",
+        "noCountries": "Ülke bulunamadı",
+        "termsConfirmationTitle": "Kayıt Onayı",
+        "termsConfirmationText": "Yukarıdakileri işaretleyerek platformun yasal kurallarını tam olarak kabul ettiğinizi onaylamış olursunuz.",
+        "errors": {
+          "emailRequired": "E-posta zorunludur",
+          "emailInvalid": "Geçersiz e-posta formatı",
+          "emailTaken": "Bu e-posta zaten kullanımda",
+          "passwordRequired": "Şifre zorunludur",
+          "passwordShort": "Şifre en az 8 karakter olmalıdır",
+          "passwordComplex": "Büyük, küçük harf, sayı ve özel karakter gereklidir",
+          "confirmRequired": "Lütfen şifrenizi onaylayın",
+          "match": "Şifreler eşleşmiyor",
+          "country": "Lütfen ülkenizi seçin",
+          "terms": "Koşulları kabul etmelisiniz",
+          "privacy": "Gizlilik politikasını kabul etmelisiniz",
+          "failed": "Kayıt başarısız. Lütfen tekrar deneyin."
+        }
+      },
+      "verification": {
+        "title": "E-postanızı Kontrol Edin",
+        "subtitle": "6 haneli kodu şu adrese gönderdik:",
+        "inputLabel": "Doğrulama Kodunu Girin",
+        "resendTimer": "{{timer}} saniye içinde tekrar gönder",
+        "resendButton": "Kodu Tekrar Gönder",
+        "success": "Doğrulandı!",
+        "redirecting": "Hesabınıza yönlendiriliyorsunuz...",
+        "errors": {
+          "invalid": "Geçersiz doğrulama kodu",
+          "resendFailed": "Kod tekrar gönderilemedi"
+        },
+        "verifyButton": "Kodu Doğrula"
+      }
+    },
+    "common": {
+      "loading": "Yükleniyor...",
+      "loadingLong": "Kaydediliyor...",
+      "checking": "Müsaitlik kontrol ediliyor...",
+      "available": "Müsait",
+      "suggestions": "Öneriler",
+      "accountSummary": "Hesap Özeti:",
+      "sending": "Kod gönderiliyor...",
+      "verifying": "Doğrulanıyor...",
+      "resetting": "Sıfırlanıyor..."
+    },
+    "gender": {
+      "male": "Erkek",
+      "female": "Kadın",
+      "nonBinary": "Non-binary",
+      "other": "Diğer",
+      "preferNotToSay": "Belirtmek istemiyorum"
+    },
+    "password": {
+      "strength": "Güç",
+      "scores": {
+        "tooWeak": "Çok zayıf",
+        "weak": "Zayıf",
+        "fair": "Orta",
+        "good": "İyi",
+        "strong": "Güçlü",
+        "veryStrong": "Çok güçlü"
+      },
+      "feedback": {
+        "tooShort": "En az 8 karakter",
+        "addUppercase": "Büyük harf ekleyin",
+        "addLowercase": "Küçük harf ekleyin",
+        "addNumber": "Sayı ekleyin",
+        "addSpecial": "Özel karakter ekleyin"
+      }
+    }
+  },
+  "selector": {
+    "title": "Dil Seçin",
+    "searchPlaceholder": "Dil ara...",
+    "popular": "Popüler Diller",
+    "all": "Tüm Diller",
+    "noResults": "\"{{query}}\" ile eşleşen dil bulunamadı",
+    "results": "Sonuçlar ({{count}})",
+    "footer": "Dil değişiklikleri anında uygulanır",
+    "close": "Kapat"
+  }
+}

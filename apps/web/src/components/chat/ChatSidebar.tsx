@@ -106,8 +106,8 @@ export const ChatSidebar: React.FC<ChatSidebarProps> = ({
                             key={f.id}
                             onClick={() => setActiveFilter(f.id as FilterType)}
                             className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${activeFilter === f.id
-                                    ? 'bg-black dark:bg-white text-white dark:text-black'
-                                    : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200'
+                                ? 'bg-black dark:bg-white text-white dark:text-black'
+                                : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200'
                                 }`}
                         >
                             {f.label}

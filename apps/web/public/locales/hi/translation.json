@@ -1,0 +1,184 @@
+{
+  "welcome": {
+    "title": "Femo Space में आपका स्वागत है",
+    "tagline": "कनेक्ट करें, बनाएं, कमाएं – नई पीढ़ी का सामाजिक अनुभव",
+    "login": "लॉगिन",
+    "register": "पंजीकरण",
+    "switchToEnglish": "अंग्रेजी में बदलें"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "संपर्क करें",
+    "terms": "शर्तें",
+    "privacy": "गोपनीयता नीति"
+  },
+  "home": {
+    "welcome": "वापसी पर स्वागत है, {{name}}!",
+    "feedSubtitle": "यह आपका सुरक्षित फीड क्षेत्र है।",
+    "logout": "लॉगआउट",
+    "feedPlaceholder": "फीड सामग्री यहाँ दिखाई देगी..."
+  },
+  "auth": {
+    "login": {
+      "title": "FEMO SPACE में आपका स्वागत है",
+      "subtitle": "आज ही अपने Femo खाते में लॉगिन करें",
+      "identifierLabel": "Femo ID या Femo Mail",
+      "identifierPlaceholder": "अपना Femo ID या Femo Mail दर्ज करें",
+      "passwordLabel": "पासवर्ड",
+      "passwordPlaceholder": "अपना पासवर्ड दर्ज करें",
+      "forgotPassword": "पासवर्ड भूल गए?",
+      "submit": "लॉगिन",
+      "submitting": "लॉगिन हो रहा है...",
+      "alreadyHaveAccount": "पहले से ही एक खाता है?",
+      "dontHaveAccount": "खाता नहीं है?",
+      "signUp": "खाता बनाएं",
+      "securityInfo": {
+        "encrypted": "आपका डेटा एन्क्रिप्टेड और सुरक्षित है",
+        "rateLimited": "ब्रूट-फोर्स सुरक्षा के साथ दर-सीमित लॉगिन"
+      },
+      "errors": {
+        "identifierRequired": "Femo ID या Femo Mail आवश्यक है",
+        "identifierInvalid": "कृपया एक मान्य Femo ID (केवल संख्याएँ) या Femo Mail दर्ज करें",
+        "passwordRequired": "पासवर्ड आवश्यक है",
+        "invalid": "अमान्य Femo ID/Mail या पासवर्ड",
+        "unverified": "आपका ईमेल सत्यापित नहीं है। कृपया अपना इनबॉक्स जांचें।",
+        "locked": "कई विफल प्रयासों के कारण खाता अस्थायी रूप से लॉक कर दिया गया है।",
+        "blocked": "आपका खाता ब्लॉक कर दिया गया है। कृपया सहायता से संपर्क करें।",
+        "failed": "लॉगिन विफल रहा। कृपया पुन: प्रयास करें।"
+      }
+    },
+    "forgotPassword": {
+      "title": "पासवर्ड रीसेट करें",
+      "subtitle": "रीसेट लिंक प्राप्त करने के लिए अपना ईमेल दर्ज करें",
+      "submit": "रीसेट लिंक भेजें",
+      "backToLogin": "लॉगिन पर वापस जाएं",
+      "successTitle": "अपना ईमेल जांचें",
+      "successSubtitle": "हमने पासवर्ड रीसेट लिंक यहां भेजा है:",
+      "errors": {
+        "failed": "रीसेट लिंक भेजने में विफल।"
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Femo में आपका स्वागत है",
+        "subtitle": "आइए हम आपको बेहतर तरीके से जानें",
+        "firstName": "नाम",
+        "lastName": "उपनाम",
+        "birthday": "जन्मतिथि",
+        "gender": "लिंग",
+        "next": "अगला",
+        "stepInfo": "चरण {{step}}/3",
+        "idInfo": "स्वचालित रूप से उत्पन्न, केवल-पढ़ने के लिए, स्थायी",
+        "placeholder": {
+          "firstName": "राहुल",
+          "lastName": "शर्मा"
+        },
+        "errors": {
+          "firstName": "नाम आवश्यक है",
+          "lastName": "उपनाम आवश्यक है",
+          "birthday": "जन्मतिथि आवश्यक है",
+          "gender": "कृपया अपना लिंग चुनें",
+          "age": "आपकी आयु कम से कम 13 वर्ष होनी चाहिए"
+        }
+      },
+      "credentials": {
+        "title": "खाता बनाएं",
+        "subtitle": "आज ही अपना Femo खाता सुरक्षित करें",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "confirmPassword": "पासवर्ड की पुष्टि करें",
+        "phoneNumber": "फ़ोन नंबर (वैकल्पिक)",
+        "country": "देश/क्षेत्र",
+        "terms": "मैं <link>शर्तों</link> को स्वीकार करता हूँ",
+        "privacy": "मैं <link>गोपनीयता नीति</link> को स्वीकार करता हूँ",
+        "back": "पीछे",
+        "submit": "खाता बनाएं",
+        "selectCountry": "अपना देश चुनें",
+        "searchCountries": "देश खोजें...",
+        "noCountries": "कोई देश नहीं मिला",
+        "termsConfirmationTitle": "पंजीकरण पुष्टि",
+        "termsConfirmationText": "ऊपर दिए गए को चिह्नित करके, आप प्लेटफॉर्म के कानूनी नियमों की पूर्ण स्वीकृति की पुष्टि करते हैं।",
+        "errors": {
+          "emailRequired": "ईमेल आवश्यक है",
+          "emailInvalid": "अमान्य ईमेल प्रारूप",
+          "emailTaken": "यह ईमेल पहले ही लिया जा चुका है",
+          "passwordRequired": "पासवर्ड आवश्यक है",
+          "passwordShort": "पासवर्ड कम से कम 8 वर्णों का होना चाहिए",
+          "passwordComplex": "बड़े अक्षर, छोटे अक्षर, अंक और विशेष वर्ण आवश्यक हैं",
+          "confirmRequired": "कृपया अपने पासवर्ड की पुष्टि करें",
+          "match": "पासवर्ड मेल नहीं खाते",
+          "country": "कृपया अपना देश चुनें",
+          "terms": "आपको नियमों और शर्तों को स्वीकार करना होगा",
+          "privacy": "आपको गोपनीयता नीति को स्वीकार करना होगा",
+          "failed": "पंजीकरण विफल रहा। कृपया पुनः प्रयास करें।"
+        }
+      },
+      "verification": {
+        "title": "अपना ईमेल जांचें",
+        "subtitle": "हमने 6-अंकों का कोड यहां भेजा है:",
+        "inputLabel": "सत्यापन कोड दर्ज करें",
+        "resendTimer": "{{timer}} सेकंड में दोबारा भेजें",
+        "resendButton": "कोड दोबारा भेजें",
+        "success": "सत्यापित!",
+        "redirecting": "आपके खाते में पुनः निर्देशित किया जा रहा है...",
+        "errors": {
+          "invalid": "अमान्य सत्यापन कोड",
+          "resendFailed": "कोड फिर से भेजने में विफल"
+        },
+        "verifyButton": "कोड सत्यापित करें"
+      }
+    },
+    "common": {
+      "loading": "लोड हो रहा है...",
+      "loadingLong": "पंजीकरण हो रहा है...",
+      "checking": "उपलब्धता की जाँच हो रही है...",
+      "available": "उपलब्ध",
+      "suggestions": "सुझाव",
+      "accountSummary": "खाता सारांश:",
+      "sending": "कोड भेजा जा रहा है...",
+      "verifying": "सत्यापित किया जा रहा है...",
+      "resetting": "रीसेट किया जा रहा है..."
+    },
+    "gender": {
+      "male": "पुरुष",
+      "female": "महिला",
+      "nonBinary": "नॉन-बाइनरी",
+      "other": "अन्य",
+      "preferNotToSay": "बताना नहीं चाहते"
+    },
+    "password": {
+      "strength": "शक्ति",
+      "scores": {
+        "tooWeak": "बहुत कमजोर",
+        "weak": "कमजोर",
+        "fair": "ठीक",
+        "good": "अच्छा",
+        "strong": "मजबूत",
+        "veryStrong": "बहुत मजबूत"
+      },
+      "feedback": {
+        "tooShort": "कम से कम 8 वर्ण",
+        "addUppercase": "एक बड़ा अक्षर जोड़ें",
+        "addLowercase": "एक छोटा अक्षर जोड़ें",
+        "addNumber": "एक अंक जोड़ें",
+        "addSpecial": "एक विशेष वर्ण जोड़ें"
+      }
+    }
+  },
+  "selector": {
+    "title": "भाषा चुनें",
+    "searchPlaceholder": "भाषाएँ खोजें...",
+    "popular": "लोकप्रिय भाषाएँ",
+    "all": "सभी भाषाएँ",
+    "noResults": "\"{{query}}\" के लिए कोई मिलान भाषा नहीं मिली",
+    "results": "परिणाम ({{count}})",
+    "footer": "भाषा परिवर्तन तुरंत लागू होते हैं",
+    "close": "बंद करें"
+  },
+  "legal": {
+    "termsTitle": "नियम और शर्तें",
+    "privacyTitle": "गोपनीयता नीति",
+    "lastUpdated": "अंतिम अपडेट",
+    "errorLoading": "कानूनी दस्तावेज़ लोड करने में विफल।"
+  }
+}

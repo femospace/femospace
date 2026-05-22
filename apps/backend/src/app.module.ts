@@ -21,6 +21,10 @@ import { MailModule } from './mail/mail.module';
 import { MonetizationModule } from './monetization/monetization.module';
 import { AIModule } from './ai/ai.module';
 import { KycModule } from './kyc/kyc.module';
+import { MarketplaceModule } from './marketplace/marketplace.module';
+import { WalletModule } from './wallet/wallet.module';
+import { PaymentModule } from './payments/payment.module';
+import { SupabaseModule } from './common/supabase.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ThrottlerModule, ThrottlerGuard } from '@nestjs/throttler';
@@ -60,6 +64,10 @@ import { I18nService } from './common/services/i18n.service';
     MonetizationModule,
     AIModule,
     KycModule,
+    MarketplaceModule,
+    WalletModule,
+    PaymentModule,
+    SupabaseModule,
     ThrottlerModule.forRoot([{
       ttl: 60000,
       limit: 10,

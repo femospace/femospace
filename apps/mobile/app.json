@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "FemoSpace",
+    "slug": "femospace-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.femospace.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "FemoSpace needs camera access to record Reels and stream Live Studio.",
+        "NSMicrophoneUsageDescription": "FemoSpace needs microphone access for Voice Messages and Live Video.",
+        "NSPhotoLibraryUsageDescription": "FemoSpace needs gallery access to upload moments and marketplace assets."
+      }
+    },
+    "android": {
+      "package": "com.femospace.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0f172a",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "predictiveBackGestureEnabled": true
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "FemoSpace needs camera access to record Reels and stream Live Studio.",
+          "microphonePermission": "FemoSpace needs microphone access for Voice Messages and Live Video.",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

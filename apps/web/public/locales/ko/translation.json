@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "title": "Femo Space에 오신 것을 환영합니다",
+    "tagline": "연결하고, 창조하고, 수익을 창출하세요 – 차세대 소셜 경험",
+    "login": "로그인",
+    "register": "회원가입",
+    "switchToEnglish": "영어(English)로 전환"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "문의하기",
+    "terms": "이용약관",
+    "privacy": "개인정보처리방침"
+  },
+  "home": {
+    "welcome": "환영합니다, {{name}}님!",
+    "feedSubtitle": "여기는 보호된 피드 영역입니다.",
+    "logout": "로그아웃",
+    "feedPlaceholder": "피드 콘텐츠가 여기에 표시됩니다..."
+  },
+  "auth": {
+    "login": {
+      "title": "다시 오신 것을 환영합니다",
+      "subtitle": "Femo 계정으로 로그인하세요",
+      "emailLabel": "이메일",
+      "passwordLabel": "비밀번호",
+      "forgotPassword": "비밀번호를 잊으셨나요?",
+      "submit": "로그인",
+      "alreadyHaveAccount": "이미 계정이 있으신가요?",
+      "dontHaveAccount": "계정이 없으신가요?",
+      "signUp": "회원가입",
+      "errors": {
+        "invalid": "잘못된 이메일 또는 비밀번호입니다",
+        "failed": "로그인에 실패했습니다. 다시 시도해 주세요."
+      }
+    },
+    "forgotPassword": {
+      "title": "비밀번호 재설정",
+      "subtitle": "재설정 링크를 받을 이메일을 입력하세요",
+      "submit": "링크 보내기",
+      "backToLogin": "로그인으로 돌아가기",
+      "successTitle": "이메일 확인",
+      "successSubtitle": "비밀번호 재설정 링크를 다음으로 보냈습니다:",
+      "errors": {
+        "failed": "링크 전송에 실패했습니다."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Femo에 오신 것을 환영합니다",
+        "subtitle": "당신에 대해 더 알려주세요",
+        "firstName": "이름",
+        "lastName": "성",
+        "birthday": "생년월일",
+        "gender": "성별",
+        "next": "다음",
+        "placeholder": {
+          "firstName": "철수",
+          "lastName": "김"
+        },
+        "errors": {
+          "firstName": "이름은 필수입니다",
+          "lastName": "성은 필수입니다",
+          "birthday": "생년월일은 필수입니다",
+          "gender": "성별을 선택해 주세요",
+          "age": "만 13세 이상이어야 합니다"
+        }
+      },
+      "credentials": {
+        "title": "계정 생성하기",
+        "subtitle": "지금 Femo 계정을 보호하세요",
+        "email": "이메일",
+        "password": "비밀번호",
+        "confirmPassword": "비밀번호 확인",
+        "country": "국가",
+        "terms": "<link>이용약관</link>에 동의합니다",
+        "privacy": "<link>개인정보처리방침</link>에 동의합니다",
+        "back": "뒤로",
+        "submit": "계정 생성",
+        "selectCountry": "국가를 선택하세요",
+        "searchCountries": "국가 검색...",
+        "noCountries": "검색된 국가가 없습니다",
+        "errors": {
+          "emailRequired": "이메일은 필수입니다",
+          "emailInvalid": "유효하지 않은 이메일 형식입니다",
+          "passwordRequired": "비밀번호는 필수입니다",
+          "passwordShort": "비밀번호는 최소 8자 이상이어야 합니다",
+          "passwordComplex": "대문자, 소문자, 숫자, 특수문자를 포함해야 합니다",
+          "confirmRequired": "비밀번호를 한 번 더 입력해 주세요",
+          "match": "비밀번호가 일치하지 않습니다",
+          "country": "국가를 선택해 주세요",
+          "terms": "이용약관에 동의해야 합니다",
+          "privacy": "개인정보처리방침에 동의해야 합니다",
+          "failed": "회원가입에 실패했습니다. 다시 시도해 주세요."
+        }
+      },
+      "verification": {
+        "title": "이메일 확인",
+        "subtitle": "6자리 코드를 다음으로 보냈습니다:",
+        "inputLabel": "인증 코드 입력",
+        "resendTimer": "{{timer}}초 후 재전송 가능",
+        "resendButton": "코드 재전송",
+        "success": "인증 완료!",
+        "redirecting": "계정으로 이동 중입니다...",
+        "errors": {
+          "invalid": "유효하지 않은 인증 코드입니다",
+          "resendFailed": "코드 재전송에 실패했습니다"
+        }
+      }
+    },
+    "gender": {
+      "male": "남성",
+      "female": "여성",
+      "nonBinary": "논바이너리",
+      "other": "기타",
+      "preferNotToSay": "밝히고 싶지 않음"
+    },
+    "password": {
+      "strength": "보안 수준",
+      "scores": {
+        "tooWeak": "매우 취약",
+        "weak": "취약",
+        "fair": "보통",
+        "good": "안전",
+        "strong": "매우 안전",
+        "veryStrong": "최고 수준"
+      },
+      "feedback": {
+        "tooShort": "최소 8자 이상",
+        "addUppercase": "대문자 추가",
+        "addLowercase": "소문자 추가",
+        "addNumber": "숫자 추가",
+        "addSpecial": "특수문자 추가"
+      }
+    }
+  },
+  "selector": {
+    "title": "언어 선택",
+    "searchPlaceholder": "언어 검색...",
+    "popular": "인기 언어",
+    "all": "모든 언어",
+    "noResults": "\"{{query}}\"와 일치하는 언어가 없습니다",
+    "results": "결과 ({{count}})",
+    "footer": "언어 변경은 즉시 적용됩니다",
+    "close": "닫기"
+  },
+  "legal": {
+    "termsTitle": "이용약관",
+    "privacyTitle": "개인정보처리방침",
+    "lastUpdated": "최근 업데이트",
+    "errorLoading": "법률 문서를 불러올 수 없습니다."
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "welcome": {
+    "title": "Femo Spaceへようこそ",
+    "tagline": "つながる、創造する、稼ぐ – 次世代ソーシャル体験",
+    "login": "ログイン",
+    "register": "登録",
+    "switchToEnglish": "英語に切り替える"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "お問い合わせ",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー"
+  },
+  "home": {
+    "welcome": "お帰りなさい、{{name}}さん!",
+    "feedSubtitle": "ここは保護されたフィードエリアです。",
+    "logout": "ログアウト",
+    "feedPlaceholder": "フィードの内容がここに表示されます..."
+  },
+  "auth": {
+    "login": {
+      "title": "FEMO SPACEへようこそ",
+      "subtitle": "今すぐFemoアカウントにログインしてください",
+      "identifierLabel": "Femo ID または Femo Mail",
+      "identifierPlaceholder": "Femo ID または Femo Mailを入力してください",
+      "passwordLabel": "パスワード",
+      "passwordPlaceholder": "パスワードを入力してください",
+      "forgotPassword": "パスワードをお忘れですか？",
+      "submit": "ログイン",
+      "submitting": "ログイン中...",
+      "alreadyHaveAccount": "アカウントをお持ちですか？",
+      "dontHaveAccount": "アカウントをお持ちでないですか？",
+      "signUp": "アカウント作成",
+      "securityInfo": {
+        "encrypted": "データは暗号化され保護されています",
+        "rateLimited": "ブルートフォース保護を備えたレート制限ログイン"
+      },
+      "errors": {
+        "identifierRequired": "Femo ID または Femo Mailが必要です",
+        "identifierInvalid": "有効な Femo ID（数字のみ）または Femo Mail（メール形式）を入力してください",
+        "passwordRequired": "パスワードが必要です",
+        "invalid": "Femo ID/Mail またはパスワードが無効です",
+        "unverified": "メールアドレスが認証されていません。受信トレイを確認してください。",
+        "locked": "複数回の試行失敗により、アカウントが一時的にロックされました。",
+        "blocked": "アカウントがブロックされました。サポートにお問い合わせください。",
+        "failed": "ログインに失敗しました。もう一度お試しください。"
+      }
+    },
+    "forgotPassword": {
+      "title": "パスワードのリセット",
+      "subtitle": "リセットリンクを受け取るためのメールアドレスを入力してください",
+      "submit": "リセットリンクを送信",
+      "backToLogin": "ログインに戻る",
+      "successTitle": "メールを確認してください",
+      "successSubtitle": "パスワードリセットリンクを以下に送信しました：",
+      "errors": {
+        "failed": "リセットリンクの送信に失敗しました。"
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Femoへようこそ",
+        "subtitle": "あなたのことをもっと教えてください",
+        "firstName": "名",
+        "lastName": "姓",
+        "birthday": "誕生日",
+        "gender": "性別",
+        "next": "次へ",
+        "stepInfo": "ステップ {{step}} / 3",
+        "idInfo": "自動生成、読み取り専用、永続的",
+        "placeholder": {
+          "firstName": "太郎",
+          "lastName": "山田"
+        },
+        "errors": {
+          "firstName": "名は必須です",
+          "lastName": "姓は必須です",
+          "birthday": "誕生日は必須です",
+          "gender": "性別を選択してください",
+          "age": "13歳以上である必要があります"
+        }
+      },
+      "credentials": {
+        "title": "アカウント作成",
+        "subtitle": "今すぐFemoアカウントを保護しましょう",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "confirmPassword": "パスワードの確認",
+        "phoneNumber": "電話番号（任意）",
+        "country": "国/地域",
+        "terms": "<link>利用規約</link>に同意します",
+        "privacy": "<link>プライバシーポリシー</link>に同意します",
+        "back": "戻る",
+        "submit": "アカウント作成",
+        "selectCountry": "国を選択してください",
+        "searchCountries": "国を検索...",
+        "noCountries": "国が見つかりません",
+        "termsConfirmationTitle": "登録の確認",
+        "termsConfirmationText": "上記にチェックを入れることで、プラットフォームの法的規則を完全に承諾したものとみなされます。",
+        "errors": {
+          "emailRequired": "メールアドレスは必須です",
+          "emailInvalid": "無効なメール形式です",
+          "emailTaken": "このメールアドレスは既に使用されています",
+          "passwordRequired": "パスワードは必須です",
+          "passwordShort": "パスワードは8文字以上である必要があります",
+          "passwordComplex": "大文字、小文字、数字、特殊文字を含める必要があります",
+          "confirmRequired": "パスワードを確認してください",
+          "match": "パスワードが一致しません",
+          "country": "国を選択してください",
+          "terms": "利用規約に同意する必要があります",
+          "privacy": "プライバシーポリシーに同意する必要があります",
+          "failed": "登録に失敗しました。もう一度お試しください。"
+        }
+      },
+      "verification": {
+        "title": "メールを確認してください",
+        "subtitle": "6桁のコードを以下に送信しました：",
+        "inputLabel": "認証コードを入力",
+        "resendTimer": "{{timer}}秒後に再送可能",
+        "resendButton": "コードを再送",
+        "success": "認証完了！",
+        "redirecting": "アカウントに移動しています...",
+        "errors": {
+          "invalid": "認証コードが無効です",
+          "resendFailed": "認証コードの再送に失敗しました"
+        },
+        "verifyButton": "コードを検証"
+      }
+    },
+    "common": {
+      "loading": "読み込み中...",
+      "loadingLong": "登録中...",
+      "checking": "空き状況を確認中...",
+      "available": "利用可能",
+      "suggestions": "提案",
+      "accountSummary": "アカウントの概要:",
+      "sending": "コードを送信中...",
+      "verifying": "検証中...",
+      "resetting": "リセット中..."
+    },
+    "gender": {
+      "male": "男性",
+      "female": "女性",
+      "nonBinary": "ノンバイナリー",
+      "other": "その他",
+      "preferNotToSay": "回答しない"
+    },
+    "password": {
+      "strength": "強度",
+      "scores": {
+        "tooWeak": "非常に弱い",
+        "weak": "弱い",
+        "fair": "普通",
+        "good": "良い",
+        "strong": "強い",
+        "veryStrong": "非常に強い"
+      },
+      "feedback": {
+        "tooShort": "最小8文字",
+        "addUppercase": "大文字を追加",
+        "addLowercase": "小文字を追加",
+        "addNumber": "数字を追加",
+        "addSpecial": "特殊文字を追加"
+      }
+    }
+  },
+  "selector": {
+    "title": "言語を選択",
+    "searchPlaceholder": "言語を検索...",
+    "popular": "人気の言語",
+    "all": "すべての言語",
+    "noResults": "\"{{query}}\" に一致する言語は見つかりませんでした",
+    "results": "結果 ({{count}})",
+    "footer": "言語の変更はすぐに適用されます",
+    "close": "閉じる"
+  },
+  "legal": {
+    "termsTitle": "利用規約",
+    "privacyTitle": "プライバシーポリシー",
+    "lastUpdated": "最終更新日",
+    "errorLoading": "法的文書を読み込めませんでした。"
+  }
+}

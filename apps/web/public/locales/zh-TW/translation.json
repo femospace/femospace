@@ -1,0 +1,184 @@
+{
+  "welcome": {
+    "title": "歡迎來到 Femo Space",
+    "tagline": "連接、創造、賺取 – 新一代社交體驗",
+    "login": "登錄",
+    "register": "註冊",
+    "switchToEnglish": "切換到英文"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "聯繫我們",
+    "terms": "條款",
+    "privacy": "隱私政策"
+  },
+  "home": {
+    "welcome": "歡迎回來，{{name}}！",
+    "feedSubtitle": "這是您的受保護動態區域。",
+    "logout": "登出",
+    "feedPlaceholder": "動態內容將在此顯示..."
+  },
+  "auth": {
+    "login": {
+      "title": "歡迎來到 FEMO SPACE",
+      "subtitle": "立即登錄您的 Femo 帳號",
+      "identifierLabel": "Femo ID 或 Femo Mail",
+      "identifierPlaceholder": "請輸入您的 Femo ID 或 Femo Mail",
+      "passwordLabel": "密碼",
+      "passwordPlaceholder": "請輸入您的密碼",
+      "forgotPassword": "忘記密碼？",
+      "submit": "登錄",
+      "submitting": "登錄中...",
+      "alreadyHaveAccount": "已有帳號？",
+      "dontHaveAccount": "沒有帳號？",
+      "signUp": "創建帳號",
+      "securityInfo": {
+        "encrypted": "您的數據已加密且安全",
+        "rateLimited": "具有暴力破解保護的速率限制登錄"
+      },
+      "errors": {
+        "identifierRequired": "請輸入 Femo ID 或 Femo Mail",
+        "identifierInvalid": "請輸入有效的 Femo ID（僅限數字）或 Femo Mail（信箱格式）",
+        "passwordRequired": "請輸入密碼",
+        "invalid": "Femo ID/Mail 或密碼錯誤",
+        "unverified": "您的電子郵件未經驗證。請檢查您的收件箱。",
+        "locked": "由於多次嘗試失敗，帳號已暫時鎖定。",
+        "blocked": "您的帳號已被封鎖。請聯繫客服。",
+        "failed": "登錄失敗，請重試。"
+      }
+    },
+    "forgotPassword": {
+      "title": "重置密碼",
+      "subtitle": "輸入您的電子郵件以接收重置連結",
+      "submit": "發送重置連結",
+      "backToLogin": "返回登錄",
+      "successTitle": "查收電子郵件",
+      "successSubtitle": "我們已發送密碼重置連結至",
+      "errors": {
+        "failed": "發送重置連結失敗，請重試。"
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "歡迎來到 Femo",
+        "subtitle": "讓我們更好地了解您",
+        "firstName": "名",
+        "lastName": "姓",
+        "birthday": "出生日期",
+        "gender": "性別",
+        "next": "下一步",
+        "stepInfo": "第 {{step}} 步（共 3 步）",
+        "idInfo": "自動生成，唯讀，永久",
+        "placeholder": {
+          "firstName": "小明",
+          "lastName": "張"
+        },
+        "errors": {
+          "firstName": "請輸入名字",
+          "lastName": "請輸入姓氏",
+          "birthday": "請輸入出生日期",
+          "gender": "請選擇您的性別",
+          "age": "您必須年滿 13 歲"
+        }
+      },
+      "credentials": {
+        "title": "創建您的帳號",
+        "subtitle": "立即保護您的 Femo 帳號",
+        "email": "電子郵件",
+        "password": "密碼",
+        "confirmPassword": "確認密碼",
+        "phoneNumber": "電話號碼（可選）",
+        "country": "國家/地區",
+        "terms": "我接受 <link>服務條款</link>",
+        "privacy": "我接受 <link>隱私政策</link>",
+        "back": "返回",
+        "submit": "創建帳號",
+        "selectCountry": "選擇您的國家",
+        "searchCountries": "搜索國家...",
+        "noCountries": "未找到相關國家",
+        "termsConfirmationTitle": "註冊確認",
+        "termsConfirmationText": "勾選上方內容即表示您確認完全接受平台的法律規則。",
+        "errors": {
+          "emailRequired": "請輸入電子郵件",
+          "emailInvalid": "電子郵件格式不正確",
+          "emailTaken": "該電子郵件已被佔用",
+          "passwordRequired": "請輸入密碼",
+          "passwordShort": "密碼長度至少為 8 位",
+          "passwordComplex": "密碼必須包含大小寫字母、數字和特殊字符",
+          "confirmRequired": "請確認您的密碼",
+          "match": "兩次輸入的密碼不匹配",
+          "country": "請選擇您的國家",
+          "terms": "您必須接受服務條款",
+          "privacy": "您必須接受隱私政策",
+          "failed": "註冊失敗，請稍後重試。"
+        }
+      },
+      "verification": {
+        "title": "查收電子郵件",
+        "subtitle": "我們已發送一個 6 位驗證碼至",
+        "inputLabel": "輸入驗證碼",
+        "resendTimer": "{{timer}} 秒後重新發送",
+        "resendButton": "重新發送驗證碼",
+        "success": "驗證成功！",
+        "redirecting": "正在為您跳转至帳號...",
+        "errors": {
+          "invalid": "驗證碼無效",
+          "resendFailed": "無法重新發送驗證碼"
+        },
+        "verifyButton": "驗證驗證碼"
+      }
+    },
+    "common": {
+      "loading": "加載中...",
+      "loadingLong": "正在註冊...",
+      "checking": "正在檢查可用性...",
+      "available": "可用",
+      "suggestions": "建議",
+      "accountSummary": "帳戶摘要：",
+      "sending": "正在發送代碼...",
+      "verifying": "正在驗證...",
+      "resetting": "正在重置..."
+    },
+    "gender": {
+      "male": "男",
+      "female": "女",
+      "nonBinary": "非二元性別",
+      "other": "其他",
+      "preferNotToSay": "不願透露"
+    },
+    "password": {
+      "strength": "強度",
+      "scores": {
+        "tooWeak": "太弱",
+        "weak": "弱",
+        "fair": "一般",
+        "good": "好",
+        "strong": "強",
+        "veryStrong": "非常強"
+      },
+      "feedback": {
+        "tooShort": "至少 8 個字符",
+        "addUppercase": "添加大寫字母",
+        "addLowercase": "添加小寫字母",
+        "addNumber": "添加數字",
+        "addSpecial": "添加特殊字符"
+      }
+    }
+  },
+  "selector": {
+    "title": "選擇語言",
+    "searchPlaceholder": "搜索語言...",
+    "popular": "熱門語言",
+    "all": "所有語言",
+    "noResults": "未找到匹配 \"{{query}}\" 的語言",
+    "results": "結果 ({{count}})",
+    "footer": "語言更改將立即生效",
+    "close": "關閉"
+  },
+  "legal": {
+    "termsTitle": "服務條款",
+    "privacyTitle": "隱私政策",
+    "lastUpdated": "最後更新",
+    "errorLoading": "無法加載法律文件。"
+  }
+}

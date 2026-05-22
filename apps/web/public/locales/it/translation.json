@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "title": "Benvenuti su Femo Space",
+    "tagline": "Connettiti, Crea, Guadagna – Social di Nuova Generazione",
+    "login": "Accedi",
+    "register": "Registrati",
+    "switchToEnglish": "Passa all'inglese"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Contattaci",
+    "terms": "Termini",
+    "privacy": "Privacy"
+  },
+  "home": {
+    "welcome": "Bentornato, {{name}}!",
+    "feedSubtitle": "Questa è la tua area feed protetta.",
+    "logout": "Logout",
+    "feedPlaceholder": "Il contenuto del feed apparirà qui..."
+  },
+  "auth": {
+    "login": {
+      "title": "Bentornato",
+      "subtitle": "Accedi al tuo account Femo",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "forgotPassword": "Password dimenticata?",
+      "submit": "Accedi",
+      "alreadyHaveAccount": "Hai già un account?",
+      "dontHaveAccount": "Non hai un account?",
+      "signUp": "Registrati",
+      "errors": {
+        "invalid": "Email o password non validi",
+        "failed": "Accesso fallito. Riprova."
+      }
+    },
+    "forgotPassword": {
+      "title": "Reimposta Password",
+      "subtitle": "Inserisci la tua email per ricevere il link",
+      "submit": "Invia Link",
+      "backToLogin": "Torna all'accesso",
+      "successTitle": "Controlla l'Email",
+      "successSubtitle": "Abbiamo inviato un link di reimpostazione a:",
+      "errors": {
+        "failed": "Invio del link fallito."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Benvenuti su Femo",
+        "subtitle": "Conosciamoci meglio",
+        "firstName": "Nome",
+        "lastName": "Cognome",
+        "birthday": "Data di Nascita",
+        "gender": "Genere",
+        "next": "Avanti",
+        "placeholder": {
+          "firstName": "Mario",
+          "lastName": "Rossi"
+        },
+        "errors": {
+          "firstName": "Il nome è obbligatorio",
+          "lastName": "Il cognome è obbligatorio",
+          "birthday": "La data di nascita è obbligatoria",
+          "gender": "Seleziona un genere",
+          "age": "Devi avere almeno 13 anni"
+        }
+      },
+      "credentials": {
+        "title": "Crea il tuo account",
+        "subtitle": "Proteggi il tuo account Femo oggi stesso",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Conferma Password",
+        "country": "Paese",
+        "terms": "Accetto i <link>Termini di Servizio</link>",
+        "privacy": "Accetto la <link>Privacy Policy</link>",
+        "back": "Indietro",
+        "submit": "Crea Account",
+        "selectCountry": "Seleziona il tuo paese",
+        "searchCountries": "Cerca paese...",
+        "noCountries": "Nessun paese trovato",
+        "errors": {
+          "emailRequired": "L'email è obbligatoria",
+          "emailInvalid": "Formato email non valido",
+          "passwordRequired": "La password è obbligatoria",
+          "passwordShort": "La password deve avere almeno 8 caratteri",
+          "passwordComplex": "Includi maiuscole, minuscole, numeri e simboli",
+          "confirmRequired": "Conferma la password",
+          "match": "Le password non corrispondono",
+          "country": "Seleziona il tuo paese",
+          "terms": "Devi accettare i Termini di Servizio",
+          "privacy": "Devi accettare la Privacy Policy",
+          "failed": "Registrazione fallita. Riprova."
+        }
+      },
+      "verification": {
+        "title": "Controlla l'email",
+        "subtitle": "Abbiamo inviato un codice a 6 cifre a:",
+        "inputLabel": "Inserisci il codice di verifica",
+        "resendTimer": "Reinvia tra {{timer}}s",
+        "resendButton": "Reinvia Codice",
+        "success": "Verificato!",
+        "redirecting": "Reindirizzamento all'account...",
+        "errors": {
+          "invalid": "Codice di verifica non valido",
+          "resendFailed": "Invio codice fallito"
+        }
+      }
+    },
+    "gender": {
+      "male": "Maschio",
+      "female": "Femmina",
+      "nonBinary": "Non binario",
+      "other": "Altro",
+      "preferNotToSay": "Preferisco non dirlo"
+    },
+    "password": {
+      "strength": "Efficacia",
+      "scores": {
+        "tooWeak": "Molto debole",
+        "weak": "Debole",
+        "fair": "Discreta",
+        "good": "Buona",
+        "strong": "Efficace",
+        "veryStrong": "Molto efficace"
+      },
+      "feedback": {
+        "tooShort": "Minimo 8 caratteri",
+        "addUppercase": "Aggiungi maiuscola",
+        "addLowercase": "Aggiungi minuscola",
+        "addNumber": "Aggiungi numero",
+        "addSpecial": "Aggiungi simbolo"
+      }
+    }
+  },
+  "selector": {
+    "title": "Scegli Lingua",
+    "searchPlaceholder": "Cerca lingua...",
+    "popular": "Lingue popolari",
+    "all": "Tutte le lingue",
+    "noResults": "Nessuna lingua per \"{{query}}\"",
+    "results": "Risultati ({{count}})",
+    "footer": "Le modifiche sono istantanee",
+    "close": "Chiudi"
+  },
+  "legal": {
+    "termsTitle": "Termini e Condizioni",
+    "privacyTitle": "Privacy Policy",
+    "lastUpdated": "Ultimo aggiornamento",
+    "errorLoading": "Impossibile caricare il documento legale."
+  }
+}

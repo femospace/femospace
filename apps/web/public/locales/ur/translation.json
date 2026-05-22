@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "title": "Femo Space میں خوش آمدید",
+    "tagline": "جڑیں، تخلیق کریں، کمائیں - نئی نسل کا سماجی تجربہ",
+    "login": "لاگ ان",
+    "register": "رجسٹر",
+    "switchToEnglish": "انگریزی میں تبدیل کریں"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "ہم سے رابطہ کریں",
+    "terms": "شرائط",
+    "privacy": "رازداری کی پالیسی"
+  },
+  "home": {
+    "welcome": "خوش آمدید، {{name}}!",
+    "feedSubtitle": "یہ آپ کا محفوظ فیڈ ایریا ہے۔",
+    "logout": "لاگ آؤٹ",
+    "feedPlaceholder": "فیڈ کا مواد یہاں ظاہر ہوگا..."
+  },
+  "auth": {
+    "login": {
+      "title": "خوش آمدید",
+      "subtitle": "اپنے Femo اکاؤنٹ میں لاگ ان کریں",
+      "emailLabel": "ای میل",
+      "passwordLabel": "پاس ورڈ",
+      "forgotPassword": "پاس ورڈ بھول گئے؟",
+      "submit": "لاگ ان",
+      "alreadyHaveAccount": "پہلے سے اکاؤنٹ ہے؟",
+      "dontHaveAccount": "اکاؤنٹ نہیں ہے؟",
+      "signUp": "رجسٹر",
+      "errors": {
+        "invalid": "غلط ای میل یا پاس ورڈ",
+        "failed": "لاگ ان ناکام رہا۔ دوبارہ کوشش کریں۔"
+      }
+    },
+    "forgotPassword": {
+      "title": "پاس ورڈ ری سیٹ کریں",
+      "subtitle": "لنک حاصل کرنے کے لیے ای میل درج کریں",
+      "submit": "لنک بھیجیں",
+      "backToLogin": "لاگ ان پر واپس جائیں",
+      "successTitle": "ای میل چیک کریں",
+      "successSubtitle": "ہم نے ری سیٹ لنک یہاں بھیجا ہے:",
+      "errors": {
+        "failed": "لنک بھیجنے میں ناکامی۔"
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Femo میں خوش آمدید",
+        "subtitle": "آئیے ہم آپ کو بہتر طور پر جانیں",
+        "firstName": "نام",
+        "lastName": "خاندانی نام",
+        "birthday": "تاریخ پیدائش",
+        "gender": "جنس",
+        "next": "اگلا",
+        "placeholder": {
+          "firstName": "احمد",
+          "lastName": "خان"
+        },
+        "errors": {
+          "firstName": "نام ضروری ہے",
+          "lastName": "خاندانی نام ضروری ہے",
+          "birthday": "تاریخ پیدائش ضروری ہے",
+          "gender": "براہ کرم جنس منتخب کریں",
+          "age": "آپ کی عمر کم از کم 13 سال ہونی چاہیے"
+        }
+      },
+      "credentials": {
+        "title": "اکاؤنٹ بنائیں",
+        "subtitle": "آج ہی اپنا Femo اکاؤنٹ محفوظ بنائیں",
+        "email": "ای میل",
+        "password": "پاس ورڈ",
+        "confirmPassword": "پاس ورڈ کی تصدیق کریں",
+        "country": "ملک",
+        "terms": "میں <link>شرائط</link> قبول کرتا ہوں",
+        "privacy": "میں <link>رازداری کی پالیسی</link> قبول کرتا ہوں",
+        "back": "واپس",
+        "submit": "اکاؤنٹ بنائیں",
+        "selectCountry": "اپنا ملک منتخب کریں",
+        "searchCountries": "ملک تلاش کریں...",
+        "noCountries": "کوئی ملک نہیں ملا",
+        "errors": {
+          "emailRequired": "ای میل ضروری ہے",
+          "emailInvalid": "غلط ای میل فارمیٹ",
+          "passwordRequired": "پاس ورڈ ضروری ہے",
+          "passwordShort": "پاس ورڈ کم از کم 8 حروف کا ہونا چاہیے",
+          "passwordComplex": "بڑے حروف، چھوٹے حروف، اعداد اور علامات ضروری ہیں",
+          "confirmRequired": "براہ کرم پاس ورڈ کی تصدیق کریں",
+          "match": "پاس ورڈ مماثل نہیں ہیں",
+          "country": "براہ کرم ملک منتخب کریں",
+          "terms": "آپ کو شرائط و ضوابط قبول کرنا ہوں گے",
+          "privacy": "آپ کو رازداری کی پالیسی قبول کرنا ہوگی",
+          "failed": "رجسٹریشن ناکام رہی۔ دوبارہ کوشش کریں۔"
+        }
+      },
+      "verification": {
+        "title": "ای میل چیک کریں",
+        "subtitle": "ہم نے 6 ہندسوں کا کوڈ بھیجا ہے:",
+        "inputLabel": "تصدیقی کوڈ درج کریں",
+        "resendTimer": "{{timer}} سیکنڈ میں دوبارہ بھیجیں",
+        "resendButton": "کوڈ دوبارہ بھیجیں",
+        "success": "تصدیق ہو گئی!",
+        "redirecting": "آپ کو آپ کے اکاؤنٹ پر لے جایا جا رہا ہے...",
+        "errors": {
+          "invalid": "غلط تصدیقی کوڈ",
+          "resendFailed": "کوڈ دوبارہ بھیجنے میں ناکامی"
+        }
+      }
+    },
+    "gender": {
+      "male": "مرد",
+      "female": "عورت",
+      "nonBinary": "غیر ثنائی",
+      "other": "دیگر",
+      "preferNotToSay": "بتانا پسند نہیں"
+    },
+    "password": {
+      "strength": "طاقت",
+      "scores": {
+        "tooWeak": "بہت کمزور",
+        "weak": "کمزور",
+        "fair": "مناسب",
+        "good": "بہتر",
+        "strong": "مضبوط",
+        "veryStrong": "بہت مضبوط"
+      },
+      "feedback": {
+        "tooShort": "کم از کم 8 حروف",
+        "addUppercase": "بڑا حرف شامل کریں",
+        "addLowercase": "چھوٹا حرف شامل کریں",
+        "addNumber": "عدد شامل کریں",
+        "addSpecial": "علامت شامل کریں"
+      }
+    }
+  },
+  "selector": {
+    "title": "زبان منتخب کریں",
+    "searchPlaceholder": "زبان تلاش کریں...",
+    "popular": "مشہور زبانیں",
+    "all": "تمام زبانیں",
+    "noResults": "\"{{query}}\" سے ملتی جلتی کوئی زبان نہیں ملی",
+    "results": "نتائج ({{count}})",
+    "footer": "زبان کی تبدیلی فوری طور پر نافذ ہوتی ہے",
+    "close": "بند کریں"
+  },
+  "legal": {
+    "termsTitle": "قواعد و ضوابط",
+    "privacyTitle": "رازداری کی پالیسی",
+    "lastUpdated": "آخری بار اپ ڈیٹ کیا گیا",
+    "errorLoading": "قانونی دستاویز لوڈ نہیں ہو سکی۔"
+  }
+}

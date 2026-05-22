@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "title": "Femo Space માં તમારું સ્વાગત છે",
+    "tagline": "જોડાવો, બનાવો, કમાઓ – નવી પેઢીનો સામાજિક અનુભવ",
+    "login": "લોગિન",
+    "register": "રજીસ્ટર",
+    "switchToEnglish": "અંગ્રેજીમાં બદલો"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "અમારો સંપર્ક કરો",
+    "terms": "શરતો",
+    "privacy": "ગોપનીયતા"
+  },
+  "home": {
+    "welcome": "ફરી સ્વાગત છે, {{name}}!",
+    "feedSubtitle": "આ તમારી સુરક્ષિત ફીડ વિસ્તાર છે.",
+    "logout": "લોગઆઉટ",
+    "feedPlaceholder": "ફીડ સામગ્રી અહીં દેખાશે..."
+  },
+  "auth": {
+    "login": {
+      "title": "ફરી સ્વાગત છે",
+      "subtitle": "તમારા Femo એકાઉન્ટમાં લોગિન કરો",
+      "emailLabel": "ઈમેલ",
+      "passwordLabel": "પાસવર્ડ",
+      "forgotPassword": "પાસવર્ડ ભૂલી ગયા છો?",
+      "submit": "લોગિન",
+      "alreadyHaveAccount": "પહેલેથી જ એકાઉન્ટ છે?",
+      "dontHaveAccount": "એકાઉન્ટ નથી?",
+      "signUp": "રજીસ્ટર",
+      "errors": {
+        "invalid": "અમાન્ય ઈમેલ અથવા પાસવર્ડ",
+        "failed": "લોગિન નિષ્ફળ રહ્યું. કૃપા કરીને ફરી પ્રયાસ કરો."
+      }
+    },
+    "forgotPassword": {
+      "title": "પાસવર્ડ રીસેટ કરો",
+      "subtitle": "રીસેટ લિંક મેળવવા માટે તમારો ઈમેલ દાખલ કરો",
+      "submit": "લિંક મોકલો",
+      "backToLogin": "લોગિન પર પાછા જાઓ",
+      "successTitle": "તમારો ઈમેલ તપાસો",
+      "successSubtitle": "અમે પાસવર્ડ રીસેટ લિંક અહીં મોકલી છે:",
+      "errors": {
+        "failed": "લિંક મોકલવામાં નિષ્ફળ."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Femo માં સ્વાગત છે",
+        "subtitle": "ચાલો અમે તમને વધુ સારી રીતે જાણીએ",
+        "firstName": "નામ",
+        "lastName": "અટક",
+        "birthday": "જન્મ તારીખ",
+        "gender": "લિંગ",
+        "next": "આગળ",
+        "placeholder": {
+          "firstName": "રાહુલ",
+          "lastName": "પટેલ"
+        },
+        "errors": {
+          "firstName": "નામ જરૂરી છે",
+          "lastName": "અટક જરૂરી છે",
+          "birthday": "જન્મ તારીખ જરૂરી છે",
+          "gender": "કૃપા કરીને તમારું લિંગ પસંદ કરો",
+          "age": "તમારી ઉંમર ઓછામાં ઓછી 13 વર્ષ હોવી જોઈએ"
+        }
+      },
+      "credentials": {
+        "title": "તમારું એકાઉન્ટ બનાવો",
+        "subtitle": "આજે જ તમારું Femo એકાઉન્ટ સુરક્ષિત કરો",
+        "email": "ઈમેલ",
+        "password": "પાસવર્ડ",
+        "confirmPassword": "પાસવર્ડની પુષ્ટિ કરો",
+        "country": "દેશ",
+        "terms": "હું <link>શરતો</link> સ્વીકારું છું",
+        "privacy": "હું <link>ગોપનીયતા નીતિ</link> સ્વીકારું છું",
+        "back": "પાછળ",
+        "submit": "એકાઉન્ટ બનાવો",
+        "selectCountry": "તમારો દેશ પસંદ કરો",
+        "searchCountries": "દેશો શોધો...",
+        "noCountries": "કોઈ દેશ મળ્યો નથી",
+        "errors": {
+          "emailRequired": "ઈમેલ જરૂરી છે",
+          "emailInvalid": "અમાન્ય ઈમેલ ફોર્મેટ",
+          "passwordRequired": "પાસવર્ડ જરૂરી છે",
+          "passwordShort": "પાસવર્ડ ઓછામાં ઓછો 8 અક્ષરોનો હોવો જોઈએ",
+          "passwordComplex": "મોટા અક્ષરો, નાના અક્ષરો, અંકો અને વિશેષ અક્ષરો જરૂરી છે",
+          "confirmRequired": "કૃપા કરીને તમારા પાસવર્ડની પુષ્ટિ કરો",
+          "match": "પાસવર્ડ મેચ થતા નથી",
+          "country": "કૃપા કરીને તમારો દેશ પસંદ કરો",
+          "terms": "તમારે નિયમો અને શરતો સ્વીકારવી પડશે",
+          "privacy": "તમારે ગોપનીયતા નીતિ સ્વીકારવી પડશે",
+          "failed": "રજીસ્ટ્રેશન નિષ્ફળ રહ્યું. કૃપા કરીને ફરી પ્રયાસ કરો."
+        }
+      },
+      "verification": {
+        "title": "તમારો ઈમેલ તપાસો",
+        "subtitle": "અમે 6-અંકનો કોડ અહીં મોકલ્યો છે:",
+        "inputLabel": "વેરિફિકેશન કોડ દાખલ કરો",
+        "resendTimer": "{{timer}} સેકન્ડમાં ફરી મોકલો",
+        "resendButton": "કોડ ફરી મોકલો",
+        "success": "વેરિફાઈડ!",
+        "redirecting": "તમને તમારા એકાઉન્ટ પર લઈ જવામાં આવે છે...",
+        "errors": {
+          "invalid": "અમાન્ય વેરિફિકેશન કોડ",
+          "resendFailed": "કોડ ફરી મોકલવામાં નિષ્ફળ"
+        }
+      }
+    },
+    "gender": {
+      "male": "પુરુષ",
+      "female": "સ્ત્રી",
+      "nonBinary": "નોન-બાઈનરી",
+      "other": "અન્ય",
+      "preferNotToSay": "કહેવા માંગતા નથી"
+    },
+    "password": {
+      "strength": "શક્તિ",
+      "scores": {
+        "tooWeak": "ખૂબ નબળું",
+        "weak": "નબળું",
+        "fair": "ઠીક",
+        "good": "સારું",
+        "strong": "મજબૂત",
+        "veryStrong": "ખૂબ મજબૂત"
+      },
+      "feedback": {
+        "tooShort": "ઓછામાં ઓછા 8 અક્ષરો",
+        "addUppercase": "મોટો અક્ષર ઉમેરો",
+        "addLowercase": "નાનો અક્ષર ઉમેરો",
+        "addNumber": "અંક ઉમેરો",
+        "addSpecial": "વિશેષ અક્ષર ઉમેરો"
+      }
+    }
+  },
+  "selector": {
+    "title": "ભાષા પસંદ કરો",
+    "searchPlaceholder": "ભાષાઓ શોધો...",
+    "popular": "લોકપ્રિય ભાષાઓ",
+    "all": "બધી ભાષાઓ",
+    "noResults": "\"{{query}}\" સાથે મેળ ખાતી કોઈ ભાષા મળી નથી",
+    "results": "પરિણામો ({{count}})",
+    "footer": "ભાષા ફેરફારો તરત જ લાગુ થાય છે",
+    "close": "બંધ કરો"
+  },
+  "legal": {
+    "termsTitle": "નિયમો અને શરતો",
+    "privacyTitle": "ગોપનીયતા નીતિ",
+    "lastUpdated": "છેલ્લે અપડેટ કરેલ",
+    "errorLoading": "કાનૂની દસ્તાવેજ લોડ કરી શકાયો નથી."
+  }
+}

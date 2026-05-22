@@ -42,6 +42,7 @@ interface User {
     followingCount: number;
   };
   isUnder18: boolean;
+  language?: string;
 }
 
 interface RegisterData {

@@ -1,0 +1,184 @@
+{
+  "welcome": {
+    "title": "Bienvenue sur Femo Space",
+    "tagline": "Connectez, Créez, Gagnez – Nouvelle Expérience Sociale",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "switchToEnglish": "Passer à l'anglais"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Contactez-nous",
+    "terms": "Conditions",
+    "privacy": "Confidentialité"
+  },
+  "home": {
+    "welcome": "Bienvenue de nouveau, {{name}}!",
+    "feedSubtitle": "Ceci est votre zone de flux protégée.",
+    "logout": "Déconnexion",
+    "feedPlaceholder": "Le contenu du flux apparaîtra ici..."
+  },
+  "auth": {
+    "login": {
+      "title": "BIENVENU SUR FEMO SPACE",
+      "subtitle": "Connectez-vous à votre compte Femo dès aujourd'hui",
+      "identifierLabel": "Femo ID ou Femo Mail",
+      "identifierPlaceholder": "Entrez votre Femo ID ou Femo Mail",
+      "passwordLabel": "Mot de passe",
+      "passwordPlaceholder": "Entrez votre mot de passe",
+      "forgotPassword": "Mot de passe oublié ?",
+      "submit": "Connexion",
+      "submitting": "Connexion en cours...",
+      "alreadyHaveAccount": "Vous avez déjà un compte ?",
+      "dontHaveAccount": "Vous n'avez pas de compte ?",
+      "signUp": "Créer un compte",
+      "securityInfo": {
+        "encrypted": "Vos données sont cryptées et sécurisées",
+        "rateLimited": "Connexion limitée avec protection contre la force brute"
+      },
+      "errors": {
+        "identifierRequired": "Femo ID ou Femo Mail est requis",
+        "identifierInvalid": "Veuillez entrer un Femo ID (chiffres uniquement) ou Femo Mail valide",
+        "passwordRequired": "Le mot de passe est requis",
+        "invalid": "Femo ID/Mail ou mot de passe invalide",
+        "unverified": "Votre e-mail n'est pas vérifié. Veuillez vérifier votre boîte de réception.",
+        "locked": "Compte temporairement verrouillé suite à plusieurs échecs.",
+        "blocked": "Votre compte a été bloqué. Veuillez contacter le support.",
+        "failed": "La connexion a échoué. Veuillez réessayer."
+      }
+    },
+    "forgotPassword": {
+      "title": "Réinitialiser le Mot de Passe",
+      "subtitle": "Entrez votre e-mail pour recevoir un lien de réinitialisation",
+      "submit": "Envoyer le Lien",
+      "backToLogin": "Retour à la Connexion",
+      "successTitle": "Vérifiez vos E-mails",
+      "successSubtitle": "Nous avons envoyé un lien de réinitialisation à",
+      "errors": {
+        "failed": "Échec de l'envoi du lien. Veuillez réessayer."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Bienvenue sur Femo",
+        "subtitle": "Apprenons à mieux vous connaître",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "birthday": "Date de naissance",
+        "gender": "Genre",
+        "next": "Suivant",
+        "stepInfo": "Étape {{step}} sur 3",
+        "idInfo": "Généré automatiquement, lecture seule, permanent",
+        "placeholder": {
+          "firstName": "Jean",
+          "lastName": "Dupont"
+        },
+        "errors": {
+          "firstName": "Le prénom est requis",
+          "lastName": "Le nom est requis",
+          "birthday": "La date de naissance est requise",
+          "gender": "Veuillez sélectionner votre genre",
+          "age": "Vous devez avoir au moins 13 ans"
+        }
+      },
+      "credentials": {
+        "title": "Créez votre compte",
+        "subtitle": "Sécurisez votre compte Femo dès aujourd'hui",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "phoneNumber": "Numéro de téléphone (Optionnel)",
+        "country": "Pays",
+        "terms": "J'accepte les <link>Conditions Générales</link>",
+        "privacy": "J'accepte la <link>Politique de Confidentialité</link>",
+        "back": "Retour",
+        "submit": "Créer un compte",
+        "selectCountry": "Sélectionnez votre pays",
+        "searchCountries": "Rechercher des pays...",
+        "noCountries": "Aucun pays trouvé",
+        "termsConfirmationTitle": "Confirmation d'inscription",
+        "termsConfirmationText": "En cochant ce qui précède, vous confirmez l'acceptation totale des règles juridiques de la plateforme.",
+        "errors": {
+          "emailRequired": "L'e-mail est requis",
+          "emailInvalid": "Format d'e-mail invalide",
+          "emailTaken": "Cet e-mail est déjà utilisé",
+          "passwordRequired": "Le mot de passe est requis",
+          "passwordShort": "Le mot de passe doit contenir au moins 8 caractères",
+          "passwordComplex": "Le mot de passe doit inclure majuscules, minuscules, chiffres et symboles",
+          "confirmRequired": "Veuillez confirmer votre mot de passe",
+          "match": "Les mots de passe ne correspondent pas",
+          "country": "Veuillez sélectionner votre pays",
+          "terms": "Vous devez accepter les Conditions Générales",
+          "privacy": "Vous devez accepter la Politique de Confidentialité",
+          "failed": "Échec de l'inscription. Veuillez réessayer."
+        }
+      },
+      "verification": {
+        "title": "Vérifiez vos e-mails",
+        "subtitle": "Nous avons envoyé un code à 6 chiffres à",
+        "inputLabel": "Entrez le code de vérification",
+        "resendTimer": "Renvoyer le code dans {{timer}}s",
+        "resendButton": "Renvoyer le code",
+        "success": "Vérifié !",
+        "redirecting": "Redirection vers votre compte...",
+        "errors": {
+          "invalid": "Code de vérification invalide",
+          "resendFailed": "Échec du renvoi du code"
+        },
+        "verifyButton": "Vérifier le code"
+      }
+    },
+    "common": {
+      "loading": "Chargement...",
+      "loadingLong": "Inscription en cours...",
+      "checking": "Vérification de la disponibilité...",
+      "available": "Disponible",
+      "suggestions": "Suggestions",
+      "accountSummary": "Résumé du compte:",
+      "sending": "Envoi du code...",
+      "verifying": "Vérification...",
+      "resetting": "Réinitialisation..."
+    },
+    "gender": {
+      "male": "Homme",
+      "female": "Femme",
+      "nonBinary": "Non-binaire",
+      "other": "Autre",
+      "preferNotToSay": "Préfère ne pas le dire"
+    },
+    "password": {
+      "strength": "Force",
+      "scores": {
+        "tooWeak": "Très faible",
+        "weak": "Faible",
+        "fair": "Moyenne",
+        "good": "Bonne",
+        "strong": "Forte",
+        "veryStrong": "Très forte"
+      },
+      "feedback": {
+        "tooShort": "Minimum 8 caractères",
+        "addUppercase": "Ajoutez une majuscule",
+        "addLowercase": "Ajoutez une minuscule",
+        "addNumber": "Ajoutez un chiffre",
+        "addSpecial": "Ajoutez un caractère spécial"
+      }
+    }
+  },
+  "selector": {
+    "title": "Choisir une Langue",
+    "searchPlaceholder": "Rechercher des langues...",
+    "popular": "Langues Populaires",
+    "all": "Toutes les Langues",
+    "noResults": "Aucune langue trouvée pour \"{{query}}\"",
+    "results": "Résultats ({{count}})",
+    "footer": "Les changements s'appliquent instantanément",
+    "close": "Fermer"
+  },
+  "legal": {
+    "termsTitle": "Conditions Générales",
+    "privacyTitle": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour",
+    "errorLoading": "Impossible de charger le document légal."
+  }
+}

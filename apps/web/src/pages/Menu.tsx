@@ -23,7 +23,9 @@ import {
     Globe,
     CheckCircle,
     Award,
-    ShieldCheck
+    ShieldCheck,
+    ShoppingBag,
+    Wallet as WalletIcon
 } from 'lucide-react';
 import { UserBadge } from '../components/common/UserBadge';
 import { useAuth } from '../contexts/AuthContext';
@@ -92,7 +94,7 @@ export const Menu = () => {
                         <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
                             <img src="/icons/Favicon.png" alt="Femo" className="w-6 h-6 object-contain brightness-0 invert" />
                         </div>
-                        <h1 className="text-xl font-extrabold text-gray-900 dark:text-white tracking-tight">Menu</h1>
+                        <h1 className="text-xl font-extrabold text-gray-900 dark:text-white tracking-tight">{t('menu.title', 'Menu')}</h1>
                     </div>
                     <motion.button
                         whileHover={{ scale: 1.1, rotate: 5 }}
@@ -145,13 +147,13 @@ export const Menu = () => {
                             onClick={() => navigate(`/profile/${user?.username}`)}
                             className="flex items-center justify-center gap-2 py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all text-sm shadow-lg shadow-blue-500/20"
                         >
-                            <UserIcon size={16} /> View Profile
+                            <UserIcon size={16} /> {t('menu.viewProfile', 'View Profile')}
                         </button>
                         <button
                             onClick={() => navigate('/profile/edit')}
                             className="flex items-center justify-center gap-2 py-3 px-4 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-xl font-bold transition-all text-sm"
                         >
-                            <Edit size={16} /> Edit Profile
+                            <Edit size={16} /> {t('menu.editProfile', 'Edit Profile')}
                         </button>
                     </div>
                 </motion.section>
@@ -160,8 +162,8 @@ export const Menu = () => {
                     {/* 2) FEMO MAIL */}
                     <MenuItem
                         icon={Mail}
-                        label="Femo Mail"
-                        subtitle="Internal Email System"
+                        label={t('settings.items.femoMail', 'Femo Mail')}
+                        subtitle={t('settings.items.femoMailSub', 'Internal Email System')}
                         path="/mail"
                     />
 
@@ -180,8 +182,8 @@ export const Menu = () => {
                                     <Briefcase size={28} className="text-white" />
                                 </div>
                                 <div className="space-y-1">
-                                    <h2 className="text-xl font-extrabold tracking-tight">Business Tool</h2>
-                                    <p className="text-sm text-blue-100/80 font-medium">Manage your business & ads</p>
+                                    <h2 className="text-xl font-extrabold tracking-tight">{t('menu.business', 'Business Tool')}</h2>
+                                    <p className="text-sm text-blue-100/80 font-medium">{t('menu.businessSubtitle', 'Manage your business & ads')}</p>
                                 </div>
                             </div>
                             <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all">
@@ -193,27 +195,29 @@ export const Menu = () => {
                     {/* OTHER MENU ITEMS */}
                     <MenuItem
                         icon={Award}
-                        label="VIP Badge"
-                        subtitle={user?.isVip ? "Active Subscription" : "Get Premium Status"}
+                        label={t('menu.vipBadge', 'VIP Badge')}
+                        subtitle={user?.isVip ? t('menu.activeSub', "Active Subscription") : t('menu.getPremium', "Get Premium Status")}
                         path="/vip-badge"
                         extra={user?.isVip && <UserBadge type="vip" size={20} />}
                     />
                     <MenuItem
                         icon={ShieldCheck}
-                        label="Creator Certification"
-                        subtitle={user?.isCreatorCertified ? "Certified Creator" : "Apply for Badge"}
+                        label={t('menu.creatorCert', 'Creator Certification')}
+                        subtitle={user?.isCreatorCertified ? t('menu.certifiedCreator', "Certified Creator") : t('menu.applyBadge', "Apply for Badge")}
                         path="/creator-certification"
                         extra={user?.isCreatorCertified && <UserBadge type="creator" size={20} />}
                     />
-                    <MenuItem icon={Layout} label="Creator Tool" path="/creator" />
-                    <MenuItem icon={Settings} label="Settings" path="/settings" />
-                    <MenuItem icon={TrendingUp} label="Monetization" path="/monetization" />
-                    <MenuItem icon={CreditCard} label="Payment" path="/payment" />
+                    <MenuItem icon={ShoppingBag} label={t('menu.marketplace', 'Marketplace')} subtitle={t('menu.shopSell', 'Shop & Sell Globally')} path="/marketplace" />
+                    <MenuItem icon={WalletIcon} label={t('menu.wallet', 'Wallet')} subtitle={t('menu.payments', 'Payments & Earnings')} path="/wallet" />
+                    <MenuItem icon={Layout} label={t('menu.creator', 'Creator Tool')} path="/creator" />
+                    <MenuItem icon={Settings} label={t('menu.settings', 'Settings')} path="/settings" />
+                    <MenuItem icon={TrendingUp} label={t('menu.monetization', 'Monetization')} path="/monetization" />
+                    <MenuItem icon={CreditCard} label={t('menu.payment', 'Payment')} path="/payment" />
 
                     {/* Dark Mode Toggle */}
                     <MenuItem
                         icon={isDarkMode ? Moon : Sun}
-                        label="Dark Mode"
+                        label={t('menu.darkMode', 'Dark Mode')}
                         onClick={toggleTheme}
                         extra={
                             <div className={clsx(
@@ -228,12 +232,12 @@ export const Menu = () => {
                         }
                     />
 
-                    <MenuItem icon={FileText} label="Terms and Conditions" path="/terms" />
-                    <MenuItem icon={ShieldAlert} label="Privacy Policy" path="/privacy" />
-                    <MenuItem icon={HelpCircle} label="Help Center" path="/help" />
+                    <MenuItem icon={FileText} label={t('menu.terms', 'Terms and Conditions')} path="/terms" />
+                    <MenuItem icon={ShieldAlert} label={t('menu.privacy', 'Privacy Policy')} path="/privacy" />
+                    <MenuItem icon={HelpCircle} label={t('menu.help', 'Help Center')} path="/help" />
                     <MenuItem
                         icon={Globe}
-                        label="Languages"
+                        label={t('menu.languages', 'Languages')}
                         onClick={() => setShowLanguageSelector(true)}
                         extra={<span className="text-xs font-bold text-blue-500 uppercase">{t('current_lang_code', { defaultValue: 'EN' })}</span>}
                     />
@@ -241,13 +245,13 @@ export const Menu = () => {
 
                 {/* Footer */}
                 <footer className="pt-12 pb-8 text-center space-y-4">
-                    <p className="text-gray-400 dark:text-gray-500 text-sm font-medium italic">© 2026 SS Corporate Inc</p>
+                    <p className="text-gray-400 dark:text-gray-500 text-sm font-medium italic">{t('menu.copyright', '© 2026 SS Corporate Inc')}</p>
                     <div className="flex items-center justify-center gap-6 text-xs font-bold text-gray-500 dark:text-gray-400">
-                        <Link to="/terms" className="hover:text-blue-500 transition-colors uppercase tracking-widest">Terms</Link>
+                        <Link to="/terms" className="hover:text-blue-500 transition-colors uppercase tracking-widest">{t('footer.terms', 'Terms')}</Link>
                         <span className="w-1 h-1 bg-gray-300 dark:bg-gray-700 rounded-full" />
-                        <Link to="/privacy" className="hover:text-blue-500 transition-colors uppercase tracking-widest">Privacy Policy</Link>
+                        <Link to="/privacy" className="hover:text-blue-500 transition-colors uppercase tracking-widest">{t('footer.privacy', 'Privacy Policy')}</Link>
                         <span className="w-1 h-1 bg-gray-300 dark:bg-gray-700 rounded-full" />
-                        <button onClick={() => setShowContactModal(true)} className="hover:text-blue-500 transition-colors uppercase tracking-widest">Contact Us</button>
+                        <button onClick={() => setShowContactModal(true)} className="hover:text-blue-500 transition-colors uppercase tracking-widest">{t('footer.contact', 'Contact Us')}</button>
                     </div>
                 </footer>
             </main>

@@ -5,13 +5,26 @@ import { AIConversation, AIConversationDocument } from './schemas/ai-conversatio
 import { AIMessage, AIMessageDocument } from './schemas/ai-message.schema';
 import { CreateAIConversationDto } from './dto/create-conversation.dto';
 import { SendAIMessageDto } from './dto/send-message.dto';
+import { WalletService } from '../wallet/wallet.service';
+import { ConfigService } from '@nestjs/config';
+import { GeminiService } from '../common/services/gemini.service';
+import OpenAI from 'openai';
 
 @Injectable()
 export class AIService {
+    private readonly AI_CREDIT_COST = 0.05; // $0.05 per AI request
+    private readonly openai: OpenAI;
+
     constructor(
         @InjectModel(AIConversation.name) private conversationModel: Model<AIConversationDocument>,
         @InjectModel(AIMessage.name) private messageModel: Model<AIMessageDocument>,
-    ) { }
+        private readonly walletService: WalletService,
+        private readonly configService: ConfigService,
+        private readonly geminiService: GeminiService,
+    ) {
+        const apiKey = this.configService.get<string>('OPENAI_API_KEY');
+        this.openai = new OpenAI({ apiKey });
+    }
 
     async createConversation(userId: string, createDto: CreateAIConversationDto): Promise<AIConversation> {
         const newConversation = new this.conversationModel({
@@ -30,10 +43,17 @@ export class AIService {
     }
 
     async sendMessage(userId: string, sendDto: SendAIMessageDto): Promise<AIMessage[]> {
-        // 1. Verify conversation belongs to user
+        // 0. Verify conversation belongs to user
         const conversation = await this.conversationModel.findOne({ _id: sendDto.conversationId, userId });
         if (!conversation) {
             throw new NotFoundException('Conversation not found or access denied');
+        }
+
+        // 1. Deduct AI Credits BEFORE making the expensive API call
+        try {
+            await this.walletService.deductAICredits(userId, this.AI_CREDIT_COST, 'AI Chat GPT-4');
+        } catch (error) {
+            throw new Error('Insufficient balance to use AI features. Please top up your wallet.');
         }
 
         // 2. Save User Message
@@ -45,11 +65,32 @@ export class AIService {
         });
         await userMessage.save();
 
-        // 3. Generate AI Response (Mock logic for now)
-        const aiResponseContent = this.generateMockResponse(sendDto.content);
+        // 3. Generate REAL AI Response from OpenAI
+        const previousMessages = await this.messageModel
+            .find({ conversationId: sendDto.conversationId })
+            .sort({ createdAt: 1 })
+            .limit(10)
+            .exec();
 
-        // Simulate processing delay if needed, but for API response we return immediately or use SSE for streaming.
-        // For this implementation, we will return the user message and the AI message directly.
+        const messagesForOpenAI: any[] = previousMessages.map(msg => ({
+            role: msg.role === 'user' ? 'user' : 'assistant',
+            content: msg.content
+        }));
+
+        if (!messagesForOpenAI.some(m => m.content === sendDto.content)) {
+            messagesForOpenAI.push({ role: 'user', content: sendDto.content });
+        }
+
+        const completion = await this.openai.chat.completions.create({
+            model: "gpt-4o-mini",
+            messages: [
+                { role: "system", content: "You are Antigravity, the official AI assistant of FemoSpace. You help users with marketplace deals, video content, and business tools. Keep responses concise and professional." },
+                ...messagesForOpenAI
+            ],
+            temperature: 0.7,
+        });
+
+        const aiResponseContent = completion.choices[0].message.content || 'I am sorry, I could not process that request.';
 
         const aiMessage = new this.messageModel({
             conversationId: sendDto.conversationId,
@@ -58,10 +99,45 @@ export class AIService {
         });
         await aiMessage.save();
 
-        // Update conversation timestamp
+        // 4. Update conversation timestamp
         await this.conversationModel.updateOne({ _id: sendDto.conversationId }, { updatedAt: new Date() });
 
         return [userMessage, aiMessage];
+    }
+
+    /**
+     * Specialized tool logic (Post Gen, SEO, Ad Copy)
+     * Deducts higher credits for specialized intelligence tools.
+     */
+    async generateToolResponse(userId: string, toolType: string, input: any): Promise<any> {
+        const cost = 0.50; // $0.50 per tool generation
+
+        // 1. Credit Check
+        try {
+            await this.walletService.deductAICredits(userId, cost, `${toolType} Generation`);
+        } catch (error) {
+            throw new Error('Insufficient balance for specialized AI tools.');
+        }
+
+        // 2. Specialized System Prompt
+        let systemPrompt = "You are an expert content creator.";
+        if (toolType === 'SEO_OPTIMIZER') systemPrompt = "You are an SEO specialist. Optimize the following text for search engines, focusing on high-intent keywords.";
+        if (toolType === 'AD_COPY') systemPrompt = "You are a professional copywriter. Create high-converting ad copy for social media based on the provided product details.";
+        if (toolType === 'POST_GEN') systemPrompt = "You are a social media influencer. Generate a viral-style post with emojis and hashtags.";
+
+        // 3. Real Gemini Call (Faster and specifically good for content tools)
+        const prompt = `${systemPrompt}\n\nInput: ${typeof input === 'string' ? input : JSON.stringify(input)}`;
+        const content = await this.geminiService.generateResponse(prompt);
+
+        return {
+            tool: toolType,
+            content,
+            meta: {
+                creditsUsed: cost,
+                engine: 'gemini-1.5-flash',
+                timestamp: new Date().toISOString()
+            }
+        };
     }
 
     async deleteConversation(userId: string, conversationId: string): Promise<void> {
@@ -69,25 +145,5 @@ export class AIService {
         if (result.deletedCount > 0) {
             await this.messageModel.deleteMany({ conversationId });
         }
-    }
-
-    private generateMockResponse(input: string): string {
-        const responses = [
-            "I'm processing your request. As an AI, I can help with coding, writing, or general questions.",
-            "That's an interesting point! Tell me more.",
-            "I can certainly help you with that. Here is a breakdown of the information...",
-            "Could you clarify what you mean by that?",
-            "Based on my analysis, the answer is 42.",
-        ];
-
-        if (input.toLowerCase().includes('hello') || input.toLowerCase().includes('hi')) {
-            return "Hello! How can I assist you today?";
-        }
-
-        if (input.toLowerCase().includes('code')) {
-            return "I can help with coding! Here is a simple Python example:\n\n```python\nprint('Hello World')\n```";
-        }
-
-        return responses[Math.floor(Math.random() * responses.length)];
     }
 }

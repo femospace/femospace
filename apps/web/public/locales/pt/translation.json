@@ -1,0 +1,184 @@
+{
+  "welcome": {
+    "title": "Bem-vindo ao Femo Space",
+    "tagline": "Conecte-se, Crie, Ganhe – Experiência Social de Nova Geração",
+    "login": "Entrar",
+    "register": "Registrar",
+    "switchToEnglish": "Alternar para Inglês"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Contate-nos",
+    "terms": "Termos",
+    "privacy": "Privacidade"
+  },
+  "home": {
+    "welcome": "Bem-vindo de volta, {{name}}!",
+    "feedSubtitle": "Esta é a sua área de feed protegida.",
+    "logout": "Sair",
+    "feedPlaceholder": "O conteúdo do feed aparecerá aqui..."
+  },
+  "auth": {
+    "login": {
+      "title": "BEM-VINDO AO FEMO SPACE",
+      "subtitle": "Entre na sua conta Femo hoje",
+      "identifierLabel": "Femo ID ou Femo Mail",
+      "identifierPlaceholder": "Digite seu Femo ID ou Femo Mail",
+      "passwordLabel": "Senha",
+      "passwordPlaceholder": "Digite sua senha",
+      "forgotPassword": "Esqueceu a senha?",
+      "submit": "Entrar",
+      "submitting": "Entrando...",
+      "alreadyHaveAccount": "Já tem uma conta?",
+      "dontHaveAccount": "Não tem uma conta?",
+      "signUp": "Criar Conta",
+      "securityInfo": {
+        "encrypted": "Seus dados estão criptografados e seguros",
+        "rateLimited": "Login com limite de taxa e proteção contra força bruta"
+      },
+      "errors": {
+        "identifierRequired": "O Femo ID ou Femo Mail é obrigatório",
+        "identifierInvalid": "Digite um Femo ID válido (apenas números) ou Femo Mail",
+        "passwordRequired": "A senha é obrigatória",
+        "invalid": "Femo ID/Mail ou senha inválidos",
+        "unverified": "Seu e-mail não está verificado. Verifique sua caixa de entrada.",
+        "locked": "Conta temporariamente bloqueada devido a várias tentativas falhas.",
+        "blocked": "Sua conta foi bloqueada. Entre em contato com o suporte.",
+        "failed": "Falha ao entrar. Tente novamente."
+      }
+    },
+    "forgotPassword": {
+      "title": "Redefinir Senha",
+      "subtitle": "Digite seu e-mail para receber um link de redefinição",
+      "submit": "Enviar Link",
+      "backToLogin": "Voltar ao Login",
+      "successTitle": "Verifique seu E-mail",
+      "successSubtitle": "Enviamos um link de redefinição para:",
+      "errors": {
+        "failed": "Falha ao enviar o link."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Bem-vindo ao Femo",
+        "subtitle": "Vamos conhecer você melhor",
+        "firstName": "Nome",
+        "lastName": "Sobrenome",
+        "birthday": "Data de Nascimento",
+        "gender": "Gênero",
+        "next": "Próximo",
+        "stepInfo": "Passo {{step}} de 3",
+        "idInfo": "Gerado automaticamente, somente leitura, permanente",
+        "placeholder": {
+          "firstName": "João",
+          "lastName": "Silva"
+        },
+        "errors": {
+          "firstName": "O nome é obrigatório",
+          "lastName": "O sobrenome é obrigatório",
+          "birthday": "A data de nascimento é obrigatória",
+          "gender": "Por favor, selecione seu gênero",
+          "age": "Você deve ter pelo menos 13 anos"
+        }
+      },
+      "credentials": {
+        "title": "Criar sua conta",
+        "subtitle": "Proteja sua conta Femo hoje mesmo",
+        "email": "E-mail",
+        "password": "Senha",
+        "confirmPassword": "Confirmar Senha",
+        "phoneNumber": "Número de Telefone (Opcional)",
+        "country": "País/Região",
+        "terms": "Eu aceito os <link>Termos e Condições</link>",
+        "privacy": "Eu aceito a <link>Política de Privacidade</link>",
+        "back": "Voltar",
+        "submit": "Criar Conta",
+        "selectCountry": "Selecione seu país",
+        "searchCountries": "Pesquisar países...",
+        "noCountries": "Nenhum país encontrado",
+        "termsConfirmationTitle": "Confirmação de Registro",
+        "termsConfirmationText": "Ao marcar o acima exposto, você confirma a aceitação total das regras legais da plataforma.",
+        "errors": {
+          "emailRequired": "O e-mail é obrigatório",
+          "emailInvalid": "Formato de e-mail inválido",
+          "emailTaken": "Este e-mail já está em uso",
+          "passwordRequired": "A senha é obrigatória",
+          "passwordShort": "A senha deve ter pelo menos 8 caracteres",
+          "passwordComplex": "Deve incluir letras maiúsculas, minúsculas, números e símbolos",
+          "confirmRequired": "Confirme sua senha",
+          "match": "As senhas não coincidem",
+          "country": "Selecione seu país",
+          "terms": "Você deve aceitar os Termos e Condições",
+          "privacy": "Você deve aceitar a Política de Privacidade",
+          "failed": "Falha no registro. Tente novamente."
+        }
+      },
+      "verification": {
+        "title": "Verifique seu e-mail",
+        "subtitle": "Enviamos um código de 6 dígitos para:",
+        "inputLabel": "Digite o código de verificação",
+        "resendTimer": "Reenviar em {{timer}}s",
+        "resendButton": "Reenviar Código",
+        "success": "Verificado!",
+        "redirecting": "Redirecionando para sua conta...",
+        "errors": {
+          "invalid": "Código de verificação inválido",
+          "resendFailed": "Falha ao reenviar o código"
+        },
+        "verifyButton": "Verificar Código"
+      }
+    },
+    "common": {
+      "loading": "Carregando...",
+      "loadingLong": "Registrando...",
+      "checking": "Verificando disponibilidade...",
+      "available": "Disponível",
+      "suggestions": "Sugestões",
+      "accountSummary": "Resumo da Conta:",
+      "sending": "Enviando código...",
+      "verifying": "Verificando...",
+      "resetting": "Redefinindo..."
+    },
+    "gender": {
+      "male": "Masculino",
+      "female": "Feminino",
+      "nonBinary": "Não-binário",
+      "other": "Outro",
+      "preferNotToSay": "Prefiro não dizer"
+    },
+    "password": {
+      "strength": "Força",
+      "scores": {
+        "tooWeak": "Muito fraca",
+        "weak": "Fraca",
+        "fair": "Razoável",
+        "good": "Boa",
+        "strong": "Forte",
+        "veryStrong": "Muito forte"
+      },
+      "feedback": {
+        "tooShort": "Mínimo de 8 caracteres",
+        "addUppercase": "Adicione uma maiúscula",
+        "addLowercase": "Adicione uma minúscula",
+        "addNumber": "Adicione um número",
+        "addSpecial": "Adicione un símbolo especial"
+      }
+    }
+  },
+  "selector": {
+    "title": "Escolha um Idioma",
+    "searchPlaceholder": "Pesquisar idiomas...",
+    "popular": "Idiomas Populares",
+    "all": "Todos os Idiomas",
+    "noResults": "Nenhum idioma encontrado correspondente a \"{{query}}\"",
+    "results": "Resultados ({{count}})",
+    "footer": "As alterações de idioma aplicam-se instantaneamente",
+    "close": "Fechar"
+  },
+  "legal": {
+    "termsTitle": "Termos e Condições",
+    "privacyTitle": "Política de Privacidade",
+    "lastUpdated": "Última atualização",
+    "errorLoading": "Não foi possível carregar o documento jurídico."
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "welcome": {
+    "title": "Willkommen bei Femo Space",
+    "tagline": "Verbinden, Erstellen, Verdienen – Neue Generation Soziale Erfahrung",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "switchToEnglish": "Auf Englisch umschalten"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Kontakt",
+    "terms": "AGB",
+    "privacy": "Datenschutz"
+  },
+  "home": {
+    "welcome": "Willkommen zurück, {{name}}!",
+    "feedSubtitle": "Dies ist Ihr geschützter Feed-Bereich.",
+    "logout": "Abmelden",
+    "feedPlaceholder": "Feed-Inhalte werden hier erscheinen..."
+  },
+  "auth": {
+    "login": {
+      "title": "WILLKOMMEN BEI FEMO SPACE",
+      "subtitle": "Melden Sie sich noch heute bei Ihrem Femo-Konto an",
+      "identifierLabel": "Femo ID oder Femo Mail",
+      "identifierPlaceholder": "Geben Sie Ihre Femo ID oder Femo Mail ein",
+      "passwordLabel": "Passwort",
+      "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+      "forgotPassword": "Passwort vergessen?",
+      "submit": "Anmelden",
+      "submitting": "Anmeldung läuft...",
+      "alreadyHaveAccount": "Schon ein Konto?",
+      "dontHaveAccount": "Noch kein Konto?",
+      "signUp": "Konto erstellen",
+      "securityInfo": {
+        "encrypted": "Ihre Daten sind verschlüsselt und sicher",
+        "rateLimited": "Anmeldung mit Brute-Force-Schutz und Ratenbegrenzung"
+      },
+      "errors": {
+        "identifierRequired": "Femo ID oder Femo Mail ist erforderlich",
+        "identifierInvalid": "Geben Sie eine gültige Femo ID (nur Zahlen) oder Femo Mail ein",
+        "passwordRequired": "Passwort ist erforderlich",
+        "invalid": "Ungültige Femo ID/Mail oder Passwort",
+        "unverified": "Ihre E-Mail ist nicht verifiziert. Bitte prüfen Sie Ihren Posteingang.",
+        "locked": "Konto aufgrund mehrerer Fehlversuche vorübergehend gesperrt.",
+        "blocked": "Ihr Konto wurde gesperrt. Bitte kontaktieren Sie den Support.",
+        "failed": "Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut."
+      }
+    },
+    "forgotPassword": {
+      "title": "Passwort zurücksetzen",
+      "subtitle": "Geben Sie Ihre E-Mail ein, um einen Reset-Link zu erhalten",
+      "submit": "Reset-Link senden",
+      "backToLogin": "Zurück zur Anmeldung",
+      "successTitle": "E-Mails prüfen",
+      "successSubtitle": "Wir haben einen Reset-Link gesendet an",
+      "errors": {
+        "failed": "Senden des Reset-Links fehlgeschlagen."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Willkommen bei Femo",
+        "subtitle": "Lernen wir Sie besser kennen",
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "birthday": "Geburtsdatum",
+        "gender": "Geschlecht",
+        "next": "Weiter",
+        "stepInfo": "Schritt {{step}} von 3",
+        "idInfo": "Automatisch generiert, schreibgeschützt, dauerhaft",
+        "placeholder": {
+          "firstName": "Max",
+          "lastName": "Mustermann"
+        },
+        "errors": {
+          "firstName": "Vorname ist erforderlich",
+          "lastName": "Nachname ist erforderlich",
+          "birthday": "Geburtsdatum ist erforderlich",
+          "gender": "Bitte wählen Sie Ihr Geschlecht",
+          "age": "Sie müssen mindestens 13 Jahre alt sein"
+        }
+      },
+      "credentials": {
+        "title": "Konto erstellen",
+        "subtitle": "Sichern Sie sich noch heute Ihr Femo-Konto",
+        "email": "E-Mail",
+        "password": "Passwort",
+        "confirmPassword": "Passwort bestätigen",
+        "phoneNumber": "Telefonnummer (Optional)",
+        "country": "Land",
+        "terms": "Ich akzeptiere die <link>AGB</link>",
+        "privacy": "Ich akzeptiere die <link>Datenschutzbestimmungen</link>",
+        "back": "Zurück",
+        "submit": "Konto erstellen",
+        "selectCountry": "Wählen Sie Ihr Land",
+        "searchCountries": "Länder suchen...",
+        "noCountries": "Keine Länder gefunden",
+        "termsConfirmationTitle": "Registrierungsbestätigung",
+        "termsConfirmationText": "Durch Aktivieren des Obigen bestätigen Sie die vollständige Akzeptanz der rechtlichen Regeln der Plattform.",
+        "errors": {
+          "emailRequired": "E-Mail ist erforderlich",
+          "emailInvalid": "Ungültiges E-Mail-Format",
+          "emailTaken": "E-Mail wird bereits verwendet",
+          "passwordRequired": "Passwort ist erforderlich",
+          "passwordShort": "Passwort muss mindestens 8 Zeichen lang sein",
+          "passwordComplex": "Passwort muss Groß-, Kleinbuchstaben, Zahlen und Sonderzeichen enthalten",
+          "confirmRequired": "Bitte bestätigen Sie Ihr Passwort",
+          "match": "Passwörter stimmen nicht überein",
+          "country": "Bitte wählen Sie Ihr Land",
+          "terms": "Sie müssen die AGB akzeptieren",
+          "privacy": "Sie müssen die Datenschutzbestimmungen akzeptieren",
+          "failed": "Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+        }
+      },
+      "verification": {
+        "title": "E-Mails prüfen",
+        "subtitle": "Wir haben einen 6-stelligen Code gesendet an",
+        "inputLabel": "Bestätigungscode eingeben",
+        "resendTimer": "Code erneut senden in {{timer}}s",
+        "resendButton": "Code erneut senden",
+        "success": "Verifiziert!",
+        "redirecting": "Weiterleitung zu Ihrem Konto...",
+        "errors": {
+          "invalid": "Ungültiger Bestätigungscode",
+          "resendFailed": "Code-Versand fehlgeschlagen"
+        },
+        "verifyButton": "Code verifizieren"
+      }
+    },
+    "common": {
+      "loading": "Laden...",
+      "loadingLong": "Registrierung läuft...",
+      "checking": "Verfügbarkeit prüfen...",
+      "available": "Verfügbar",
+      "suggestions": "Vorschläge",
+      "accountSummary": "Kontoübersicht:",
+      "sending": "Code wird gesendet...",
+      "verifying": "Verifizierung...",
+      "resetting": "Zurücksetzen..."
+    },
+    "gender": {
+      "male": "Männlich",
+      "female": "Weiblich",
+      "nonBinary": "Nicht-binär",
+      "other": "Andere",
+      "preferNotToSay": "Keine Angabe"
+    },
+    "password": {
+      "strength": "Stärke",
+      "scores": {
+        "tooWeak": "Zu schwach",
+        "weak": "Schwach",
+        "fair": "Mittel",
+        "good": "Gut",
+        "strong": "Stark",
+        "veryStrong": "Sehr stark"
+      },
+      "feedback": {
+        "tooShort": "Mindestens 8 Zeichen",
+        "addUppercase": "Großbuchstaben hinzufügen",
+        "addLowercase": "Kleinbuchstaben hinzufügen",
+        "addNumber": "Zahl hinzufügen",
+        "addSpecial": "Sonderzeichen hinzufügen"
+      }
+    }
+  },
+  "selector": {
+    "title": "Sprache wählen",
+    "searchPlaceholder": "Sprachen suchen...",
+    "popular": "Beliebte Sprachen",
+    "all": "Alle Sprachen",
+    "noResults": "Keine Sprachen für \"{{query}}\" gefunden",
+    "results": "Ergebnisse ({{count}})",
+    "footer": "Sprachänderungen werden sofort wirksam",
+    "close": "Schließen"
+  },
+  "legal": {
+    "termsTitle": "AGB",
+    "privacyTitle": "Datenschutzbestimmungen",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "errorLoading": "Rechtliches Dokument konnte nicht geladen werden."
+  }
+}

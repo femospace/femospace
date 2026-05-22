@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import { monetizationService, Transaction, Payout, Gift as GiftData, SubscriptionTier, EarningsBreakdown, Wallet } from '../services/monetization.service';
 import { useAuth } from '../contexts/AuthContext';
-import { kycService, KYCStatus } from '../services/kyc.service';
+import { kycService, type KYCStatusType, KYCStatus } from '../services/kyc.service';
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 import { PageWrapper } from '../components/common/PageWrapper';
@@ -23,7 +23,7 @@ export const MonetizationDashboard = () => {
     const isDark = theme === 'dark';
     const [activeTab, setActiveTab] = useState<TabId>('overview');
     const [loading, setLoading] = useState(true);
-    const [kycStatus, setKycStatus] = useState<KYCStatus>(KYCStatus.NOT_STARTED);
+    const [kycStatus, setKycStatus] = useState<KYCStatusType>(KYCStatus.NOT_STARTED);
     const [data, setData] = useState<{
         wallet: Wallet | null;
         breakdown: EarningsBreakdown | null;

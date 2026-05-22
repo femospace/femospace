@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "title": "Witaj w Femo Space",
+    "tagline": "Łącz się, twórz, zarabiaj – nowa generacja mediów społecznościowych",
+    "login": "Zaloguj się",
+    "register": "Zarejestruj się",
+    "switchToEnglish": "Przełącz na angielski"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Kontakt",
+    "terms": "Regulamin",
+    "privacy": "Prywatność"
+  },
+  "home": {
+    "welcome": "Witaj ponownie, {{name}}!",
+    "feedSubtitle": "To jest Twoja chroniona sekcja aktualności.",
+    "logout": "Wyloguj się",
+    "feedPlaceholder": "Zawartość tablicy pojawi się tutaj..."
+  },
+  "auth": {
+    "login": {
+      "title": "Witaj ponownie",
+      "subtitle": "Zaloguj się do swojego konta Femo",
+      "emailLabel": "E-mail",
+      "passwordLabel": "Hasło",
+      "forgotPassword": "Zapomniałeś hasła?",
+      "submit": "Zaloguj się",
+      "alreadyHaveAccount": "Masz już konto?",
+      "dontHaveAccount": "Nie masz konta?",
+      "signUp": "Zarejestruj się",
+      "errors": {
+        "invalid": "Błędny e-mail lub hasło",
+        "failed": "Logowanie nieudane. Spróbuj ponownie."
+      }
+    },
+    "forgotPassword": {
+      "title": "Zresetuj hasło",
+      "subtitle": "Wpisz e-mail, aby otrzymać link do resetowania",
+      "submit": "Wyślij link",
+      "backToLogin": "Wróć do logowania",
+      "successTitle": "Sprawdź pocztę",
+      "successSubtitle": "Wysłaliśmy link do resetowania hasła na:",
+      "errors": {
+        "failed": "Nie udało się wysłać linku."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Witaj w Femo",
+        "subtitle": "Pozwól nam poznać się lepiej",
+        "firstName": "Imię",
+        "lastName": "Nazwisko",
+        "birthday": "Data urodzenia",
+        "gender": "Płeć",
+        "next": "Dalej",
+        "placeholder": {
+          "firstName": "Jan",
+          "lastName": "Kowalski"
+        },
+        "errors": {
+          "firstName": "Imię jest wymagane",
+          "lastName": "Nazwisko jest wymagane",
+          "birthday": "Data urodzenia jest wymagana",
+          "gender": "Wybierz płeć",
+          "age": "Musisz mieć co najmniej 13 lat"
+        }
+      },
+      "credentials": {
+        "title": "Utwórz konto",
+        "subtitle": "Zabezpiecz swoje konto Femo dzisiaj",
+        "email": "E-mail",
+        "password": "Hasło",
+        "confirmPassword": "Potwierdź hasło",
+        "country": "Kraj",
+        "terms": "Akceptuję <link>Regulamin</link>",
+        "privacy": "Akceptuję <link>Politykę prywatności</link>",
+        "back": "Cofnij",
+        "submit": "Utwórz konto",
+        "selectCountry": "Wybierz kraj",
+        "searchCountries": "Szukaj kraju...",
+        "noCountries": "Nie znaleziono krajów",
+        "errors": {
+          "emailRequired": "E-mail jest wymagany",
+          "emailInvalid": "Błędny format e-mail",
+          "passwordRequired": "Hasło jest wymagane",
+          "passwordShort": "Hasło musi mieć co najmniej 8 znaków",
+          "passwordComplex": "Wymagane wielkie, małe litery, cyfry i symbole",
+          "confirmRequired": "Potwierdź hasło",
+          "match": "Hasła nie zgadzają się",
+          "country": "Wybierz kraj",
+          "terms": "Musisz zaakceptować Regulamin",
+          "privacy": "Musisz zaakceptować Politykę prywatności",
+          "failed": "Rejestracja nieudana. Spróbuj ponownie."
+        }
+      },
+      "verification": {
+        "title": "Sprawdź pocztę",
+        "subtitle": "Wysłaliśmy 6-cyfrowy kod na:",
+        "inputLabel": "Wpisz kod weryfikacyjny",
+        "resendTimer": "Wyślij ponownie za {{timer}}s",
+        "resendButton": "Wyślij kod ponownie",
+        "success": "Zweryfikowano!",
+        "redirecting": "Przekierowanie do konta...",
+        "errors": {
+          "invalid": "Błędny kod weryfikacyjny",
+          "resendFailed": "Nie udało się wysłać kodu ponownie"
+        }
+      }
+    },
+    "gender": {
+      "male": "Mężczyzna",
+      "female": "Kobieta",
+      "nonBinary": "Niebinarny",
+      "other": "Inna",
+      "preferNotToSay": "Nie chcę podawać"
+    },
+    "password": {
+      "strength": "Moc hasła",
+      "scores": {
+        "tooWeak": "Bardzo słabe",
+        "weak": "Słabe",
+        "fair": "Średnie",
+        "good": "Dobre",
+        "strong": "Mocne",
+        "veryStrong": "Bardzo mocne"
+      },
+      "feedback": {
+        "tooShort": "Minimum 8 znaków",
+        "addUppercase": "Dodaj wielką literę",
+        "addLowercase": "Dodaj małą literę",
+        "addNumber": "Dodaj cyfrę",
+        "addSpecial": "Dodaj symbol"
+      }
+    }
+  },
+  "selector": {
+    "title": "Wybierz język",
+    "searchPlaceholder": "Szukaj języka...",
+    "popular": "Popularne języki",
+    "all": "Wszystkie języki",
+    "noResults": "Nie znaleziono języka pasującego do \"{{query}}\"",
+    "results": "Wyniki ({{count}})",
+    "footer": "Zmiany języka działają natychmiastowo",
+    "close": "Zamknij"
+  },
+  "legal": {
+    "termsTitle": "Regulamin",
+    "privacyTitle": "Polityka prywatności",
+    "lastUpdated": "Ostatnia aktualizacja",
+    "errorLoading": "Nie udało się załadować dokumentu prawnego."
+  }
+}

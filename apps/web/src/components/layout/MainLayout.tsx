@@ -32,6 +32,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         { id: 'videos', light: 'video_light_mode_icon.png', dark: 'video_dark_mode_icon.png', label: 'Videos', route: '/videos' },
         { id: 'chat', light: 'messages_light_mode_icon.png', dark: 'massages_dark_mode_icon.png', label: 'Chat', route: '/chat', badge: 3 },
         { id: 'notifications', light: 'notification_light_mode_icon.png', dark: 'notification_dark_mode_icon.png', label: 'Notifications', route: '/notifications', badge: 5 },
+        { id: 'marketplace', light: 'marketplace_light_mode_icon.png', dark: 'marketplace_dark_mode_icon.png', label: 'Marketplace', route: '/marketplace' },
         { id: 'menu', light: 'menu_light_mode_icon.png', dark: 'menu_dark_mode_icon.png', label: 'Menu', route: '/menu' },
     ];
 

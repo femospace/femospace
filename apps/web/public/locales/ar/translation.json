@@ -1,0 +1,184 @@
+{
+  "welcome": {
+    "title": "مرحباً بك في Femo Space",
+    "tagline": "تواصل، أنشئ، اربح – تجربة اجتماعية من الجيل الجديد",
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "switchToEnglish": "التبديل إلى الإنجليزية"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "اتصل بنا",
+    "terms": "الشروط",
+    "privacy": "سياسة الخصوصية"
+  },
+  "home": {
+    "welcome": "مرحباً بعودتك، {{name}}!",
+    "feedSubtitle": "هذه هي منطقة الخلاصة المحمية الخاصة بك.",
+    "logout": "تسجيل الخروج",
+    "feedPlaceholder": "سيظهر محتوى الخلاصة هنا..."
+  },
+  "auth": {
+    "login": {
+      "title": "مرحبًا بك في FEMO SPACE",
+      "subtitle": "سجل الدخول إلى حساب Femo الخاص بك اليوم",
+      "identifierLabel": "معرف Femo أو بريد Femo",
+      "identifierPlaceholder": "أدخل معرف Femo أو بريد Femo الخاص بك",
+      "passwordLabel": "كلمة المرور",
+      "passwordPlaceholder": "أدخل كلمة المرور الخاصة بك",
+      "forgotPassword": "هل نسيت كلمة المرور؟",
+      "submit": "تسجيل الدخول",
+      "submitting": "جاري تسجيل الدخول...",
+      "alreadyHaveAccount": "لديك حساب بالفعل؟",
+      "dontHaveAccount": "ليس لديك حساب؟",
+      "signUp": "إنشاء حساب",
+      "securityInfo": {
+        "encrypted": "بياناتك مشفرة وآمنة",
+        "rateLimited": "تسجيل دخول محدود السرعة مع حماية من الهجمات العنيفة"
+      },
+      "errors": {
+        "identifierRequired": "معرف Femo أو بريد Femo مطلوب",
+        "identifierInvalid": "يرجى إدخال معرف Femo صالح (أرقام فقط) أو بريد Femo صالح",
+        "passwordRequired": "كلمة المرور مطلوبة",
+        "invalid": "معرف Femo/Mail أو كلمة مرور غير صالحة",
+        "unverified": "بريدك الإلكتروني غير مفعل. يرجى مراجعة بريدك الوارد.",
+        "locked": "الحساب مغلق مؤقتًا بسبب محاولات فاشلة متعددة.",
+        "blocked": "لقد تم حظر حسابك. يرجى الاتصال بالدعم.",
+        "failed": "فشل تسجيل الدخول. يرجى المحاولة مرة أخرى."
+      }
+    },
+    "forgotPassword": {
+      "title": "إعادة تعيين كلمة المرور",
+      "subtitle": "أدخل بريدك الإلكتروني لتلقي رابط إعادة التعيين",
+      "submit": "إرسال الرابط",
+      "backToLogin": "العودة للدخول",
+      "successTitle": "تحقق من بريدك",
+      "successSubtitle": "لقد أرسلنا رابط إعادة تعيين كلمة المرور إلى:",
+      "errors": {
+        "failed": "فشل إرسال الرابط."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "مرحباً بك في Femo",
+        "subtitle": "دعنا نتعرف عليك بشكل أفضل",
+        "firstName": "الاسم الأول",
+        "lastName": "اسم العائلة",
+        "birthday": "تاريخ الميلاد",
+        "gender": "الجنس",
+        "next": "التالي",
+        "stepInfo": "الخطوة {{step}} من 3",
+        "idInfo": "تم إنشاؤه تلقائيًا، للقراءة فقط، دائم",
+        "placeholder": {
+          "firstName": "أحمد",
+          "lastName": "محمد"
+        },
+        "errors": {
+          "firstName": "الاسم الأول مطلوب",
+          "lastName": "اسم العائلة مطلوب",
+          "birthday": "تاريخ الميلاد مطلوب",
+          "gender": "يرجى اختيار الجنس",
+          "age": "يجب أن يكون عمرك 13 عاماً على الأقل"
+        }
+      },
+      "credentials": {
+        "title": "إنشاء حسابك",
+        "subtitle": "أمن حساب Femo الخاص بك اليوم",
+        "email": "البريد الإلكتروني",
+        "password": "كلمة المرور",
+        "confirmPassword": "تأكيد كلمة المرور",
+        "phoneNumber": "رقم الهاتف (اختياري)",
+        "country": "الدولة/المنطقة",
+        "terms": "أوافق على <link>الشروط والأحكام</link>",
+        "privacy": "أوافق على <link>سياسة الخصوصية</link>",
+        "back": "رجوع",
+        "submit": "إنشاء حساب",
+        "selectCountry": "اختر بلدك",
+        "searchCountries": "البحث عن الدول...",
+        "noCountries": "لم يتم العثور على دول",
+        "termsConfirmationTitle": "تأكيد التسجيل",
+        "termsConfirmationText": "من خلال التأشير أعلاه، فإنك تؤكد قبولك الكامل للقواعد القانونية للمنصة.",
+        "errors": {
+          "emailRequired": "البريد الإلكتروني مطلوب",
+          "emailInvalid": "تنسيق بريد إلكتروني غير صالح",
+          "emailTaken": "هذا البريد الإلكتروني مستخدم بالفعل",
+          "passwordRequired": "كلمة المرور مطلوبة",
+          "passwordShort": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+          "passwordComplex": "يجب أن تتضمن أحرفاً كبيرة وصغيرة وأرقاماً ورموزاً",
+          "confirmRequired": "يرجى تأكيد كلمة المرور",
+          "match": "كلمات المرور غير متطابقة",
+          "country": "يرجى اختيار بلدك",
+          "terms": "يجب عليك الموافقة على الشروط والأحكام",
+          "privacy": "يجب عليك الموافقة على سياسة الخصوصية",
+          "failed": "فشل التسجيل. يرجى المحاولة مرة أخرى."
+        }
+      },
+      "verification": {
+        "title": "تحقق من بريدك",
+        "subtitle": "لقد أرسلنا رمزاً مكوناً من 6 أرقام إلى:",
+        "inputLabel": "أدخل رمز التحقق",
+        "resendTimer": "إعادة الإرسال خلال {{timer}} ثانية",
+        "resendButton": "إعادة إرسال الرمز",
+        "success": "تم التحقق!",
+        "redirecting": "جاري توجيهك إلى حسابك...",
+        "errors": {
+          "invalid": "رمز التحقق غير صالح",
+          "resendFailed": "فشل في إعادة إرسال الرمز"
+        },
+        "verifyButton": "تحقق من الرمز"
+      }
+    },
+    "common": {
+      "loading": "جاري التحميل...",
+      "loadingLong": "جاري التسجيل...",
+      "checking": "جاري التحقق من التوفر...",
+      "available": "متاح",
+      "suggestions": "اقتراحات",
+      "accountSummary": "ملخص الحساب:",
+      "sending": "جاري إرسال الرمز...",
+      "verifying": "جاري التحقق...",
+      "resetting": "جاري إعادة التعيين..."
+    },
+    "gender": {
+      "male": "ذكر",
+      "female": "أنثى",
+      "nonBinary": "غير ثنائي",
+      "other": "أخرى",
+      "preferNotToSay": "أفضل عدم القول"
+    },
+    "password": {
+      "strength": "القوة",
+      "scores": {
+        "tooWeak": "ضعيفة جداً",
+        "weak": "ضعيفة",
+        "fair": "متوسطة",
+        "good": "جيدة",
+        "strong": "قوية",
+        "veryStrong": "قوية جداً"
+      },
+      "feedback": {
+        "tooShort": "8 أحرف على الأقل",
+        "addUppercase": "أضف حرفاً كبيراً",
+        "addLowercase": "أضف حرفاً صغيراً",
+        "addNumber": "أضف رقماً",
+        "addSpecial": "أضف رمزاً خاصاً"
+      }
+    }
+  },
+  "selector": {
+    "title": "اختر اللغة",
+    "searchPlaceholder": "ابحث عن لغة...",
+    "popular": "اللغات الشائعة",
+    "all": "جميع اللغات",
+    "noResults": "لم يتم العثور على لغات تطابق \"{{query}}\"",
+    "results": "نتائج ({{count}})",
+    "footer": "تطبق تغييرات اللغة فوراً",
+    "close": "إغلاق"
+  },
+  "legal": {
+    "termsTitle": "الشروط والأحكام",
+    "privacyTitle": "سياسة الخصوصية",
+    "lastUpdated": "آخر تحديث",
+    "errorLoading": "تعذر تحميل المستند القانوني."
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { X, Upload, Film, Image as ImageIcon, Check, Loader } from 'lucide-react';
+import { X, Upload, Film, Image as ImageIcon, Check, Loader, ShoppingBag } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import api from '../../lib/api';
 
@@ -355,16 +355,20 @@ export const VideoUpload: React.FC<VideoUploadProps> = ({
                                     </div>
 
                                     <div>
-                                        <label className="text-white text-sm font-semibold mb-2 block">
-                                            Tags (comma separated)
+                                        <label className="text-white text-sm font-semibold mb-2 block flex items-center gap-2">
+                                            <ShoppingBag size={14} className="text-blue-500" /> Tag Products (Marketplace)
                                         </label>
-                                        <input
-                                            type="text"
-                                            value={formData.tags}
-                                            onChange={(e) => setFormData({ ...formData, tags: e.target.value })}
-                                            className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-blue-500"
-                                            placeholder="travel, vlog, adventure"
-                                        />
+                                        <div className="relative group">
+                                            <input
+                                                type="text"
+                                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-blue-500"
+                                                placeholder="Search products to tag..."
+                                            />
+                                            <div className="absolute right-3 top-3 text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded-full font-black uppercase tracking-widest opacity-0 group-focus-within:opacity-100 transition-opacity">
+                                                Beta
+                                            </div>
+                                        </div>
+                                        <p className="text-[10px] text-gray-500 mt-1 uppercase font-bold tracking-tight">Tagging products allows you to earn commission from sales.</p>
                                     </div>
 
                                     {/* Actions */}

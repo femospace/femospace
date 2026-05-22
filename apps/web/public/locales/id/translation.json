@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "title": "Selamat Datang di Femo Space",
+    "tagline": "Hubungkan, Ciptakan, Hasilkan – Pengalaman Sosial Generasi Baru",
+    "login": "Masuk",
+    "register": "Daftar",
+    "switchToEnglish": "Ganti ke Bahasa Inggris"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Hubungi Kami",
+    "terms": "Syarat",
+    "privacy": "Privasi"
+  },
+  "home": {
+    "welcome": "Selamat datang kembali, {{name}}!",
+    "feedSubtitle": "Ini adalah area feed yang dilindungi.",
+    "logout": "Keluar",
+    "feedPlaceholder": "Konten feed akan muncul di sini..."
+  },
+  "auth": {
+    "login": {
+      "title": "Selamat datang kembali",
+      "subtitle": "Masuk ke akun Femo Anda",
+      "emailLabel": "Email",
+      "passwordLabel": "Kata Sandi",
+      "forgotPassword": "Lupa kata sandi?",
+      "submit": "Masuk",
+      "alreadyHaveAccount": "Sudah punya akun?",
+      "dontHaveAccount": "Belum punya akun?",
+      "signUp": "Daftar",
+      "errors": {
+        "invalid": "Email atau kata sandi salah",
+        "failed": "Gagal masuk. Silakan coba lagi."
+      }
+    },
+    "forgotPassword": {
+      "title": "Atur Ulang Kata Sandi",
+      "subtitle": "Masukkan email Anda untuk menerima tautan bantuan",
+      "submit": "Kirim Tautan",
+      "backToLogin": "Kembali ke Login",
+      "successTitle": "Periksa Email Anda",
+      "successSubtitle": "Kami telah mengirimkan tautan atur ulang ke:",
+      "errors": {
+        "failed": "Gagal mengirim tautan."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Selamat Datang di Femo",
+        "subtitle": "Mari kita kenali Anda lebih baik",
+        "firstName": "Nama Depan",
+        "lastName": "Nama Belakang",
+        "birthday": "Tanggal Lahir",
+        "gender": "Jenis Kelamin",
+        "next": "Lanjut",
+        "placeholder": {
+          "firstName": "Budi",
+          "lastName": "Santoso"
+        },
+        "errors": {
+          "firstName": "Nama depan wajib diisi",
+          "lastName": "Nama belakang wajib diisi",
+          "birthday": "Tanggal lahir wajib diisi",
+          "gender": "Pilih jenis kelamin Anda",
+          "age": "Usia minimal harus 13 tahun"
+        }
+      },
+      "credentials": {
+        "title": "Buat Akun Anda",
+        "subtitle": "Amankan akun Femo Anda hari ini",
+        "email": "Email",
+        "password": "Kata Sandi",
+        "confirmPassword": "Konformasi Kata Sandi",
+        "country": "Negara",
+        "terms": "Saya menerima <link>Syarat & Ketentuan</link>",
+        "privacy": "Saya menerima <link>Kebijakan Privasi</link>",
+        "back": "Kembali",
+        "submit": "Buat Akun",
+        "selectCountry": "Pilih negara Anda",
+        "searchCountries": "Cari negara...",
+        "noCountries": "Negara tidak ditemukan",
+        "errors": {
+          "emailRequired": "Email wajib diisi",
+          "emailInvalid": "Format email tidak valid",
+          "passwordRequired": "Kata sandi wajib diisi",
+          "passwordShort": "Kata sandi minimal 8 karakter",
+          "passwordComplex": "Harus ada huruf besar, kecil, angka, dan simbol",
+          "confirmRequired": "Konfirmasi kata sandi Anda",
+          "match": "Kata sandi tidak cocok",
+          "country": "Pilih negara Anda",
+          "terms": "Anda harus menerima Syarat & Ketentuan",
+          "privacy": "Anda harus menerima Kebijakan Privasi",
+          "failed": "Pendaftaran gagal. Silakan coba lagi."
+        }
+      },
+      "verification": {
+        "title": "Periksa email",
+        "subtitle": "Kami telah mengirim kode 6 digit ke:",
+        "inputLabel": "Masukkan kode verifikasi",
+        "resendTimer": "Kirim ulang dalam {{timer}} detik",
+        "resendButton": "Kirim Ulang Kode",
+        "success": "Terverifikasi!",
+        "redirecting": "Mengarahkan ke akun Anda...",
+        "errors": {
+          "invalid": "Kode verifikasi salah",
+          "resendFailed": "Gagal mengirim ulang kode"
+        }
+      }
+    },
+    "gender": {
+      "male": "Laki-laki",
+      "female": "Perempuan",
+      "nonBinary": "Non-biner",
+      "other": "Lainnya",
+      "preferNotToSay": "Lebih baik tidak menjawab"
+    },
+    "password": {
+      "strength": "Kekuatan",
+      "scores": {
+        "tooWeak": "Sangat Lemah",
+        "weak": "Lemah",
+        "fair": "Cukup",
+        "good": "Baik",
+        "strong": "Kuat",
+        "veryStrong": "Sangat Kuat"
+      },
+      "feedback": {
+        "tooShort": "Minimal 8 karakter",
+        "addUppercase": "Tambahkan huruf besar",
+        "addLowercase": "Tambahkan huruf kecil",
+        "addNumber": "Tambahkan angka",
+        "addSpecial": "Tambahkan karakter khusus"
+      }
+    }
+  },
+  "selector": {
+    "title": "Pilih Bahasa",
+    "searchPlaceholder": "Cari bahasa...",
+    "popular": "Bahasa Populer",
+    "all": "Semua Bahasa",
+    "noResults": "Tidak ada bahasa yang cocok dengan \"{{query}}\"",
+    "results": "Hasil ({{count}})",
+    "footer": "Perubahan bahasa langsung diterapkan",
+    "close": "Tutup"
+  },
+  "legal": {
+    "termsTitle": "Syarat & Ketentuan",
+    "privacyTitle": "Kebijakan Privasi",
+    "lastUpdated": "Terakhir diperbarui",
+    "errorLoading": "Gagal memuat dokumen hukum."
+  }
+}

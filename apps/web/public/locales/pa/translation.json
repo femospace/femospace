@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "title": "Femo Space ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ",
+    "tagline": "ਜੁੜੋ, ਬਣਾਓ, ਕਮਾਓ - ਨਵੀਂ ਪੀੜ੍ਹੀ ਦਾ ਸਮਾਜਿਕ ਅਨੁਭਵ",
+    "login": "ਲੌਗਇਨ",
+    "register": "ਰਜਿਸਟਰ",
+    "switchToEnglish": "ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਬਦਲੋ"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+    "terms": "ਸ਼ਰਤਾਂ",
+    "privacy": "ਪ੍ਰਾਈਵੇਸੀ ਪਾਲਿਸੀ"
+  },
+  "home": {
+    "welcome": "ਜੀ ਆਇਆਂ ਨੂੰ, {{name}}!",
+    "feedSubtitle": "ਇਹ ਤੁਹਾਡਾ ਸੁਰੱਖਿਅਤ ਫੀਡ ਖੇਤਰ ਹੈ।",
+    "logout": "ਲੌਗਆਉਟ",
+    "feedPlaceholder": "ਫੀਡ ਸਮੱਗਰੀ ਇੱਥੇ ਦਿਖਾਈ ਦੇਵੇਗੀ..."
+  },
+  "auth": {
+    "login": {
+      "title": "ਜੀ ਆਇਆਂ ਨੂੰ",
+      "subtitle": "ਆਪਣੇ Femo ਖਾਤੇ ਵਿੱਚ ਲੌਗਇਨ ਕਰੋ",
+      "emailLabel": "ਈਮੇਲ",
+      "passwordLabel": "ਪਾਸਵਰਡ",
+      "forgotPassword": "ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ?",
+      "submit": "ਲੌਗਇਨ",
+      "alreadyHaveAccount": "ਪਹਿਲਾਂ ਹੀ ਖਾਤਾ ਹੈ?",
+      "dontHaveAccount": "ਖਾਤਾ ਨਹੀਂ ਹੈ?",
+      "signUp": "ਰਜਿਸਟਰ",
+      "errors": {
+        "invalid": "ਗਲਤ ਈਮੇਲ ਜਾਂ ਪਾਸਵਰਡ",
+        "failed": "ਲੌਗਇਨ ਅਸਫਲ ਰਿਹਾ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+      }
+    },
+    "forgotPassword": {
+      "title": "ਪਾਸਵਰਡ ਰੀਸੈਟ ਕਰੋ",
+      "subtitle": "ਰੀਸੈਟ ਲਿੰਕ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਆਪਣੀ ਈਮੇਲ ਦਰਜ ਕਰੋ",
+      "submit": "ਲਿੰਕ ਭੇਜੋ",
+      "backToLogin": "ਲੌਗਇਨ ਤੇ ਵਾਪਸ ਜਾਓ",
+      "successTitle": "ਆਪਣੀ ਈਮੇਲ ਚੈੱਕ ਕਰੋ",
+      "successSubtitle": "ਅਸੀਂ ਪਾਸਵਰਡ ਰੀਸੈਟ ਲਿੰਕ ਇੱਥੇ ਭੇਜਿਆ ਹੈ:",
+      "errors": {
+        "failed": "ਲਿੰਕ ਭੇਜਣ ਵਿੱਚ ਅਸਫਲ।"
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Femo ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ",
+        "subtitle": "ਆਓ ਅਸੀਂ ਤੁਹਾਨੂੰ ਬਿਹਤਰ ਤਰੀਕੇ ਨਾਲ ਜਾਣੀਏ",
+        "firstName": "ਨਾਂ",
+        "lastName": "ਪਿਛਲਾ ਨਾਂ",
+        "birthday": "ਜਨਮ ਮਿਤੀ",
+        "gender": "ਲਿੰਗ",
+        "next": "ਅੱਗੇ",
+        "placeholder": {
+          "firstName": "ਰਾਹੁਲ",
+          "lastName": "ਸਿੰਘ"
+        },
+        "errors": {
+          "firstName": "ਨਾਂ ਜ਼ਰੂਰੀ ਹੈ",
+          "lastName": "ਪਿਛਲਾ ਨਾਂ ਜ਼ਰੂਰੀ ਹੈ",
+          "birthday": "ਜਨਮ ਮਿਤੀ ਜ਼ਰੂਰੀ ਹੈ",
+          "gender": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਲਿੰਗ ਚੁਣੋ",
+          "age": "ਤੁਹਾਡੀ ਉਮਰ ਘੱਟੋ-ਘੱਟ 13 ਸਾਲ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
+        }
+      },
+      "credentials": {
+        "title": "ਖਾਤਾ ਬਣਾਓ",
+        "subtitle": "ਅੱਜ ਹੀ ਆਪਣਾ Femo ਖਾਤਾ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+        "email": "ਈਮੇਲ",
+        "password": "ਪਾਸਵਰਡ",
+        "confirmPassword": "ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+        "country": "ਦੇਸ਼",
+        "terms": "ਮੈਂ <link>ਸ਼ਰਤਾਂ</link> ਨੂੰ ਸਵੀਕਾਰ ਕਰਦਾ ਹਾਂ",
+        "privacy": "ਮੈਂ <link>ਪ੍ਰਾਈਵੇਸੀ ਪਾਲਿਸੀ</link> ਨੂੰ ਸਵੀਕਾਰ ਕਰਦਾ ਹਾਂ",
+        "back": "ਪਿੱਛੇ",
+        "submit": "ਖਾਤਾ ਬਣਾਓ",
+        "selectCountry": "ਆਪਣਾ ਦੇਸ਼ ਚੁਣੋ",
+        "searchCountries": "ਦੇਸ਼ ਖੋਜੋ...",
+        "noCountries": "ਕੋਈ ਦੇਸ਼ ਨਹੀਂ ਮਿਲਿਆ",
+        "errors": {
+          "emailRequired": "ਈਮੇਲ ਜ਼ਰੂਰੀ ਹੈ",
+          "emailInvalid": "ਗਲਤ ਈਮੇਲ ਫਾਰਮੈਟ",
+          "passwordRequired": "ਪਾਸਵਰਡ ਜ਼ਰੂਰੀ ਹੈ",
+          "passwordShort": "ਪਾਸਵਰਡ ਘੱਟੋ-ਘੱਟ 8 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
+          "passwordComplex": "ਵੱਡੇ ਅੱਖਰ, ਛੋਟੇ ਅੱਖਰ, ਅੰਕ ਅਤੇ ਵਿਸ਼ੇਸ਼ ਅੱਖਰ ਜ਼ਰੂਰੀ ਹਨ",
+          "confirmRequired": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+          "match": "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ",
+          "country": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਦੇਸ਼ ਚੁਣੋ",
+          "terms": "ਤੁਹਾਨੂੰ ਨਿਯਮਾਂ ਅਤੇ ਸ਼ਰਤਾਂ ਨੂੰ ਸਵੀਕਾਰ ਕਰਨਾ ਪਵੇਗਾ",
+          "privacy": "ਤੁਹਾਨੂੰ ਪ੍ਰਾਈਵੇਸੀ ਪਾਲਿਸੀ ਨੂੰ ਸਵੀਕਾਰ ਕਰਨਾ ਪਵੇਗਾ",
+          "failed": "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅਸਫਲ ਰਹੀ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+        }
+      },
+      "verification": {
+        "title": "ਆਪਣੀ ਈਮੇਲ ਚੈੱਕ ਕਰੋ",
+        "subtitle": "ਅਸੀਂ 6-ਅੰਕਾਂ ਦਾ ਕੋਡ ਇੱਥੇ ਭੇਜਿਆ ਹੈ:",
+        "inputLabel": "ਵੈਰੀਫਿਕੇਸ਼ਨ ਕੋਡ ਦਰਜ ਕਰੋ",
+        "resendTimer": "{{timer}} ਸਕਿੰਟ ਵਿੱਚ ਦੁਬਾਰਾ ਭੇਜੋ",
+        "resendButton": "ਕੋਡ ਦੁਬਾਰਾ ਭੇਜੋ",
+        "success": "ਵੈਰੀਫਾਈਡ!",
+        "redirecting": "ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਖਾਤੇ ਤੇ ਲਿਜਾਇਆ ਜਾ ਰਿਹਾ ਹੈ...",
+        "errors": {
+          "invalid": "ਗਲਤ ਵੈਰੀਫਿਕੇਸ਼ਨ ਕੋਡ",
+          "resendFailed": "ਕੋਡ ਦੁਬਾਰਾ ਭੇਜਣ ਵਿੱਚ ਅਸਫਲ"
+        }
+      }
+    },
+    "gender": {
+      "male": "ਪੁਰਸ਼",
+      "female": "ਮਹਿਲਾ",
+      "nonBinary": "ਨਾਨ-ਬਾਇਨਰੀ",
+      "other": "ਹੋਰ",
+      "preferNotToSay": "ਦੱਸਣਾ ਨਹੀਂ ਚਾਹੁੰਦੇ"
+    },
+    "password": {
+      "strength": "ਸ਼ਕਤੀ",
+      "scores": {
+        "tooWeak": "ਬਹੁਤ ਕਮਜ਼ੋਰ",
+        "weak": "ਕਮਜ਼ੋਰ",
+        "fair": "ਠੀਕ",
+        "good": "ਵਧੀਆ",
+        "strong": "ਮਜ਼ਬੂਤ",
+        "veryStrong": "ਬਹੁਤ ਮਜ਼ਬੂਤ"
+      },
+      "feedback": {
+        "tooShort": "ਘੱਟੋ-ਘੱਟ 8 ਅੱਖਰ",
+        "addUppercase": "ਵੱਡਾ ਅੱਖਰ ਜੋੜੋ",
+        "addLowercase": "ਛੋਟਾ ਅੱਖਰ ਜੋੜੋ",
+        "addNumber": "ਅੰਕ ਜੋੜੋ",
+        "addSpecial": "ਵਿਸ਼ੇਸ਼ ਅੱਖਰ ਜੋੜੋ"
+      }
+    }
+  },
+  "selector": {
+    "title": "ਭਾਸ਼ਾ ਚੁਣੋ",
+    "searchPlaceholder": "ਭਾਸ਼ਾ ਖੋਜੋ...",
+    "popular": "ਪ੍ਰਸਿੱਧ ਭਾਸ਼ਾਵਾਂ",
+    "all": "ਸਾਰੀਆਂ ਭਾਸ਼ਾਵਾਂ",
+    "noResults": "\"{{query}}\" ਨਾਲ ਮੇਲ ਖਾਂਦੀ ਕੋਈ ਭਾਸ਼ਾ ਨਹੀਂ ਮਿਲੀ",
+    "results": "ਨਤੀਜੇ ({{count}})",
+    "footer": "ਭਾਸ਼ਾ ਤਬਦੀਲੀਆਂ ਤੁਰੰਤ ਲਾਗੂ ਹੁੰਦੀਆਂ ਹਨ",
+    "close": "ਬੰਦ ਕਰੋ"
+  },
+  "legal": {
+    "termsTitle": "ਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ",
+    "privacyTitle": "ਪ੍ਰਾਈਵੇਸੀ ਪਾਲਿਸੀ",
+    "lastUpdated": "ਆਖਰੀ ਵਾਰ ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ",
+    "errorLoading": "ਕਾਨੂੰਨੀ ਦਸਤਾਵੇਜ਼ ਲੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+  }
+}

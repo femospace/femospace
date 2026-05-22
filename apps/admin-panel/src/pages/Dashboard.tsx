@@ -4,10 +4,10 @@ import { Users, CreditCard, Activity, TrendingUp, Cpu, Server, Database, Globe }
 
 export const Dashboard: React.FC = () => {
     const stats = [
-        { label: 'Total Users', value: '45.2K', trend: '+12.5%', icon: <Users className="text-blue-400" />, color: 'blue' },
-        { label: 'Active Sessions', value: '12.8K', trend: '+8.2%', icon: <Activity className="text-emerald-400" />, color: 'emerald' },
-        { label: 'Monthly Revenue', value: '$84,200', trend: '+24.1%', icon: <CreditCard className="text-amber-400" />, color: 'amber' },
-        { label: 'Ecosystem Growth', value: '18.4%', trend: '+4.5%', icon: <TrendingUp className="text-indigo-400" />, color: 'indigo' }
+        { label: 'New Registrations', value: '1,284', trend: '+18.5%', icon: <Users className="text-blue-400" />, color: 'blue' },
+        { label: 'Marketplace Orders', value: '842', trend: '+12.2%', icon: <Activity className="text-emerald-400" />, color: 'emerald' },
+        { label: 'Total Revenue', value: '$124,500', trend: '+24.1%', icon: <CreditCard className="text-amber-400" />, color: 'amber' },
+        { label: 'Wallet Balances', value: '$1.92M', trend: '+4.5%', icon: <TrendingUp className="text-indigo-400" />, color: 'indigo' }
     ];
 
     const serverHealth = [

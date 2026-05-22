@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../contexts/AuthContext';
 import { useSocket } from '../contexts/SocketContext';
 import { chatService, Chat as ChatType, Message } from '../services/chat.service';
@@ -15,6 +16,7 @@ import { CameraTab } from '../components/chat/CameraTab';
 type TabType = 'messages' | 'ai' | 'camera';
 
 export const Chat = () => {
+    const { t } = useTranslation();
     const { user } = useAuth();
     const { socket } = useSocket();
 
@@ -346,7 +348,7 @@ export const Chat = () => {
     };
 
     const handleCreateGroup = async () => {
-        const name = prompt("Enter group name:");
+        const name = prompt(t('chat.groupNamePrompt', 'Enter group name:'));
         if (name) {
             try {
                 await chatService.createGroup({ name, participants: [] });
@@ -368,7 +370,7 @@ export const Chat = () => {
                             }`}
                     >
                         <MessageSquare size={16} />
-                        <span className="hidden md:inline">Messages</span>
+                        <span className="hidden md:inline">{t('chat.messages', 'Messages')}</span>
                     </button>
                     <button
                         onClick={() => handleTabChange('ai')}
@@ -376,7 +378,7 @@ export const Chat = () => {
                             }`}
                     >
                         <Bot size={16} />
-                        <span className="hidden md:inline">AI Assistant</span>
+                        <span className="hidden md:inline">{t('chat.aiAssistant', 'AI Assistant')}</span>
                     </button>
                     <button
                         onClick={() => handleTabChange('camera')}
@@ -384,7 +386,7 @@ export const Chat = () => {
                             }`}
                     >
                         <Camera size={16} />
-                        <span className="hidden md:inline">Camera</span>
+                        <span className="hidden md:inline">{t('chat.camera', 'Camera')}</span>
                     </button>
                 </div>
             </div>

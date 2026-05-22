@@ -5,9 +5,9 @@ import {
     getPopularLanguages,
     getAllLanguages,
     searchLanguages,
-    isRTL,
     type Language,
 } from '../data/languages';
+import { useLanguage } from '../contexts/LanguageContext';
 import './LanguageSelector.css';
 
 interface LanguageSelectorProps {
@@ -19,13 +19,13 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
     onClose,
     mode = 'modal',
 }) => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
+    const { changeLanguage, currentLanguage } = useLanguage();
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredLanguages, setFilteredLanguages] = useState<Language[]>([]);
     const [isVisible, setIsVisible] = useState(false);
     const searchInputRef = useRef<HTMLInputElement>(null);
 
-    const currentLanguage = i18n.language;
     const popularLanguages = getPopularLanguages();
     const allLanguages = getAllLanguages();
 
@@ -44,19 +44,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
     }, [searchQuery]);
 
     const handleLanguageChange = async (languageCode: string) => {
-        // Change language instantly (no reload)
-        await i18n.changeLanguage(languageCode);
-
-        // Apply RTL if needed
-        const rtl = isRTL(languageCode);
-        document.documentElement.dir = rtl ? 'rtl' : 'ltr';
-        document.documentElement.lang = languageCode;
-
-        // Persist to localStorage (for guests)
-        localStorage.setItem('i18nextLng', languageCode);
-
-        // TODO: If user is logged in, save to backend
-        // await updateUserLanguagePreference(languageCode);
+        await changeLanguage(languageCode);
 
         // Close modal with animation
         setIsVisible(false);

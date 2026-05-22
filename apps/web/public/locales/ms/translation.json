@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "title": "Selamat Datang ke Femo Space",
+    "tagline": "Hubung, Cipta, Jana – Pengalaman Sosial Generasi Baru",
+    "login": "Log Masuk",
+    "register": "Daftar",
+    "switchToEnglish": "Tukar ke Bahasa Inggeris"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Hubungi Kami",
+    "terms": "Syarat",
+    "privacy": "Privasi"
+  },
+  "home": {
+    "welcome": "Selamat datang kembali, {{name}}!",
+    "feedSubtitle": "Ini adalah kawasan suapan yang dilindungi.",
+    "logout": "Log Keluar",
+    "feedPlaceholder": "Kandungan suapan akan muncul di sini..."
+  },
+  "auth": {
+    "login": {
+      "title": "Selamat datang kembali",
+      "subtitle": "Log masuk ke akaun Femo anda",
+      "emailLabel": "Emel",
+      "passwordLabel": "Kata Laluan",
+      "forgotPassword": "Lupa kata laluan?",
+      "submit": "Log Masuk",
+      "alreadyHaveAccount": "Sudah mempunyai akaun?",
+      "dontHaveAccount": "Belum mempunyai akaun?",
+      "signUp": "Daftar",
+      "errors": {
+        "invalid": "Emel atau kata laluan tidak sah",
+        "failed": "Gagal log masuk. Sila cuba lagi."
+      }
+    },
+    "forgotPassword": {
+      "title": "Set Semula Kata Laluan",
+      "subtitle": "Masukkan emel anda untuk menerima pautan bantuan",
+      "submit": "Hantar Pautan",
+      "backToLogin": "Kembali ke Log Masuk",
+      "successTitle": "Semak Emel Anda",
+      "successSubtitle": "Kami telah menghantar pautan set semula ke:",
+      "errors": {
+        "failed": "Gagal menghantar pautan."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Selamat Datang ke Femo",
+        "subtitle": "Mari kenali anda dengan lebih baik",
+        "firstName": "Nama Pertama",
+        "lastName": "Nama Keluarga",
+        "birthday": "Tarikh Lahir",
+        "gender": "Jantina",
+        "next": "Seterusnya",
+        "placeholder": {
+          "firstName": "Ahmad",
+          "lastName": "Kasim"
+        },
+        "errors": {
+          "firstName": "Nama pertama diperlukan",
+          "lastName": "Nama keluarga diperlukan",
+          "birthday": "Tarikh lahir diperlukan",
+          "gender": "Sila pilih jantina anda",
+          "age": "Umur mestilah sekurang-kurangnya 13 tahun"
+        }
+      },
+      "credentials": {
+        "title": "Cipta Akaun Anda",
+        "subtitle": "Lindungi akaun Femo anda hari ini",
+        "email": "Emel",
+        "password": "Kata Laluan",
+        "confirmPassword": "Sahkan Kata Laluan",
+        "country": "Negara",
+        "terms": "Saya menerima <link>Syarat & Ketentuan</link>",
+        "privacy": "Saya menerima <link>Dasar Privasi</link>",
+        "back": "Kembali",
+        "submit": "Cipta Akaun",
+        "selectCountry": "Pilih negara anda",
+        "searchCountries": "Cari negara...",
+        "noCountries": "Tiada negara ditemui",
+        "errors": {
+          "emailRequired": "Emel diperlukan",
+          "emailInvalid": "Format emel tidak sah",
+          "passwordRequired": "Kata laluan diperlukan",
+          "passwordShort": "Kata laluan minimum 8 aksara",
+          "passwordComplex": "Perlu huruf besar, kecil, nombor, dan simbol",
+          "confirmRequired": "Sila sahkan kata laluan anda",
+          "match": "Kata laluan tidak sepadan",
+          "country": "Sila pilih negara anda",
+          "terms": "Anda mesti menerima Syarat & Ketentuan",
+          "privacy": "Anda mesti menerima Dasar Privasi",
+          "failed": "Pendaftaran gagal. Sila cuba lagi."
+        }
+      },
+      "verification": {
+        "title": "Semak emel",
+        "subtitle": "Kami telah menghantar kod 6-digit ke:",
+        "inputLabel": "Masukkan kod pengesahan",
+        "resendTimer": "Hantar semula dalam {{timer}}s",
+        "resendButton": "Hantar Semula Kod",
+        "success": "Disahkan!",
+        "redirecting": "Mengarahkan ke akaun anda...",
+        "errors": {
+          "invalid": "Kod pengesahan tidak sah",
+          "resendFailed": "Gagal menghantar semula kod"
+        }
+      }
+    },
+    "gender": {
+      "male": "Lelaki",
+      "female": "Perempuan",
+      "nonBinary": "Bukan binari",
+      "other": "Lain-lain",
+      "preferNotToSay": "Lebih suka tidak memberitahu"
+    },
+    "password": {
+      "strength": "Tahap Kekuatan",
+      "scores": {
+        "tooWeak": "Sangat Lemah",
+        "weak": "Lemah",
+        "fair": "Sederhana",
+        "good": "Baik",
+        "strong": "Kuat",
+        "veryStrong": "Sangat Kuat"
+      },
+      "feedback": {
+        "tooShort": "Minimum 8 aksara",
+        "addUppercase": "Tambah huruf besar",
+        "addLowercase": "Tambah huruf kecil",
+        "addNumber": "Tambah nombor",
+        "addSpecial": "Tambah aksara khas"
+      }
+    }
+  },
+  "selector": {
+    "title": "Pilih Bahasa",
+    "searchPlaceholder": "Cari bahasa...",
+    "popular": "Bahasa Popular",
+    "all": "Semua Bahasa",
+    "noResults": "Tiada bahasa ditemui padanan dengan \"{{query}}\"",
+    "results": "Keputusan ({{count}})",
+    "footer": "Pertukaran bahasa berkuat kuasa serta-merta",
+    "close": "Tutup"
+  },
+  "legal": {
+    "termsTitle": "Syarat & Ketentuan",
+    "privacyTitle": "Dasar Privasi",
+    "lastUpdated": "Kemas kini terakhir",
+    "errorLoading": "Gagal memuatkan dokumen undang-undang."
+  }
+}

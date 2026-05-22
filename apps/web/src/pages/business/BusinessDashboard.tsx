@@ -18,6 +18,8 @@ import {
     CreditCard
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
+import { BusinessProducts } from './BusinessProducts';
+import { BusinessOrders } from './BusinessOrders';
 
 // --- MOCK DATA ---
 const SALES_STATS = [
@@ -280,8 +282,22 @@ export const BusinessDashboard = () => {
                         </div>
                     )}
 
+                    {/* PRODUCTS TAB */}
+                    {activeTab === 'products' && (
+                        <div className="max-w-7xl mx-auto">
+                            <BusinessProducts />
+                        </div>
+                    )}
+
+                    {/* ORDERS TAB */}
+                    {activeTab === 'orders' && (
+                        <div className="max-w-7xl mx-auto">
+                            <BusinessOrders />
+                        </div>
+                    )}
+
                     {/* Placeholder for other tabs */}
-                    {(activeTab !== 'overview' && activeTab !== 'finance') && (
+                    {(activeTab !== 'overview' && activeTab !== 'finance' && activeTab !== 'products' && activeTab !== 'orders') && (
                         <div className="flex flex-col items-center justify-center h-full text-gray-500">
                             <Megaphone size={48} className="mb-4 text-indigo-200" />
                             <p>Business Module <strong>{activeTab}</strong> is under development.</p>

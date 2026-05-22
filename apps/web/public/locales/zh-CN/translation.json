@@ -1,0 +1,184 @@
+{
+  "welcome": {
+    "title": "欢迎来到 Femo Space",
+    "tagline": "连接、创造、赚取 – 新一代社交体验",
+    "login": "登录",
+    "register": "注册",
+    "switchToEnglish": "切换到英文"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "联系我们",
+    "terms": "条款",
+    "privacy": "隐私政策"
+  },
+  "home": {
+    "welcome": "欢迎回来，{{name}}！",
+    "feedSubtitle": "这是您的受保护动态区域。",
+    "logout": "退出登录",
+    "feedPlaceholder": "动态内容将在此处显示..."
+  },
+  "auth": {
+    "login": {
+      "title": "欢迎来到 FEMO SPACE",
+      "subtitle": "立即登录您的 Femo 账号",
+      "identifierLabel": "Femo ID 或 Femo Mail",
+      "identifierPlaceholder": "请输入您的 Femo ID 或 Femo Mail",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "请输入您的密码",
+      "forgotPassword": "忘记密码？",
+      "submit": "登录",
+      "submitting": "登录中...",
+      "alreadyHaveAccount": "已有账号？",
+      "dontHaveAccount": "没有账号？",
+      "signUp": "创建账号",
+      "securityInfo": {
+        "encrypted": "您的数据已加密且安全",
+        "rateLimited": "具有暴力破解保护的速率限制登录"
+      },
+      "errors": {
+        "identifierRequired": "请输入 Femo ID 或 Femo Mail",
+        "identifierInvalid": "请输入有效的 Femo ID（仅限数字）或 Femo Mail（邮箱格式）",
+        "passwordRequired": "请输入密码",
+        "invalid": "Femo ID/Mail 或密码错误",
+        "unverified": "您的电子邮件未经验证。请检查您的收件箱。",
+        "locked": "由于多次尝试失败，账号已暂时锁定。",
+        "blocked": "您的账号已被封锁。请联系客服。",
+        "failed": "登录失败，请重试。"
+      }
+    },
+    "forgotPassword": {
+      "title": "重置密码",
+      "subtitle": "输入您的电子邮件以接收重置链接",
+      "submit": "发送重置链接",
+      "backToLogin": "返回登录",
+      "successTitle": "查收电子邮件",
+      "successSubtitle": "我们已发送密码重置链接至",
+      "errors": {
+        "failed": "发送重置链接失败，请重试。"
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "欢迎来到 Femo",
+        "subtitle": "让我们更好地了解您",
+        "firstName": "名",
+        "lastName": "姓",
+        "birthday": "出生日期",
+        "gender": "性别",
+        "next": "下一步",
+        "stepInfo": "第 {{step}} 步（共 3 步）",
+        "idInfo": "自动生成，只读，永久",
+        "placeholder": {
+          "firstName": "小明",
+          "lastName": "张"
+        },
+        "errors": {
+          "firstName": "请输入名字",
+          "lastName": "请输入姓氏",
+          "birthday": "请输入出生日期",
+          "gender": "请选择您的性别",
+          "age": "您必须年满 13 岁"
+        }
+      },
+      "credentials": {
+        "title": "创建您的账号",
+        "subtitle": "立即保护您的 Femo 账号",
+        "email": "电子邮件",
+        "password": "密码",
+        "confirmPassword": "确认密码",
+        "phoneNumber": "电话号码（可选）",
+        "country": "国家/地区",
+        "terms": "我接受 <link>服务条款</link>",
+        "privacy": "我接受 <link>隐私政策</link>",
+        "back": "返回",
+        "submit": "创建账号",
+        "selectCountry": "选择您的国家",
+        "searchCountries": "搜索国家...",
+        "noCountries": "未找到相关国家",
+        "termsConfirmationTitle": "注册确认",
+        "termsConfirmationText": "勾选上方内容即表示您确认完全接受平台的法律规则。",
+        "errors": {
+          "emailRequired": "必须填写电子邮件",
+          "emailInvalid": "电子邮件格式无效",
+          "emailTaken": "该电子邮件已被占用",
+          "passwordRequired": "必须填写密码",
+          "passwordShort": "密码长度至少为 8 位",
+          "passwordComplex": "密码必须包含大小写字母、数字和特殊字符",
+          "confirmRequired": "请确认您的密码",
+          "match": "两次输入的密码不匹配",
+          "country": "请选择您的国家",
+          "terms": "您必须接受服务条款",
+          "privacy": "您必须接受隐私政策",
+          "failed": "注册失败，请稍后重试。"
+        }
+      },
+      "verification": {
+        "title": "查收电子邮件",
+        "subtitle": "我们已发送一个 6 位验证码至",
+        "inputLabel": "输入验证码",
+        "resendTimer": "{{timer}} 秒后重新发送",
+        "resendButton": "重新发送验证码",
+        "success": "验证成功！",
+        "redirecting": "正在为您跳转至账号...",
+        "errors": {
+          "invalid": "验证码无效",
+          "resendFailed": "无法重新发送验证码"
+        },
+        "verifyButton": "验证验证码"
+      }
+    },
+    "common": {
+      "loading": "加载中...",
+      "loadingLong": "正在注册...",
+      "checking": "正在检查可用性...",
+      "available": "可用",
+      "suggestions": "建议",
+      "accountSummary": "账户摘要：",
+      "sending": "正在发送代码...",
+      "verifying": "正在验证...",
+      "resetting": "正在重置..."
+    },
+    "gender": {
+      "male": "男",
+      "female": "女",
+      "nonBinary": "非二元性别",
+      "other": "其他",
+      "preferNotToSay": "不愿透露"
+    },
+    "password": {
+      "strength": "强度",
+      "scores": {
+        "tooWeak": "太弱",
+        "weak": "弱",
+        "fair": "一般",
+        "good": "好",
+        "strong": "强",
+        "veryStrong": "非常强"
+      },
+      "feedback": {
+        "tooShort": "至少 8 个字符",
+        "addUppercase": "添加大写字母",
+        "addLowercase": "添加小写字母",
+        "addNumber": "添加数字",
+        "addSpecial": "添加特殊字符"
+      }
+    }
+  },
+  "selector": {
+    "title": "选择语言",
+    "searchPlaceholder": "搜索语言...",
+    "popular": "热门语言",
+    "all": "所有语言",
+    "noResults": "未找到匹配 \"{{query}}\" 的语言",
+    "results": "结果 ({{count}})",
+    "footer": "语言更改将立即生效",
+    "close": "关闭"
+  },
+  "legal": {
+    "termsTitle": "服务条款",
+    "privacyTitle": "隐私政策",
+    "lastUpdated": "最后更新",
+    "errorLoading": "无法加载法律文件。"
+  }
+}

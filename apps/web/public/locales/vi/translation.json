@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "title": "Chào mừng đến với Femo Space",
+    "tagline": "Kết nối, Sáng tạo, Kiếm tiền – Trải nghiệm xã hội thế hệ mới",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "switchToEnglish": "Chuyển sang tiếng Anh"
+  },
+  "footer": {
+    "copyright": "© 2026 SS Corporate Inc",
+    "contact": "Liên hệ",
+    "terms": "Điều khoản",
+    "privacy": "Bảo mật"
+  },
+  "home": {
+    "welcome": "Chào mừng trở lại, {{name}}!",
+    "feedSubtitle": "Đây là khu vực trang chủ được bảo vệ của bạn.",
+    "logout": "Đăng xuất",
+    "feedPlaceholder": "Nội dung bảng tin sẽ xuất hiện ở đây..."
+  },
+  "auth": {
+    "login": {
+      "title": "Chào mừng trở lại",
+      "subtitle": "Đăng nhập vào tài khoản Femo của bạn",
+      "emailLabel": "Email",
+      "passwordLabel": "Mật khẩu",
+      "forgotPassword": "Quên mật khẩu?",
+      "submit": "Đăng nhập",
+      "alreadyHaveAccount": "Đã có tài khoản?",
+      "dontHaveAccount": "Chưa có tài khoản?",
+      "signUp": "Đăng ký",
+      "errors": {
+        "invalid": "Email hoặc mật khẩu không hợp lệ",
+        "failed": "Đăng nhập thất bại. Vui lòng thử lại."
+      }
+    },
+    "forgotPassword": {
+      "title": "Đặt lại mật khẩu",
+      "subtitle": "Nhập email của bạn để nhận liên kết đặt lại",
+      "submit": "Gửi liên kết",
+      "backToLogin": "Quay lại đăng nhập",
+      "successTitle": "Kiểm tra Email",
+      "successSubtitle": "Chúng tôi đã gửi liên kết đặt lại mật khẩu đến:",
+      "errors": {
+        "failed": "Không thể gửi liên kết."
+      }
+    },
+    "register": {
+      "identity": {
+        "title": "Chào mừng đến với Femo",
+        "subtitle": "Hãy để chúng tôi hiểu bạn hơn",
+        "firstName": "Tên",
+        "lastName": "Họ",
+        "birthday": "Ngày sinh",
+        "gender": "Giới tính",
+        "next": "Tiếp theo",
+        "placeholder": {
+          "firstName": "An",
+          "lastName": "Nguyễn"
+        },
+        "errors": {
+          "firstName": "Tên là bắt buộc",
+          "lastName": "Họ là bắt buộc",
+          "birthday": "Ngày sinh là bắt buộc",
+          "gender": "Vui lòng chọn giới tính",
+          "age": "Bạn phải ít nhất 13 tuổi"
+        }
+      },
+      "credentials": {
+        "title": "Tạo tài khoản",
+        "subtitle": "Bảo mật tài khoản Femo của bạn ngay hôm nay",
+        "email": "Email",
+        "password": "Mật khẩu",
+        "confirmPassword": "Xác nhận mật khẩu",
+        "country": "Quốc gia",
+        "terms": "Tôi chấp nhận <link>Điều khoản sử dụng</link>",
+        "privacy": "Tôi chấp nhận <link>Chính sách bảo mật</link>",
+        "back": "Quay lại",
+        "submit": "Tạo tài khoản",
+        "selectCountry": "Chọn quốc gia của bạn",
+        "searchCountries": "Tìm kiếm quốc gia...",
+        "noCountries": "Không tìm thấy quốc gia",
+        "errors": {
+          "emailRequired": "Email là bắt buộc",
+          "emailInvalid": "Định dạng email không hợp lệ",
+          "passwordRequired": "Mật khẩu là bắt buộc",
+          "passwordShort": "Mật khẩu phải có ít nhất 8 ký tự",
+          "passwordComplex": "Cần có chữ hoa, chữ thường, số và ký tự đặc biệt",
+          "confirmRequired": "Vui lòng xác nhận mật khẩu",
+          "match": "Mật khẩu không khớp",
+          "country": "Vui lòng chọn quốc gia",
+          "terms": "Bạn phải chấp nhận Điều khoản sử dụng",
+          "privacy": "Bạn phải chấp nhận Chính sách bảo mật",
+          "failed": "Đăng ký thất bại. Vui lòng thử lại."
+        }
+      },
+      "verification": {
+        "title": "Kiểm tra email",
+        "subtitle": "Chúng tôi đã gửi mã 6 số đến:",
+        "inputLabel": "Nhập mã xác nhận",
+        "resendTimer": "Gửi lại sau {{timer}}s",
+        "resendButton": "Gửi lại mã",
+        "success": "Đã xác minh!",
+        "redirecting": "Đang chuyển đến tài khoản của bạn...",
+        "errors": {
+          "invalid": "Mã xác nhận không hợp lệ",
+          "resendFailed": "Không thể gửi lại mã"
+        }
+      }
+    },
+    "gender": {
+      "male": "Nam",
+      "female": "Nữ",
+      "nonBinary": "Phi nhị nguyên giới",
+      "other": "Khác",
+      "preferNotToSay": "Không muốn tiết lộ"
+    },
+    "password": {
+      "strength": "Độ mạnh",
+      "scores": {
+        "tooWeak": "Rất yếu",
+        "weak": "Yếu",
+        "fair": "Trung bình",
+        "good": "Tốt",
+        "strong": "Mạnh",
+        "veryStrong": "Rất mạnh"
+      },
+      "feedback": {
+        "tooShort": "Ít nhất 8 ký tự",
+        "addUppercase": "Thêm chữ hoa",
+        "addLowercase": "Thêm chữ thường",
+        "addNumber": "Thêm số",
+        "addSpecial": "Thêm ký tự đặc biệt"
+      }
+    }
+  },
+  "selector": {
+    "title": "Chọn ngôn ngữ",
+    "searchPlaceholder": "Tìm kiếm ngôn ngữ...",
+    "popular": "Ngôn ngữ phổ biến",
+    "all": "Tất cả ngôn ngữ",
+    "noResults": "Không tìm thấy ngôn ngữ nào khớp với \"{{query}}\"",
+    "results": "Kết quả ({{count}})",
+    "footer": "Thay đổi ngôn ngữ có hiệu lực ngay lập tức",
+    "close": "Đóng"
+  },
+  "legal": {
+    "termsTitle": "Điều khoản sử dụng",
+    "privacyTitle": "Chính sách bảo mật",
+    "lastUpdated": "Cập nhật lần cuối",
+    "errorLoading": "Không thể tải tài liệu pháp lý."
+  }
+}

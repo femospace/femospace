@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import {
     Search as SearchIcon,
     User,
@@ -33,6 +34,7 @@ interface SearchResults {
 }
 
 export const Search = () => {
+    const { t } = useTranslation();
     const [searchParams, setSearchParams] = useSearchParams();
     const query = searchParams.get('q') || '';
     const navigate = useNavigate();
@@ -77,12 +79,12 @@ export const Search = () => {
     }, [query, activeTab]);
 
     const tabs = [
-        { id: 'top', label: 'Top', icon: <SearchIcon size={14} /> },
-        { id: 'users', label: 'Users', icon: <User size={14} /> },
-        { id: 'videos', label: 'Videos', icon: <Play size={14} /> },
-        { id: 'reels', label: 'Reels', icon: <Flame size={14} /> },
-        { id: 'posts', label: 'Posts', icon: <FileText size={14} /> },
-        { id: 'pages', label: 'Pages', icon: <Users size={14} /> }
+        { id: 'top', label: t('search.tabs.top', 'Top'), icon: <SearchIcon size={14} /> },
+        { id: 'users', label: t('search.tabs.users', 'Users'), icon: <User size={14} /> },
+        { id: 'videos', label: t('search.tabs.videos', 'Videos'), icon: <Play size={14} /> },
+        { id: 'reels', label: t('search.tabs.reels', 'Reels'), icon: <Flame size={14} /> },
+        { id: 'posts', label: t('search.tabs.posts', 'Posts'), icon: <FileText size={14} /> },
+        { id: 'pages', label: t('search.tabs.pages', 'Pages'), icon: <Users size={14} /> }
     ];
 
     return (
@@ -100,7 +102,7 @@ export const Search = () => {
                             type="text"
                             value={query}
                             onChange={(e) => setSearchParams({ q: e.target.value })}
-                            placeholder="Search Femo Space..."
+                            placeholder={t('search.placeholder', 'Search Femo Space...')}
                             className="w-full bg-gray-100 dark:bg-gray-800/50 border-none rounded-2xl pl-12 pr-28 py-3 focus:ring-2 focus:ring-blue-500/50 dark:text-white transition-all font-medium"
                         />
                         <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
@@ -149,20 +151,20 @@ export const Search = () => {
                         {/* Trending Section */}
                         <div className="space-y-6">
                             <h2 className="text-xl font-black dark:text-white flex items-center gap-2">
-                                <TrendingUp className="text-red-500" size={22} /> Trending Now
+                                <TrendingUp className="text-red-500" size={22} /> {t('search.trendingNow', 'Trending Now')}
                             </h2>
                             <div className="flex flex-col gap-2">
-                                {trending.map((t, i) => (
+                                {trending.map((t_item, i) => (
                                     <div
                                         key={i}
-                                        onClick={() => setSearchParams({ q: t.query })}
+                                        onClick={() => setSearchParams({ q: t_item.query })}
                                         className="p-4 bg-gray-50 dark:bg-gray-800/40 rounded-2xl hover:bg-blue-50 dark:hover:bg-blue-900/10 cursor-pointer transition-all flex justify-between items-center group"
                                     >
                                         <div className="flex items-center gap-4">
                                             <span className="text-2xl font-black text-gray-200 dark:text-gray-700 italic group-hover:text-blue-500 transition-colors">#{i + 1}</span>
                                             <div>
-                                                <p className="font-bold dark:text-white">{t.query}</p>
-                                                <p className="text-[10px] text-gray-400 uppercase tracking-wider font-bold">{t.status}</p>
+                                                <p className="font-bold dark:text-white">{t_item.query}</p>
+                                                <p className="text-[10px] text-gray-400 uppercase tracking-wider font-bold">{t_item.status}</p>
                                             </div>
                                         </div>
                                         <ChevronRight size={18} className="text-gray-300 group-hover:text-blue-500" />
@@ -175,9 +177,9 @@ export const Search = () => {
                         <div className="space-y-6">
                             <div className="flex justify-between items-center">
                                 <h2 className="text-xl font-black dark:text-white flex items-center gap-2">
-                                    <History className="text-blue-500" size={22} /> Recent
+                                    <History className="text-blue-500" size={22} /> {t('search.recent', 'Recent')}
                                 </h2>
-                                <button className="text-xs font-bold text-blue-500 hover:underline">Clear all</button>
+                                <button className="text-xs font-bold text-blue-500 hover:underline">{t('search.clearAll', 'Clear all')}</button>
                             </div>
                             <div className="flex flex-wrap gap-2">
                                 {['Next.js Guide', 'Tokyo Travel', 'AI 2026', 'Femo Space App'].map(s => (
@@ -222,7 +224,7 @@ export const Search = () => {
                                     {/* Users Section */}
                                     {(activeTab === 'top' || activeTab === 'users') && results.users.length > 0 && (
                                         <div className="space-y-4">
-                                            <h3 className="text-lg font-black dark:text-white px-2">People</h3>
+                                            <h3 className="text-lg font-black dark:text-white px-2">{t('search.sections.people', 'People')}</h3>
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                 {results.users.map(u => (
                                                     <div key={u.id} className="p-4 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl flex items-center gap-4 hover:shadow-lg transition-all group">
@@ -238,7 +240,7 @@ export const Search = () => {
                                                             </div>
                                                             <p className="text-xs text-gray-500 truncate">{u.handle}</p>
                                                         </div>
-                                                        <button className="px-4 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl transition-all">Follow</button>
+                                                        <button className="px-4 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl transition-all">{t('common.follow', 'Follow')}</button>
                                                     </div>
                                                 ))}
                                             </div>
@@ -248,7 +250,7 @@ export const Search = () => {
                                     {/* Videos Section */}
                                     {(activeTab === 'top' || activeTab === 'videos') && results.videos.length > 0 && (
                                         <div className="space-y-4">
-                                            <h3 className="text-lg font-black dark:text-white px-2">Long-form Videos</h3>
+                                            <h3 className="text-lg font-black dark:text-white px-2">{t('search.sections.videos', 'Long-form Videos')}</h3>
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                 {results.videos.map(v => (
                                                     <div key={v._id} className="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden group cursor-pointer border border-transparent hover:border-blue-500 transition-all">
@@ -260,7 +262,7 @@ export const Search = () => {
                                                         </div>
                                                         <div className="p-4">
                                                             <h4 className="font-bold dark:text-white truncate mb-1">{v.title}</h4>
-                                                            <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider">{v.metrics.views} views</p>
+                                                            <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider">{v.metrics.views} {t('video.views', 'views')}</p>
                                                         </div>
                                                     </div>
                                                 ))}
@@ -272,7 +274,7 @@ export const Search = () => {
                                     {(activeTab === 'top' || activeTab === 'reels') && results.reels.length > 0 && (
                                         <div className="space-y-4">
                                             <h3 className="text-lg font-black dark:text-white px-2 flex items-center gap-2">
-                                                Reels <Flame size={18} className="text-orange-500" />
+                                                {t('search.sections.reels', 'Reels')} <Flame size={18} className="text-orange-500" />
                                             </h3>
                                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                                                 {results.reels.map(r => (
@@ -280,7 +282,7 @@ export const Search = () => {
                                                         <img src={r.thumbnailUrl} className="w-full h-full object-cover" />
                                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
                                                             <h4 className="text-white text-xs font-bold truncate">{r.title}</h4>
-                                                            <p className="text-white/60 text-[10px] font-bold">{r.metrics.likes} likes</p>
+                                                            <p className="text-white/60 text-[10px] font-bold">{r.metrics.likes} {t('common.likes', 'likes')}</p>
                                                         </div>
                                                     </div>
                                                 ))}
@@ -289,9 +291,9 @@ export const Search = () => {
                                     )}
 
                                     {/* Pages / Groups / Channels Section */}
-                                    {(activeTab === 'top' || activeTab === 'pages') && results.posts.length > 0 && (
+                                    {(activeTab === 'top' || activeTab === 'pages') && (
                                         <div className="space-y-4">
-                                            <h3 className="text-lg font-black dark:text-white px-2">Pages & Channels</h3>
+                                            <h3 className="text-lg font-black dark:text-white px-2">{t('search.sections.pages', 'Pages & Channels')}</h3>
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                 {[
                                                     { id: 'p1', name: 'Femo Official', avatar: '/icons/logo_512.png', type: 'Page', isCreatorCertified: true },
@@ -307,9 +309,9 @@ export const Search = () => {
                                                                 <h4 className="font-bold dark:text-white truncate">{p.name}</h4>
                                                                 <span className="text-[10px] font-bold bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded text-gray-500 uppercase">{p.type}</span>
                                                             </div>
-                                                            <p className="text-xs text-gray-500 truncate">Official {p.type} for the Femo community.</p>
+                                                            <p className="text-xs text-gray-500 truncate">{t('search.officialSub', { type: p.type, defaultValue: `Official ${p.type} for the Femo community.` })}</p>
                                                         </div>
-                                                        <button className="px-4 py-1.5 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-xs font-bold rounded-xl transition-all">Join</button>
+                                                        <button className="px-4 py-1.5 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-xs font-bold rounded-xl transition-all">{t('common.join', 'Join')}</button>
                                                     </div>
                                                 ))}
                                             </div>
@@ -322,8 +324,8 @@ export const Search = () => {
                                             <div className="w-20 h-20 bg-gray-100 dark:bg-gray-800 rounded-3xl flex items-center justify-center mb-6">
                                                 <SearchIcon size={40} className="text-gray-400" />
                                             </div>
-                                            <h3 className="text-xl font-bold dark:text-white mb-2">No results for "{query}"</h3>
-                                            <p className="text-sm text-gray-500 dark:text-gray-400">Try checking your spelling or using more general keywords.</p>
+                                            <h3 className="text-xl font-bold dark:text-white mb-2">{t('search.noResults', { query, defaultValue: `No results for "${query}"` })}</h3>
+                                            <p className="text-sm text-gray-500 dark:text-gray-400">{t('search.noResultsSubtitle', 'Try checking your spelling or using more general keywords.')}</p>
                                         </div>
                                     )}
                                 </motion.div>
