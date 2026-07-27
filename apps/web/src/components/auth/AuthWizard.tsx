@@ -7,6 +7,7 @@ import { VerificationStep } from './steps/VerificationStep';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../contexts/AuthContext';
+import api from '../../lib/api';
 
 interface AuthWizardProps {
     isOpen: boolean;
@@ -66,7 +67,10 @@ export const AuthWizard = ({ isOpen, onClose, onSwitchMode }: AuthWizardProps) =
                 privacyAccepted: formData.privacyAccepted,
             });
 
-            // Move to verification step (Simulation for now, or actual if implemented)
+            // Generate OTP
+            await api.post('/auth/otp/generate', { email: formData.email });
+
+            // Move to verification step
             setCurrentStep(3);
         } catch (err: any) {
             setError(err.response?.data?.message || t('auth.register.credentials.errors.failed'));
@@ -75,10 +79,8 @@ export const AuthWizard = ({ isOpen, onClose, onSwitchMode }: AuthWizardProps) =
         }
     };
 
-    const handleVerify = async () => {
-        // TODO: Implement actual OTP verification on backend if required
-        // Since register already logged us in (returned tokens), we can just proceed
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+    const handleVerify = async (code: string) => {
+        await api.post('/auth/otp/verify', { email: formData.email, code });
 
         setTimeout(() => {
             onClose();
@@ -87,8 +89,7 @@ export const AuthWizard = ({ isOpen, onClose, onSwitchMode }: AuthWizardProps) =
     };
 
     const handleResendOTP = async () => {
-        // TODO: Implement resend OTP endpoint
-        await new Promise((resolve) => setTimeout(resolve, 500));
+        await api.post('/auth/otp/generate', { email: formData.email });
     };
 
     const handleClose = () => {

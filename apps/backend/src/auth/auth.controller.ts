@@ -143,4 +143,16 @@ export class AuthController {
         await this.authService.forgotPassword(email);
         return { message: 'If an account exists with this email, a reset link has been sent.' };
     }
+
+    @Post('otp/generate')
+    @HttpCode(HttpStatus.OK)
+    async generateOTP(@Body('email') email: string) {
+        return this.authService.generateOTP(email);
+    }
+
+    @Post('otp/verify')
+    @HttpCode(HttpStatus.OK)
+    async verifyOTP(@Body('email') email: string, @Body('code') code: string) {
+        return this.authService.verifyOTP(email, code);
+    }
 }

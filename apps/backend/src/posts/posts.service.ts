@@ -17,8 +17,8 @@ export class PostsService {
     ) { }
 
     async create(userId: string, createPostDto: CreatePostDto): Promise<PostDocument> {
-        // Authorization check
-        if (createPostDto.ownerType === 'user' && createPostDto.ownerId !== userId) {
+        // Authorization check: ensure the user is posting as themselves (string compare)
+        if (createPostDto.ownerType === 'user' && createPostDto.ownerId.toString() !== userId.toString()) {
             throw new ForbiddenException('Cannot post as another user');
         }
 
@@ -35,7 +35,8 @@ export class PostsService {
 
         const createdPost = new this.postModel({
             ...createPostDto,
-            ownerId: new Types.ObjectId(createPostDto.ownerId),
+            // Always use the authenticated userId as the ownerId for user posts
+            ownerId: new Types.ObjectId(userId),
             contentSafetyLevel: safetyLevel,
         });
 

@@ -20,6 +20,52 @@ export class AuthService {
         private auditService: AuditService,
     ) { }
 
+    private otpStore = new Map<string, { code: string; expires: Date; attempts: number }>();
+
+    async generateOTP(email: string): Promise<{ success: boolean; message: string; code?: string }> {
+        const code = Math.floor(100000 + Math.random() * 900000).toString(); // 6 digits
+        const expires = new Date(Date.now() + 10 * 60 * 1000); // 10 mins
+
+        this.otpStore.set(email, { code, expires, attempts: 0 });
+        
+        // In a real application, send this code via email.
+        console.log(`[DEV ONLY] OTP for ${email} is ${code}`);
+
+        return { success: true, message: 'OTP generated successfully', code };
+    }
+
+    async verifyOTP(email: string, code: string): Promise<{ success: boolean; message: string }> {
+        const record = this.otpStore.get(email);
+        
+        if (!record) {
+            throw new BadRequestException('Invalid or expired OTP');
+        }
+
+        if (new Date() > record.expires) {
+            this.otpStore.delete(email);
+            throw new BadRequestException('OTP has expired');
+        }
+
+        if (record.code !== code) {
+            record.attempts += 1;
+            if (record.attempts >= 5) {
+                this.otpStore.delete(email);
+                throw new BadRequestException('Too many incorrect attempts. Please request a new OTP.');
+            }
+            throw new BadRequestException('Incorrect OTP');
+        }
+
+        // Mark user as email verified
+        const user = await this.usersService.findByEmail(email);
+        if (user) {
+            await this.usersService.update(user._id.toString(), { isEmailVerified: true } as any);
+        }
+
+        this.otpStore.delete(email);
+
+        return { success: true, message: 'Email verified successfully' };
+    }
+
     async register(createUserDto: CreateUserDto) {
         const hash = await argon2.hash(createUserDto.password);
         const user = await this.usersService.create(createUserDto, hash);

@@ -16,6 +16,7 @@ export interface AdminUser {
     role: AdminRoleType;
     department?: string;
     notes?: string;
+    language?: string;
 }
 
 const SUPER_ADMIN_SEED: AdminUser & { secretKey: string } = {
@@ -109,6 +110,18 @@ class AdminAuthService {
 
     getCurrentUser(): AdminUser | null {
         return this.currentUser;
+    }
+
+    updateUserLanguagePreference(languageCode: string) {
+        if (this.currentUser) {
+            this.currentUser.language = languageCode;
+            const index = this.employees.findIndex(e => e.id === this.currentUser!.id);
+            if (index !== -1) {
+                this.employees[index].language = languageCode;
+                this.save();
+            }
+            localStorage.setItem('admin_session', JSON.stringify(this.currentUser));
+        }
     }
 
     registerEmployee(data: Omit<AdminUser, 'id'> & { secretKey: string }, initiator: AdminUser): AdminUser {

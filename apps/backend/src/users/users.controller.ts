@@ -14,6 +14,7 @@ import {
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import { UpdateProfileDto } from './dto/update-profile.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { extname } from 'path';
@@ -24,7 +25,7 @@ export class UsersController {
 
     @Put('update')
     @UseGuards(JwtAuthGuard)
-    async updateProfile(@Req() req: any, @Body() updateData: any) {
+    async updateProfile(@Req() req: any, @Body() updateData: UpdateProfileDto) {
         const userId = req.user.userId || req.user.sub || req.user.id;
         const user = await this.usersService.update(userId, updateData);
         if (!user) throw new NotFoundException('User not found');
@@ -33,7 +34,7 @@ export class UsersController {
 
     @Put('me/profile')
     @UseGuards(JwtAuthGuard)
-    async updateMyProfile(@Req() req: any, @Body() updateData: any) {
+    async updateMyProfile(@Req() req: any, @Body() updateData: UpdateProfileDto) {
         const userId = req.user.userId || req.user.sub || req.user.id;
         const user = await this.usersService.update(userId, updateData);
         if (!user) throw new NotFoundException('User not found');
@@ -100,7 +101,7 @@ export class UsersController {
     }
     @Patch('me/profile')
     @UseGuards(JwtAuthGuard)
-    async patchMyProfile(@Req() req: any, @Body() updateData: any) {
+    async patchMyProfile(@Req() req: any, @Body() updateData: UpdateProfileDto) {
         const userId = req.user.userId || req.user.sub || req.user.id;
         const user = await this.usersService.update(userId, updateData);
         if (!user) throw new NotFoundException('User not found');

@@ -95,7 +95,26 @@ export const PostComposer: React.FC<PostComposerProps> = ({ onSuccess }) => {
                 status: 'published'
             };
 
-            await api.post('/posts', payload);
+            const postResponse = await api.post('/posts', payload);
+
+            // Auto-register videos to the Videos tab
+            const videoItems = uploadedMedia.filter(m => m.type === 'video');
+            if (videoItems.length > 0) {
+                for (const vid of videoItems) {
+                    try {
+                        await api.post('/videos', {
+                            title: postContent ? postContent.slice(0, 80) : 'Video Post',
+                            description: postContent || undefined,
+                            url: vid.url,
+                            type: 'video',
+                            visibility: visibility === 'public' ? 'public' : 'private',
+                        });
+                    } catch (videoErr) {
+                        // Non-fatal: post still succeeded
+                        console.warn('Could not register video to Videos tab:', videoErr);
+                    }
+                }
+            }
 
             // Clear state
             setContent('');

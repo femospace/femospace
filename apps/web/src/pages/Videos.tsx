@@ -230,23 +230,48 @@ export const Videos = () => {
 
 const ReelItem = ({ video, isMuted, onToggleMute, onLike, isLiked }: any) => {
     const { t } = useTranslation();
-    const [playing, setPlaying] = useState(true);
+    const [playing, setPlaying] = useState(false);
     const videoRef = useRef<HTMLVideoElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
 
+    // Autoplay when reel is visible in viewport
     useEffect(() => {
-        if (playing) videoRef.current?.play();
-        else videoRef.current?.pause();
-    }, [playing]);
+        const el = containerRef.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    videoRef.current?.play().then(() => setPlaying(true)).catch(() => {});
+                } else {
+                    videoRef.current?.pause();
+                    setPlaying(false);
+                }
+            },
+            { threshold: 0.6 }
+        );
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
+
+    const togglePlay = () => {
+        if (!videoRef.current) return;
+        if (playing) {
+            videoRef.current.pause();
+            setPlaying(false);
+        } else {
+            videoRef.current.play().then(() => setPlaying(true)).catch(() => {});
+        }
+    };
 
     return (
-        <div className="h-full w-full snap-start relative bg-black flex items-center justify-center">
+        <div ref={containerRef} className="h-full w-full snap-start relative bg-black flex items-center justify-center">
             <video
                 ref={videoRef}
                 src={video.videoUrl}
                 className="h-full w-full object-contain"
                 loop
                 muted={isMuted}
-                onClick={() => setPlaying(!playing)}
+                onClick={togglePlay}
                 playsInline
             />
 
@@ -347,16 +372,58 @@ const ReelItem = ({ video, isMuted, onToggleMute, onLike, isLiked }: any) => {
 
 const VideoCard = ({ video }: { video: Video }) => {
     const { t } = useTranslation();
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const [isHovered, setIsHovered] = useState(false);
+    const [isInView, setIsInView] = useState(false);
+
+    // IntersectionObserver: track if card is in the viewport
+    useEffect(() => {
+        const el = containerRef.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => setIsInView(entry.isIntersecting),
+            { threshold: 0.5 }
+        );
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
+
+    // Autoplay preview when hovered AND in view
+    useEffect(() => {
+        if (!videoRef.current) return;
+        if (isHovered && isInView) {
+            videoRef.current.currentTime = 0;
+            videoRef.current.play().catch(() => {});
+        } else {
+            videoRef.current.pause();
+            videoRef.current.currentTime = 0;
+        }
+    }, [isHovered, isInView]);
+
     return (
         <motion.div
+            ref={containerRef}
             whileHover={{ y: -10 }}
+            onHoverStart={() => setIsHovered(true)}
+            onHoverEnd={() => setIsHovered(false)}
             className="group relative bg-[#1a2133]/40 backdrop-blur-md rounded-[40px] overflow-hidden border border-white/5 hover:border-blue-500/30 transition-all cursor-pointer shadow-2xl"
         >
             <div className="relative aspect-video">
+                {/* Thumbnail shown when not hovered */}
                 <img
                     src={video.thumbnailUrl || (video.type === 'live' ? 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&q=80' : 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=500&q=80')}
                     alt={video.title}
-                    className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${isHovered ? 'opacity-0 scale-105' : 'grayscale-[20%] group-hover:grayscale-0'}`}
+                />
+                {/* Autoplay video preview on hover */}
+                <video
+                    ref={videoRef}
+                    src={video.videoUrl}
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
+                    muted
+                    loop
+                    playsInline
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
@@ -382,8 +449,8 @@ const VideoCard = ({ video }: { video: Video }) => {
                     </div>
                 )}
 
-                {/* Play Button Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
+                {/* Play Button Overlay — shown when not hovered */}
+                <div className={`absolute inset-0 flex items-center justify-center transition-all ${isHovered ? 'opacity-0' : 'opacity-0 group-hover:opacity-100'}`}>
                     <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-2xl shadow-blue-500/50 scale-110">
                         <Play size={24} className="text-white fill-white ml-1" />
                     </div>

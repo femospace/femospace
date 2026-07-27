@@ -9,6 +9,7 @@ import {
     isRTL,
     type Language,
 } from '../data/languages';
+import { adminAuthService } from '../services/adminAuth.service';
 import './LanguageSelector.css';
 
 interface LanguageSelectorProps {
@@ -56,8 +57,8 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
         // Persist to localStorage (for guests)
         localStorage.setItem('i18nextLng', languageCode);
 
-        // TODO: If user is logged in, save to backend
-        // await updateUserLanguagePreference(languageCode);
+        // If user is logged in, save to backend
+        adminAuthService.updateUserLanguagePreference(languageCode);
 
         // Close modal with animation
         setIsVisible(false);

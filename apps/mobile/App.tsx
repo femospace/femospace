@@ -8,6 +8,7 @@ import { MainNavigator } from './src/navigation/MainNavigator';
 import { LoginScreen } from './src/screens/Auth/LoginScreen';
 import { RegisterScreen } from './src/screens/Auth/RegisterScreen';
 import { CameraScreen } from './src/screens/CameraScreen';
+import { LegalScreen } from './src/screens/LegalScreen';
 import { theme } from './src/theme';
 
 const Stack = createNativeStackNavigator();
@@ -28,6 +29,7 @@ export default function App() {
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="Main" component={MainNavigator} />
         <Stack.Screen name="Camera" component={CameraScreen} options={{ presentation: 'fullScreenModal' }} />
+        <Stack.Screen name="Legal" component={LegalScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
