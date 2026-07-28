@@ -9,5 +9,8 @@
     "dev": "npm run dev --workspaces --if-present",
     "build": "npm run build --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "vite-plugin-node-polyfills": "^0.25.0"
   }
 }
