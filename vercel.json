@@ -2,5 +2,5 @@
   "framework": "vite",
   "buildCommand": "npx vite build",
   "outputDirectory": "dist",
-  "installCommand": "cd ../.. && npm install"
+  "installCommand": "cd ../.. && npm install --ignore-scripts"
 }
