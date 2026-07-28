@@ -58,10 +58,10 @@ export const CreatorDashboard = () => {
     );
 
     return (
-        <PageWrapper className="flex h-screen overflow-hidden">
+        <PageWrapper className="flex flex-col lg:flex-row h-screen overflow-hidden">
 
-            {/* SIDEBAR */}
-            <div className={`w-64 ${isDark ? 'bg-[#1e293b] border-gray-800' : 'bg-white border-slate-200'} border-r flex flex-col shrink-0`}>
+            {/* SIDEBAR — hidden on mobile, visible on lg+ */}
+            <div className={`hidden lg:flex w-64 ${isDark ? 'bg-[#1e293b] border-gray-800' : 'bg-white border-slate-200'} border-r flex-col shrink-0`}>
                 <div className="p-6 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/home')}>
                     <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-xl text-white">F</div>
                     <span className={`text-xl font-bold tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>{t('creator.studio', 'Creator Studio')}</span>
@@ -87,29 +87,62 @@ export const CreatorDashboard = () => {
                 </div>
             </div>
 
+            {/* MOBILE TOP NAV — visible only on mobile/tablet */}
+            <div className={`lg:hidden ${isDark ? 'bg-[#1e293b] border-gray-800' : 'bg-white border-slate-200'} border-b shrink-0`}>
+                <div className="flex items-center gap-2 px-4 py-3 border-b border-slate-100 dark:border-gray-800">
+                    <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-base text-white">F</div>
+                    <span className={`text-base font-bold tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>{t('creator.studio', 'Creator Studio')}</span>
+                </div>
+                <div className="overflow-x-auto">
+                    <div className="flex gap-1 px-3 py-2 min-w-max">
+                        {[
+                            { id: 'overview', icon: <LayoutDashboard size={16} />, label: t('creator.tabs.overview', 'Overview') },
+                            { id: 'content', icon: <Video size={16} />, label: t('creator.tabs.content', 'Content') },
+                            { id: 'analytics', icon: <BarChart2 size={16} />, label: t('creator.tabs.analytics', 'Analytics') },
+                            { id: 'monetization', icon: <DollarSign size={16} />, label: t('creator.tabs.monetization', 'Monetization') },
+                            { id: 'audience', icon: <Users size={16} />, label: t('creator.tabs.audience', 'Audience') },
+                            { id: 'settings', icon: <Settings size={16} />, label: t('common.settings', 'Settings') },
+                        ].map(item => (
+                            <button
+                                key={item.id}
+                                onClick={() => setActiveTab(item.id)}
+                                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-colors whitespace-nowrap ${
+                                    activeTab === item.id
+                                        ? 'bg-blue-600 text-white'
+                                        : `${isDark ? 'text-gray-400 hover:bg-gray-800 hover:text-white' : 'text-slate-500 hover:bg-blue-50 hover:text-blue-600'}`
+                                }`}
+                            >
+                                {item.icon}
+                                <span>{item.label}</span>
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
             {/* MAIN CONTENT */}
-            <div className="flex-1 flex flex-col overflow-hidden">
+            <div className="flex-1 flex flex-col overflow-hidden min-w-0">
 
                 {/* TOP HEADER */}
-                <header className={`h-16 border-b ${isDark ? 'border-gray-800 bg-[#1e293b]/50' : 'border-slate-200 bg-white/50'} backdrop-blur-md flex items-center justify-between px-8`}>
-                    <h1 className={`text-xl font-bold capitalize ${isDark ? 'text-white' : 'text-slate-900'}`}>{t(`creator.tabs.${activeTab}`, activeTab)}</h1>
-                    <div className="flex items-center gap-4">
-                        <div className="relative">
+                <header className={`h-auto min-h-[4rem] border-b ${isDark ? 'border-gray-800 bg-[#1e293b]/50' : 'border-slate-200 bg-white/50'} backdrop-blur-md flex flex-wrap items-center justify-between gap-2 px-4 sm:px-8 py-3`}>
+                    <h1 className={`text-base sm:text-xl font-bold capitalize ${isDark ? 'text-white' : 'text-slate-900'}`}>{t(`creator.tabs.${activeTab}`, activeTab)}</h1>
+                    <div className="flex items-center gap-2 sm:gap-4">
+                        <div className="relative hidden sm:block">
                             <input
-                                className={`${isDark ? 'bg-gray-800 text-white' : 'bg-slate-100 text-slate-900'} border-none rounded-full py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-blue-500 w-64 transitioning-colors`}
+                                className={`${isDark ? 'bg-gray-800 text-white' : 'bg-slate-100 text-slate-900'} border-none rounded-full py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-blue-500 w-40 sm:w-64 transitioning-colors`}
                                 placeholder={t('common.searchContent', 'Search content...')}
                             />
                             <Search className="absolute left-3 top-2.5 text-gray-400" size={16} />
                         </div>
                         <button className={`relative ${isDark ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'} p-2 rounded-full`}>
-                            <Bell size={20} />
+                            <Bell size={18} />
                             <span className="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-white dark:border-[#1e293b]"></span>
                         </button>
                         <button
                             onClick={() => setShowCreationModal(true)}
-                            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full font-bold flex items-center gap-2 text-sm shadow-lg shadow-blue-900/20"
+                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 sm:px-4 py-2 rounded-full font-bold flex items-center gap-1.5 text-xs sm:text-sm shadow-lg shadow-blue-900/20"
                         >
-                            <Plus size={18} /> {t('common.create', 'Create')}
+                            <Plus size={16} /> {t('common.create', 'Create')}
                         </button>
                     </div>
                 </header>

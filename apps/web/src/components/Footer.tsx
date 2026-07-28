@@ -17,19 +17,19 @@ export const Footer = ({ onLanguageClick, onContactClick, isAuth = false }: Foot
   return (
     <motion.footer
       className={clsx(
-        "left-0 right-0 z-50 px-6 py-6",
-        isAuth ? "relative mt-auto" : "fixed bottom-0 pointer-events-none"
+        "left-0 right-0 z-50 px-4 sm:px-6 py-4 sm:py-6 mt-auto",
+        isAuth ? "relative" : "relative lg:fixed lg:bottom-0 pointer-events-none"
       )}
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
     >
       <div className={clsx("max-w-7xl mx-auto", !isAuth && "pointer-events-auto")}>
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="flex flex-col items-center gap-2 sm:gap-4 md:flex-row md:justify-between">
           {/* Copyright */}
           {!isAuth && (
             <motion.p
-              className="text-gray-600 dark:text-gray-400 text-sm"
+              className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm text-center"
               whileHover={{ scale: 1.05 }}
             >
               {t('footer.copyright')}
@@ -37,9 +37,9 @@ export const Footer = ({ onLanguageClick, onContactClick, isAuth = false }: Foot
           )}
 
           {/* Links */}
-          <div className={clsx("flex items-center gap-6 flex-wrap justify-center", isAuth && "flex-1")}>
+          <div className={clsx("flex items-center gap-4 sm:gap-6 flex-wrap justify-center", isAuth && "flex-1")}>
             <motion.button
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors font-medium"
+              className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 text-xs sm:text-sm transition-colors font-medium"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={onContactClick}
@@ -47,7 +47,7 @@ export const Footer = ({ onLanguageClick, onContactClick, isAuth = false }: Foot
               {t('footer.contact')}
             </motion.button>
             <motion.button
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors font-medium"
+              className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 text-xs sm:text-sm transition-colors font-medium"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate('/terms')}
@@ -55,7 +55,7 @@ export const Footer = ({ onLanguageClick, onContactClick, isAuth = false }: Foot
               {t('footer.terms')}
             </motion.button>
             <motion.button
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors font-medium"
+              className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 text-xs sm:text-sm transition-colors font-medium"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate('/privacy')}
@@ -73,5 +73,6 @@ export const Footer = ({ onLanguageClick, onContactClick, isAuth = false }: Foot
     </motion.footer>
   );
 };
+
 
 

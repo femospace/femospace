@@ -93,28 +93,47 @@ export const MonetizationDashboard = () => {
     return (
         <PageWrapper className="pb-24 font-sans antialiased">
             {/* Top Bar */}
-            <div className={`fixed top-0 inset-x-0 h-16 ${isDark ? 'bg-black/60' : 'bg-white/60'} backdrop-blur-3xl border-b border-white/5 z-50 flex items-center justify-between px-8`}>
-                <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-blue-600/30">
+            <div className={`fixed top-0 inset-x-0 h-16 ${isDark ? 'bg-black/60' : 'bg-white/60'} backdrop-blur-3xl border-b border-white/5 z-50 flex items-center justify-between px-4 sm:px-8`}>
+                <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                    <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-blue-600/30 shrink-0">
                         <TrendingUp size={20} className="text-white" />
                     </div>
-                    <h1 className={`text-sm font-black uppercase tracking-widest ${isDark ? 'text-white/90' : 'text-slate-900'}`}>{isDark ? 'Creator Monetization Center' : 'Creator Center'}</h1>
+                    <h1 className={`text-xs sm:text-sm font-black uppercase tracking-widest truncate ${isDark ? 'text-white/90' : 'text-slate-900'}`}>{'Creator Center'}</h1>
                 </div>
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-3 sm:gap-6 shrink-0">
                     <div className="flex flex-col items-end">
-                        <span className={`text-[10px] font-black ${isDark ? 'text-white/40' : 'text-slate-400'} uppercase tracking-tighter`}>Coin Balance</span>
-                        <span className="text-sm font-black text-blue-500">{(data.wallet?.coinBalance || 0).toLocaleString()} Coins</span>
+                        <span className={`text-[9px] sm:text-[10px] font-black ${isDark ? 'text-white/40' : 'text-slate-400'} uppercase tracking-tighter`}>Coins</span>
+                        <span className="text-xs sm:text-sm font-black text-blue-500">{(data.wallet?.coinBalance || 0).toLocaleString()}</span>
                     </div>
                     <div className="flex flex-col items-end">
-                        <span className={`text-[10px] font-black ${isDark ? 'text-white/40' : 'text-slate-400'} uppercase tracking-tighter`}>Earnings</span>
-                        <span className="text-sm font-black text-green-500">${(data.wallet?.cashBalance || 0).toLocaleString()}</span>
+                        <span className={`text-[9px] sm:text-[10px] font-black ${isDark ? 'text-white/40' : 'text-slate-400'} uppercase tracking-tighter`}>Earnings</span>
+                        <span className="text-xs sm:text-sm font-black text-green-500">${(data.wallet?.cashBalance || 0).toLocaleString()}</span>
                     </div>
                 </div>
             </div>
 
-            <div className="pt-24 max-w-[1400px] mx-auto px-8 flex gap-10">
-                {/* Sidebar Nav */}
-                <div className="w-64 flex flex-col gap-1 sticky top-24 h-fit">
+            {/* Mobile horizontal tab strip */}
+            <div className={`lg:hidden fixed top-16 inset-x-0 z-40 ${isDark ? 'bg-black/80' : 'bg-white/90'} backdrop-blur-xl border-b border-white/5 overflow-x-auto`}>
+                <div className="flex gap-1 px-3 py-2 min-w-max">
+                    {tabs.map(tab => (
+                        <button
+                            key={tab.id}
+                            onClick={() => setActiveTab(tab.id)}
+                            className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all duration-200 whitespace-nowrap ${activeTab === tab.id
+                                ? 'bg-blue-600 text-white shadow-lg'
+                                : `${isDark ? 'text-neutral-400 hover:text-white hover:bg-white/5' : 'text-slate-500 hover:text-blue-600 hover:bg-blue-50'}`
+                                }`}
+                        >
+                            {tab.icon}
+                            <span>{tab.label}</span>
+                        </button>
+                    ))}
+                </div>
+            </div>
+
+            <div className="pt-24 lg:pt-24 max-w-[1400px] mx-auto px-4 sm:px-8 flex gap-10">
+                {/* Sidebar Nav — hidden on mobile, shown on lg+ */}
+                <div className="hidden lg:flex w-64 flex-col gap-1 sticky top-24 h-fit">
                     {tabs.map(tab => (
                         <button
                             key={tab.id}
@@ -131,7 +150,7 @@ export const MonetizationDashboard = () => {
                 </div>
 
                 {/* Main Content Area */}
-                <div className="flex-1">
+                <div className="flex-1 min-w-0 pt-12 lg:pt-0">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={activeTab}

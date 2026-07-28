@@ -62,10 +62,10 @@ export const BusinessDashboard = () => {
     );
 
     return (
-        <div className="flex h-screen bg-[#f3f4f6] dark:bg-[#0f172a] text-gray-900 dark:text-white font-sans overflow-hidden">
+        <div className="flex flex-col lg:flex-row h-screen bg-[#f3f4f6] dark:bg-[#0f172a] text-gray-900 dark:text-white font-sans overflow-hidden">
 
-            {/* SIDEBAR - Dark Theme Always for Professional look */}
-            <div className="w-64 bg-[#111827] text-white flex flex-col shrink-0">
+            {/* SIDEBAR - hidden on mobile, shown on lg+ */}
+            <div className="hidden lg:flex w-64 bg-[#111827] text-white flex-col shrink-0">
                 <div className="p-6 flex items-center gap-3 cursor-pointer" onClick={() => navigate('/home')}>
                     <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg">B</div>
                     <div>
@@ -101,32 +101,70 @@ export const BusinessDashboard = () => {
                 </div>
             </div>
 
+            {/* MOBILE TOP NAV - visible on mobile/tablet only */}
+            <div className="lg:hidden bg-[#111827] text-white shrink-0">
+                <div className="flex items-center gap-3 px-4 py-3 border-b border-gray-800">
+                    <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center font-bold text-base">B</div>
+                    <div>
+                        <div className="font-bold text-sm leading-none">Business</div>
+                        <div className="text-[9px] text-gray-400 font-medium tracking-widest uppercase">Suite</div>
+                    </div>
+                </div>
+                <div className="overflow-x-auto">
+                    <div className="flex gap-1 px-3 py-2 min-w-max">
+                        {[
+                            { id: 'overview', icon: <LayoutGrid size={15} />, label: 'Overview' },
+                            { id: 'products', icon: <ShoppingBag size={15} />, label: 'Products' },
+                            { id: 'orders', icon: <ShoppingCart size={15} />, label: 'Orders' },
+                            { id: 'customers', icon: <Users size={15} />, label: 'Customers' },
+                            { id: 'analytics', icon: <BarChart3 size={15} />, label: 'Analytics' },
+                            { id: 'marketing', icon: <Megaphone size={15} />, label: 'Marketing & Ads' },
+                            { id: 'finance', icon: <Wallet size={15} />, label: 'Finance' },
+                            { id: 'settings', icon: <Settings size={15} />, label: 'Settings' },
+                        ].map(item => (
+                            <button
+                                key={item.id}
+                                onClick={() => setActiveTab(item.id)}
+                                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-[11px] font-bold transition-colors whitespace-nowrap ${
+                                    activeTab === item.id
+                                        ? 'bg-indigo-600 text-white'
+                                        : 'text-gray-400 hover:bg-gray-800 hover:text-white'
+                                }`}
+                            >
+                                {item.icon}
+                                <span>{item.label}</span>
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
             {/* MAIN CONTENT */}
-            <div className="flex-1 flex flex-col overflow-hidden">
+            <div className="flex-1 flex flex-col overflow-hidden min-w-0">
 
                 {/* TOP HEADER */}
-                <header className="h-16 bg-white dark:bg-[#1e293b] border-b border-gray-200 dark:border-gray-700 flex items-center justify-between px-8 shadow-sm z-10">
-                    <h2 className="text-xl font-bold capitalize text-gray-800 dark:text-gray-100">{activeTab}</h2>
-                    <div className="flex items-center gap-4">
+                <header className="h-auto min-h-[4rem] bg-white dark:bg-[#1e293b] border-b border-gray-200 dark:border-gray-700 flex flex-wrap items-center justify-between gap-2 px-4 sm:px-8 py-3 shadow-sm z-10">
+                    <h2 className="text-base sm:text-xl font-bold capitalize text-gray-800 dark:text-gray-100">{activeTab}</h2>
+                    <div className="flex items-center gap-2 sm:gap-4">
                         <div className="relative hidden md:block">
                             <input
-                                className="bg-gray-100 dark:bg-gray-800 border-none rounded-lg py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-indigo-500 w-64 dark:text-gray-200"
+                                className="bg-gray-100 dark:bg-gray-800 border-none rounded-lg py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-indigo-500 w-48 sm:w-64 dark:text-gray-200"
                                 placeholder="Search orders, products..."
                             />
                             <Search className="absolute left-3 top-2.5 text-gray-400" size={16} />
                         </div>
                         <button className="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300">
-                            <Bell size={20} />
+                            <Bell size={18} />
                             <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
                         </button>
-                        <div className="flex items-center gap-3 pl-4 border-l border-gray-200 dark:border-gray-700">
-                            <img src={user?.avatarUrl || 'https://i.pravatar.cc/150'} className="w-9 h-9 rounded-full border border-gray-200" />
+                        <div className="flex items-center gap-2 sm:gap-3 pl-2 sm:pl-4 border-l border-gray-200 dark:border-gray-700">
+                            <img src={user?.avatarUrl || 'https://i.pravatar.cc/150'} className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-gray-200" />
                         </div>
                     </div>
                 </header>
 
                 {/* SCROLLABLE AREA */}
-                <main className="flex-1 overflow-auto p-8 remove-scrollbar bg-[#f3f4f6] dark:bg-[#0f172a]">
+                <main className="flex-1 overflow-auto p-4 sm:p-8 remove-scrollbar bg-[#f3f4f6] dark:bg-[#0f172a]">
 
                     {/* OVERVIEW TAB */}
                     {activeTab === 'overview' && (

@@ -86,9 +86,9 @@ export const Menu = () => {
     );
 
     return (
-        <div className="min-h-screen bg-[#f8fafc] dark:bg-[#0f172a] pb-32">
+        <div className="min-h-screen bg-[#f8fafc] dark:bg-[#0f172a] pb-24 sm:pb-32">
             {/* Sticky Header */}
-            <header className="sticky top-0 z-40 bg-white/80 dark:bg-[#0f172a]/80 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800 px-6 py-4">
+            <header className="sticky top-0 z-40 bg-white/80 dark:bg-[#0f172a]/80 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800 px-4 sm:px-6 py-4">
                 <div className="max-w-2xl mx-auto flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
@@ -107,7 +107,7 @@ export const Menu = () => {
                 </div>
             </header>
 
-            <main className="max-w-2xl mx-auto px-6 pt-6 space-y-6">
+            <main className="max-w-2xl mx-auto px-4 sm:px-6 pt-4 sm:pt-6 space-y-4 sm:space-y-6">
                 {/* 1) ACCOUNT SECTION */}
                 <motion.section
                     initial={{ opacity: 0, y: 20 }}
@@ -244,13 +244,13 @@ export const Menu = () => {
                 </motion.div>
 
                 {/* Footer */}
-                <footer className="pt-12 pb-8 text-center space-y-4">
+                <footer className="pt-8 sm:pt-12 pb-6 sm:pb-8 text-center space-y-3 sm:space-y-4">
                     <p className="text-gray-400 dark:text-gray-500 text-sm font-medium italic">{t('menu.copyright', '© 2026 SS Corporate Inc')}</p>
-                    <div className="flex items-center justify-center gap-6 text-xs font-bold text-gray-500 dark:text-gray-400">
+                    <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs font-bold text-gray-500 dark:text-gray-400">
                         <Link to="/terms" className="hover:text-blue-500 transition-colors uppercase tracking-widest">{t('footer.terms', 'Terms')}</Link>
-                        <span className="w-1 h-1 bg-gray-300 dark:bg-gray-700 rounded-full" />
+                        <span className="w-1 h-1 bg-gray-300 dark:bg-gray-700 rounded-full hidden sm:block" />
                         <Link to="/privacy" className="hover:text-blue-500 transition-colors uppercase tracking-widest">{t('footer.privacy', 'Privacy Policy')}</Link>
-                        <span className="w-1 h-1 bg-gray-300 dark:bg-gray-700 rounded-full" />
+                        <span className="w-1 h-1 bg-gray-300 dark:bg-gray-700 rounded-full hidden sm:block" />
                         <button onClick={() => setShowContactModal(true)} className="hover:text-blue-500 transition-colors uppercase tracking-widest">{t('footer.contact', 'Contact Us')}</button>
                     </div>
                 </footer>
