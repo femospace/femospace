@@ -44,7 +44,8 @@ export class AudioService {
     const filepath = path.join(uploadDir, filename);
     await fs.writeFile(filepath, file.buffer);
 
-    const baseUrl = process.env.BACKEND_URL || 'http://localhost:3000';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.BACKEND_URL || 'https://femospace.onrender.com';
+    const baseUrl = API_URL;
     const fileUrl = `${baseUrl}/uploads/audio/${filename}`;
 
     const newTrack = new this.audioModel({

@@ -68,7 +68,8 @@ export class UsersController {
     )
     async uploadAvatar(@Req() req: any, @UploadedFile() file: any) {
         const userId = req.user.userId;
-        const baseUrl = process.env.BACKEND_URL || 'http://localhost:3000';
+        const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.BACKEND_URL || 'https://femospace.onrender.com';
+        const baseUrl = API_URL;
         const avatarUrl = `${baseUrl}/uploads/avatars/${file.filename}`;
 
         const user = await this.usersService.update(userId, { 'profile.avatarUrl': avatarUrl } as any);
@@ -93,7 +94,8 @@ export class UsersController {
     )
     async uploadCover(@Req() req: any, @UploadedFile() file: any) {
         const userId = req.user.userId;
-        const baseUrl = process.env.BACKEND_URL || 'http://localhost:3000';
+        const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.BACKEND_URL || 'https://femospace.onrender.com';
+        const baseUrl = API_URL;
         const coverUrl = `${baseUrl}/uploads/covers/${file.filename}`;
 
         const user = await this.usersService.update(userId, { 'profile.coverImage': coverUrl } as any);

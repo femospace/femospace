@@ -27,7 +27,7 @@ const Step3: React.FC<Step3Props> = ({ onSubmit, onPrevious, loading, initialDat
   const [suggestions, setSuggestions] = useState<FemoMailSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
-  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || process.env.REACT_APP_API_URL || 'https://femospace.onrender.com';
 
   const fetchSuggestions = useCallback(async (username: string) => {
     if (username.length < 3) return;

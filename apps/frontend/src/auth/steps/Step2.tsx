@@ -29,7 +29,7 @@ const Step2: React.FC<Step2Props> = ({ onSubmit, onPrevious, loading, initialDat
   const [validationError, setValidationError] = useState<string | null>(null);
   const [passwordStrength, setPasswordStrength] = useState<PasswordStrength | null>(null);
 
-  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || process.env.REACT_APP_API_URL || 'https://femospace.onrender.com';
 
   const handleChange = async (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;

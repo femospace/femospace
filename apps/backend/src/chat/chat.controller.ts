@@ -52,7 +52,7 @@ export class ChatController {
     async uploadFile(@UploadedFile() file: Express.Multer.File) {
         if (!file) throw new Error('File upload failed');
         return {
-            url: `http://localhost:3000/uploads/chat/${file.filename}`, // Adjust for production
+            url: `${process.env.NEXT_PUBLIC_API_URL || process.env.BACKEND_URL || 'https://femospace.onrender.com'}/uploads/chat/${file.filename}`, // Adjust for production
             fileName: file.originalname,
             size: file.size,
             mimetype: file.mimetype

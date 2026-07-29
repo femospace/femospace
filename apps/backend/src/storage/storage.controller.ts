@@ -19,7 +19,8 @@ export class StorageController {
         })
     }))
     uploadFile(@UploadedFile() file: any) {
-        const baseUrl = process.env.BACKEND_URL || 'http://localhost:3000';
+        const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.BACKEND_URL || 'https://femospace.onrender.com';
+        const baseUrl = API_URL;
         return {
             url: `${baseUrl}/uploads/${file.filename}`,
             originalName: file.originalname,

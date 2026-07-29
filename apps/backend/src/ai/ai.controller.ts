@@ -68,7 +68,7 @@ export class AIController {
         // Process file (e.g. read content, summarize)
         // mock return
         return {
-            url: `http://localhost:3000/uploads/ai/${file.filename}`,
+            url: `${process.env.NEXT_PUBLIC_API_URL || process.env.BACKEND_URL || 'https://femospace.onrender.com'}/uploads/ai/${file.filename}`,
             originalName: file.originalname,
             mimetype: file.mimetype,
             size: file.size

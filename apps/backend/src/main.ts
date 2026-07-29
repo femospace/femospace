@@ -34,8 +34,24 @@ async function bootstrap() {
   });
 
   // Enable CORS for frontend
+  const allowedOrigins = [
+    'https://femospace.space',
+    'https://www.femospace.space',
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'http://localhost:3001',
+  ];
+  if (process.env.FRONTEND_URL) {
+    // Support comma-separated list of additional origins in env
+    process.env.FRONTEND_URL.split(',').forEach(origin => {
+      const trimmed = origin.trim();
+      if (trimmed && !allowedOrigins.includes(trimmed)) {
+        allowedOrigins.push(trimmed);
+      }
+    });
+  }
   app.enableCors({
-    origin: process.env.FRONTEND_URL ? [process.env.FRONTEND_URL, 'http://localhost:5173', 'http://localhost:5174'] : ['http://localhost:5173', 'http://localhost:5174'],
+    origin: allowedOrigins,
     credentials: true,
   });
 
