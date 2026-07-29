@@ -51,5 +51,4 @@ export const MailSchema = SchemaFactory.createForClass(Mail);
 
 // Indexes
 MailSchema.index({ toUserIds: 1 });
-MailSchema.index({ fromUserId: 1 });
 MailSchema.index({ createdAt: -1 });

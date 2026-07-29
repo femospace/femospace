@@ -140,6 +140,5 @@ export const PostSchema = SchemaFactory.createForClass(Post);
 
 // Indexes for performance
 PostSchema.index({ ownerId: 1, ownerType: 1 });
-PostSchema.index({ hashtags: 1 });
 PostSchema.index({ createdAt: -1 });
 PostSchema.index({ visibility: 1 });

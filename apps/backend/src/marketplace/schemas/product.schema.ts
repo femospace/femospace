@@ -109,6 +109,4 @@ export const ProductSchema = SchemaFactory.createForClass(Product);
 ProductSchema.index({ title: 'text', description: 'text', tags: 'text' });
 ProductSchema.index({ storeId: 1 });
 ProductSchema.index({ sellerId: 1 });
-ProductSchema.index({ category: 1 });
-ProductSchema.index({ status: 1 });
 ProductSchema.index({ createdAt: -1 });

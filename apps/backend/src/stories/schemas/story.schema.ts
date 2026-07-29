@@ -108,5 +108,4 @@ export class Story {
 
 export const StorySchema = SchemaFactory.createForClass(Story);
 
-StorySchema.index({ expiresAt: 1 });
 StorySchema.index({ ownerId: 1, createdAt: -1 });

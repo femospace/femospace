@@ -34,6 +34,5 @@ export class AudioTrack {
 }
 
 export const AudioTrackSchema = SchemaFactory.createForClass(AudioTrack);
-AudioTrackSchema.index({ hash: 1 }, { unique: true });
 AudioTrackSchema.index({ type: 1 });
 AudioTrackSchema.index({ createdAt: -1 });
